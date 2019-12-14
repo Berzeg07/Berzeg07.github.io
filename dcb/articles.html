@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/clickEffect/modernizr.custom.js"></script>
+  </head>
+  <body>
+    <div class="blur-wrap">
+      <header class="header">
+        <ul class="mobile-menu">
+          <li>
+            <div class="mobile-menu__inner"><a href="#">Структура больницы</a>
+              <div class="show-dropdown"></div>
+            </div>
+            <ul class="mobile-menu__dropdown">
+              <li><a href="#">Поликлиническая служба</a></li>
+              <li><a href="#">Круглосуточный стационар</a></li>
+              <li><a href="#">Дневной стационар</a></li>
+              <li><a href="#">Детский диагностический <br>центр</a></li>
+              <li><a href="#">Платные услуги</a></li>
+              <li><a href="#">Городской детский <br>кардиологический центр</a></li>
+              <li><a href="#">Неотложная помощь</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="mobile-menu__inner"><a href="#">Платные услуги</a>
+              <div class="show-dropdown"></div>
+            </div>
+            <ul class="mobile-menu__dropdown">
+              <li><a href="#">Бассейн</a></li>
+              <li><a href="#">Кабинет косметолога</a></li>
+              <li><a href="#">Зубкинs Family</a></li>
+              <li><a href="#">Кабинет диетолога</a></li>
+              <li><a href="#">Водолечебница</a></li>
+              <li><a href="#">Консультация специалистов</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="mobile-menu__inner"><a href="#">Информация для <br>пациентов</a>
+              <div class="show-dropdown"></div>
+            </div>
+            <ul class="mobile-menu__dropdown">
+              <li><a href="#">Важная информация</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Вопрос-ответ</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="mobile-menu__inner"><a href="#">О нас</a>
+              <div class="show-dropdown"></div>
+            </div>
+            <ul class="mobile-menu__dropdown">
+              <li><a href="#">Наша история</a></li>
+              <li><a href="#">Сотрудники</a></li>
+              <li><a href="#">Администрация</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">СМИ о нас</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Осуществление закупок</a></li>
+              <li><a href="#">Направления деятельности</a></li>
+              <li><a href="#">Технологии</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="header-top">
+          <div class="header-top__item"><a class="logo-mobile" href="#"><img src="img/logo-min.png"></a>
+            <form class="form-search" action="#">
+              <label class="search header-top__search">
+                <input type="text" placeholder="Поиск">
+                <button class="search__btn" type="submit"> </button>
+              </label>
+            </form>
+          </div>
+          <div class="header-top__item">
+            <div class="phone-box">
+              <div class="phone-box__main"><a href="tel:73432047676">
+                   +7 (343) <b>204 76 76</b></a></div>
+              <ul class="phone-box__hidden">
+                <li><a class="phone-box__mob-phone" href="tel:73432047676">
+                     +7 (343) <b>204 76 76</b></a>
+                  <div class="phone-box__article">
+                     Единая городская<br> регистратура</div>
+                </li>
+                <li><a href="tel:73432285933">+7 (343) <b>228 59 33</b></a>
+                  <div class="phone-box__article">
+                     Call центр ДГКБ №11</div>
+                </li>
+                <li><a href="tel:73432712062">+7 (343) <b>271 20 62</b></a>
+                  <div class="phone-box__article">
+                     Неотложная помощь</div>
+                </li>
+                <li><a href="tel:79126426128">+7 (912) <b>642 61 28</b></a>
+                  <div class="phone-box__article">
+                     “Горячая линия” <br>по вопросам записи<br> на прием</div>
+                </li>
+                <li><a href="tel:79126246128">+7 (912) <b>642 61 28</b></a>
+                  <div class="phone-box__article">
+                     Платные услуги   </div>
+                </li>
+              </ul>
+            </div>
+            <button class="modal-btn modal-btn_header full" type="button"><span>Записаться <br>на прием</span></button><a class="change-version" href="#">
+              <div class="change-version__img cbutton cbutton--effect-nikola"></div>
+              <div class="change-version__article">Версия для <br><b>слабовидящих           </b></div></a>
+            <div class="burger"><span></span><span></span><span></span><span>                           </span></div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom__inner container">
+            <div class="main-logo"><a href="#"><img src="img/logo.png"></a></div><a class="logo-sticky" href="#"><img src="img/logo-min.png"></a>
+            <nav class="main-nav">
+              <div class="main-nav__line"></div>
+              <ul class="main-nav__list">
+                <li class="main-nav__first tab-menu active"><a href="#" menu="#menu_structure">Структура больницы</a></li>
+                <li class="main-nav__second tab-menu"><a href="#" menu="#menu_services">Платные услуги</a></li>
+                <li class="main-nav__third tab-menu"><a href="#" menu="#menu_info">Информация для пациентов</a></li>
+                <li class="main-nav__fourth tab-menu"><a href="#" menu="#menu_about">О нас</a></li>
+                <li class="main-nav__fifth"><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="social social__header"><a class="fb cbutton cbutton--effect-nikola" href="#"><span></span></a><a class="vk cbutton cbutton--effect-nikola" href="#"><span></span></a><a class="inst cbutton cbutton--effect-nikola" href="#"><span></span></a></div>
+            <div class="phone-box sticky-el">
+              <div class="phone-box__main"><a href="tel:73432047676">
+                   +7 (343) <b>204 76 76</b></a></div>
+              <ul class="phone-box__hidden">
+                <li><a class="phone-box__mob-phone" href="tel:73432047676">
+                     +7 (343) <b>204 76 76</b></a>
+                  <div class="phone-box__article">
+                     Единая городская<br> регистратура</div>
+                </li>
+                <li><a href="tel:73432285933">+7 (343) <b>228 59 33</b></a>
+                  <div class="phone-box__article">
+                     Call центр ДГКБ №11</div>
+                </li>
+                <li><a href="tel:73432712062">+7 (343) <b>271 20 62</b></a>
+                  <div class="phone-box__article">
+                     Неотложная помощь</div>
+                </li>
+                <li><a href="tel:79126426128">+7 (912) <b>642 61 28</b></a>
+                  <div class="phone-box__article">
+                     “Горячая линия” <br>по вопросам записи<br> на прием</div>
+                </li>
+                <li><a href="tel:79126246128">+7 (912) <b>642 61 28</b></a>
+                  <div class="phone-box__article">
+                     Платные услуги   </div>
+                </li>
+              </ul>
+            </div>
+            <button class="modal-btn sticky-el modal-btn_header full" type="button"><span>Записаться <br>на прием</span></button>
+          </div>
+          <div class="header-bottom__item">
+            <div class="dropdowmmenu" id="menu_structure">
+              <div class="container">
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Поликлиническая служба</a></li>
+                  <li><a href="#">Круглосуточный стационар</a></li>
+                  <li><a href="#">Дневной стационар</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Детский диагностический центр</a></li>
+                  <li><a href="#">Платные услуги</a></li>
+                  <li><a href="#">Городской детский <br>кардиологический центр</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Неотложная помощь</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdowmmenu" id="menu_services">
+              <div class="container">
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Бассейн</a></li>
+                  <li><a href="#">Кабинет косметолога</a></li>
+                  <li><a href="#">Зубкинs Family</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Кабинет диетолога</a></li>
+                  <li><a href="#">Водолечебница</a></li>
+                  <li><a href="#">Консультация специалистов</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdowmmenu" id="menu_info">
+              <div class="container">
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Важная информация</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Вопрос-ответ</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Полезные статьи</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdowmmenu" id="menu_about">
+              <div class="container">
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Наша история</a></li>
+                  <li><a href="#">Сотрудники</a></li>
+                  <li><a href="#">Администрация</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">СМИ о нас</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                </ul>
+                <ul class="dropdowmmenu__list">
+                  <li><a href="#">Осуществление закупок</a></li>
+                  <li><a href="#">Направления деятельности</a></li>
+                  <li><a href="#">Технологии</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="top-inner top-inner_article">
+        <div class="container">
+          <h1 class="main-title main-title_grey">Статьи</h1>
+          <div class="breadcrumbs"><a href="#">Главная            </a><a href="#">Статьи</a></div>
+        </div>
+      </div>
+      <div class="top-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="top-slider__item top-slider__item_pink"><a href="#">
+                <div class="top-slider__img"><img src="img/top-sl-2.jpg"></div>
+                <div class="top-slider__cont">
+                  <div class="top-slider__inner">           
+                    <div class="top-slider__title">Работает бассейн!</div>
+                    <div class="top-slider__article"> 
+                      <p>atibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium </p>
+                    </div>
+                    <div class="top-slider__link"><span>Подробнее</span></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="top-slider__item top-slider__item_blue"><a href="#">
+                <div class="top-slider__img"><img src="img/top-sl-1.jpg"></div>
+                <div class="top-slider__cont">
+                  <div class="top-slider__inner">  
+                    <div class="top-slider__title top-slider__title_blue">Занятия в нашем бассейне <br>с малышами от 1 года до 7 лет</div>
+                    <div class="top-slider__article"> 
+                      <p>atibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium </p>
+                    </div>
+                    <div class="top-slider__link"><span>Подробнее                        </span></div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="top-slider__item top-slider__item_pink"><a href="#">
+                <div class="top-slider__img"><img src="img/top-sl-3.jpg"></div>
+                <div class="top-slider__cont">
+                  <div class="top-slider__inner">  
+                    <div class="top-slider__title">Детская стоматология <br>Совсем не больно!</div>
+                    <div class="top-slider__article"> 
+                      <p>atibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium </p>
+                    </div>
+                    <div class="top-slider__link"><span>Подробнее</span></div>
+                  </div>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev">       </div>
+      </div>
+      <div class="container articles">
+        <div class="page-block">
+          <div class="sidebar">
+            <div class="sidebar__heading">О нас</div>
+            <ul class="sidebar__list">
+              <li><span class="sidebar__title">Наша история</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Сотрудники</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Администрация</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Новости</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">СМИ о нас</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Вакансии</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Осуществление закупок</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">Направление деятельности</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+              <li><span class="sidebar__title">СМИ о нас</span>
+                <ul class="sidebar__hidden">
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                  <li><a href="#">Заголовок страницы в две строки</a></li>
+                  <li><a href="#">Заголовок страницы</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="content content_articles">
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+            <div class="articles-block">
+              <div class="main-info__img main-info__img_pz"><a href="#"><img src="img/gazeta.jpg"></a></div>
+              <div class="main-info__article-wrap">
+                <div class="main-info__inner main-info__inner_cont">
+                  <div class="main-info__title">ГОЛОСУЕМ ЗА ДГКБ 11 в конкурсе КЛИНИКА ГОДА-2019</div>
+                  <div class="main-info__date">30/05/19</div>
+                </div>
+                <div class="main-info__article">
+                  <p>Выбираем лучшие медицинские учреждения в номинациях конкурса «Клиника года – 2019 Свердловская область» по оценкам посетителей...    </p>
+                </div>
+              </div>
+              <div class="main-info__btn main-info__btn_cont"><a class="btn-animate" href="#"> <span>Перейти к статье</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination__list"><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">Вперед</a></div><a class="btn-animate" href="#"> <span>Показать еще</span></a>
+        </div>
+        <div class="slider-inner">
+          <div class="info-slider swiper-container wow slideInLeft" data-wow-duration="1.5s" data-wow-offset="10">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="info-slider__item"><a href="#"><img src="img/ikb.jpg"></a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info-slider__item"><a href="#"><img src="img/ikb.jpg"></a></div>
+              </div>
+              <div class="swiper-slide">                 
+                <div class="info-slider__item"><a href="#"><img src="img/ikb.jpg"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer wow fadeInUp" data-wow-duration="1.5s">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__list-wrap">
+              <ul class="footer__list">
+                <li>Моя больница</li>
+                <li><a href="#">Поликлиническая служба    </a></li>
+                <li><a href="#">Круглосуточный стационар</a></li>
+                <li><a href="#">Дневной стационар</a></li>
+                <li><a href="#">Городской детский кардиологический центр</a></li>
+                <li><a href="#">Детский диагностический центр</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li>Платные услуги</li>
+                <li><a href="#">Бассейн   </a></li>
+                <li><a href="#">Кабинет косметолога</a></li>
+                <li><a href="#">Зубкинs Family</a></li>
+                <li><a href="#">Кабинет диетолога</a></li>
+                <li><a href="#">Водолечебница</a></li>
+                <li><a href="#">Консультации специалистов<br> (с подразделами по узким специалистам)</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li>Информация<br> для пациента</li>
+                <li><a href="#">Важная информация   </a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Полезные статьи</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li>О нас</li>
+                <li><a href="#">Наша история  </a></li>
+                <li><a href="#">Специалисты</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">СМИ о нас</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Технологии</a></li>
+                <li><a href="#">Направления деятельности</a></li>
+                <li><a href="#">Осуществление закупок</a></li>
+              </ul>
+              <ul class="footer__list">
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <ul class="footer__info">
+              <li>
+                <div class="assessment">
+                  <div class="assessment__img"><img src="img/gerb.jpg"></div>
+                  <div class="assessment__article">Независимая оценка качества условий оказания услуг медицинскими организациями</div>
+                  <ul class="assessment__bottom">
+                    <li><a href="#">Подробнее</a></li>
+                    <li><a href="#">Оценить    </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="adress-map">
+                  <button class="marker" type="button"></button>
+                  <div class="adress-map__info">г. Екатеринбург <br> ул. Нагорная, д.48</div>
+                </div>
+                <div class="footer__phone"><a href="#">
+                     +7 (343) <b>204 76 76</b></a></div>
+                <button class="modal-btn full modal-btn_footer" type="button"><span>Записаться <br>на прием</span></button>
+                <form class="form-search form-search_footer" action="#">
+                  <label class="search header-top__search">
+                    <input type="text" placeholder="Поиск">
+                    <button class="search__btn" type="submit"></button>
+                  </label>
+                </form><a class="btn" href="#">Сотрудникам                             </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__logo"><img src="img/footer-logo.png"></div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="copyright">© 2011 Детская Городская Клиническая Больница №11</div>
+            <div class="social social_footer"><a class="fb cbutton cbutton--effect-nikola" href="#"><span></span></a><a class="vk cbutton cbutton--effect-nikola" href="#"><span></span></a><a class="inst cbutton cbutton--effect-nikola" href="#"><span></span></a></div>
+            <ul class="footer__link">
+              <li><a class="footer__btn" href="#"> <span>Неотложная <br>помощь ребенку</span></a></li>
+              <li><a class="footer__btn" href="#">Задать вопрос главному врачу   </a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="overlay"></div>
+      <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+      <script src="libs/moment/moment.js"></script>
+      <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+      <script src="libs/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+      <script src="libs/wow/wow.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+      <script src="libs/mask/jquery.maskedinput.min.js"></script>
+      <script src="libs/clickEffect/classie.js"></script>
+      <script src="js/common.js"></script>
+    </div>
+    <div class="preloder" id="preloader">
+      <div class="preloder__img"><img src="img/plus.png"></div>
+    </div>
+    <div class="main-map">
+      <div class="main-map__inner">
+        <div class="map-close">+</div>
+        <div id="main-map"> </div>
+      </div>
+    </div>
+    <div class="modal modal_reception-first">
+      <div class="modal__item">
+        <div class="modal__top">
+          <div class="reseption__close reseption__close_mob"></div>
+          <div class="modal__title">Записаться на прием</div>
+          <div class="modal__article">Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи</div>
+        </div>
+        <div class="doctor-slider doctor-slider_first swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="modal__item reception">
+        <ul class="reception__top">
+          <li>
+            <div class="reception__num">1</div><span>Шаг</span>
+          </li>
+          <li>
+            <div class="reseption__pick">Выберите врача</div>
+          </li>
+          <li>
+            <div class="reseption__close"></div>
+          </li>
+        </ul>
+        <div class="reception__main">
+          <div class="reception__title">Специализация врача</div>
+          <div class="select-custom select-custom_spec">
+            <select id="selectSpec">
+              <option value="Гинеколог">Гинеколог</option>
+              <option value="Дерматолог">Дерматолог</option>
+              <option value="Хирург">Хирург</option>
+              <option value="Гинеколог">Гинеколог</option>
+              <option value="Дерматолог">Дерматолог</option>
+              <option value="Хирург">Хирург</option>
+              <option value="Гинеколог">Гинеколог</option>
+              <option value="Дерматолог">Дерматолог</option>
+              <option value="Хирург">Хирург</option>
+            </select>
+          </div>
+          <div class="reception__title">Выберите врача </div>
+          <div class="select-custom select-custom_name">
+            <select id="selectDoc">
+              <option value="Бахарева В.Н.">Бахарева В.Н.</option>
+              <option value="Громовой В.Д.">Громовой В.Д.</option>
+              <option value="Соколова Т.В.">Соколова Т.В.             </option>
+            </select>
+          </div>
+          <ul class="reception__price-box">
+            <li> <span>Стоимость приема</span></li>
+            <li> <span class="reception__price">1300 </span><b>р</b></li>
+          </ul>
+          <div class="reception__article">Цена указана за первичный прием к данному специалисту. </div>
+          <div class="reception__title">Дата и время приема</div>
+          <ul class="reception__date">
+            <li>
+              <label class="reception__label">
+                <input class="date-inp" type="text" placeholder="Выберите дату" id="date">
+              </label>
+            </li>
+            <li>
+              <div class="select-custom select-custom_time">
+                <select id="selectTime">
+                  <option value="9:00 - 10:00">9:00 - 10:00</option>
+                  <option value="11:00 - 12:00">11:00 - 12:00</option>
+                  <option value="12:00 - 13:00">12:00 - 13:00</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+          <div class="reception__btn-wrap">
+            <button class="reception__btn reception__btn_next" type="button">Личные данные</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="modal modal_reception-next" action="#">
+      <div class="modal__item">
+        <div class="modal__top">
+          <div class="modal__title">Записаться на прием</div>
+          <div class="modal__article">Заполните заявку и администратор позвонит вам в ближайшее рабочее время для подтверждения записи</div>
+        </div>
+        <div class="doctor-slider doctor-slider_next swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg">
+                <ul class="reseption-data">
+                  <li class="reseption-data__name">Гинеколог - Бахарева В.Н.</li>
+                  <li><span class="reseption-data__date">16.10.19, </span><span class="reseption-data__time">15:30 - 16:00        </span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg">
+                <ul class="reseption-data">
+                  <li class="reseption-data__name">Гинеколог - Бахарева В.Н.</li>
+                  <li><span class="reseption-data__date">16.10.19, </span><span class="reseption-data__time">15:30 - 16:00        </span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="doctor-slider__item"><img src="img/doc.jpg">
+                <ul class="reseption-data">
+                  <li class="reseption-data__name">Гинеколог - Бахарева В.Н.</li>
+                  <li><span class="reseption-data__date">16.10.19, </span><span class="reseption-data__time">15:30 - 16:00        </span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="modal__item reception">
+        <ul class="reception__top">
+          <li>
+            <div class="reception__num">2</div><span>Шаг</span>
+          </li>
+          <li>
+            <div class="reseption__pick">Введите личные данные</div>
+          </li>
+          <li>
+            <div class="reseption__close"></div>
+          </li>
+        </ul>
+        <div class="reception__main">       
+          <div class="reception__user-info">
+            <input class="name-inp" type="text" placeholder="Имя">
+            <input class="surname-inp" type="text" placeholder="Фамилия">
+            <input class="phone-inp" type="text" placeholder="+7 (XXX) XXX XX XX">
+          </div>
+          <div class="reception__textarea-wrap">
+            <textarea>Текст</textarea>
+          </div>
+          <div class="reception__privacy"> <a href="#">Нажав на кнопку “Записаться” Вы соглашаетесь с условиями <span>публичной оферты </span>и с <span>условиями Политики обработки персональных данных</span></a></div>
+          <ul class="reception__btn-block">                 
+            <li>
+              <button class="reception__back" type="button"></button>
+            </li>
+            <li>   
+              <button class="reception__btn reception__btn_submit" type="button">Записаться</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+    <div class="modal-thanks">
+      <div class="modal-thanks__inner">
+        <div class="reseption__close modal-thanks__close"></div>
+        <div class="modal-thanks__title">Заявка успешно оформлена</div>
+        <div class="modal-thanks__article">Администратор свяжется с вами в ближайшее рабочее время для подтверждения записи</div>
+      </div>
+    </div>
+  </body>
+</html>
