@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/jscrollplane/jscrollplane.css">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="hidden-menu">
+		<div class="hidden-menu_item">
+			<div class="hamburger hidden-menu_close is-active" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span>
+			</div>
+			<div class="hidden-menu_phone"><a href="tel:+3432870666"><span>(343) </span>2-870-666</a>
+			</div>
+			<div class="hidden-menu_search">
+				<div class="search-menu">
+					<input type="text">
+				</div>
+			</div>
+			<ul class="hidden-menu_links">
+				<li><a class="hidden-menu_recallBtn" href="#">Заказать звонок</a>
+				</li>
+				<li> <a href="#">Наши партнеры</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hidden-menu_item">
+			<div class="hidden-menu_form">
+				<div class="form-thanks">
+					<p>Спасибо!</p><span>Наши менеджеры свяжутся с вами</span>
+				</div>
+				<form>
+					<p class="main-title">Заполните поля,
+						<br>Наши менеджеры <span>бесплатно </span>проконсультируют вас</p>
+					<div class="contactRecall-inp">
+						<label>
+							<input type="text" placeholder="Имя*" required>
+						</label>
+						<label>
+							<input type="text" placeholder="Телефон*" required>
+						</label>
+					</div>
+					<div class="contactRecall-text">
+						<textarea placeholder="Добавить комментарий"></textarea>
+					</div>
+					<div class="capcha">
+						<img src="img/capcha.png">
+					</div>
+					<div class="privacy">
+						Нажав на кнопку “заказать обратный звонок” Вы соглашаетесь с условиями <a href="#">публичной оферты </a>и с условиями <a href="#">Политики обработки персональных данных</a>
+					</div>
+					<button class="form-btn btn" type="submit">Заказать обратный звонок</button>
+				</form>
+			</div>
+			<div class="hidden-menu_tabNav">
+				<ul class="hidden-menu_nav">
+					<li> <a href="company.html">О компании</a>
+					</li>
+					<li><a href="catalog.html">Продукция</a>
+					</li>
+					<li><a href="news.html">Новости</a>
+					</li>
+					<li> <a href="actions.html">Акции и скидки</a>
+					</li>
+				</ul>
+				<ul class="hidden-menu_nav">
+					<li> <a href="#">геологоразведочный <br>инструмент и оборудование</a>
+					</li>
+					<li><a href="#">химические реагенты <br>для бурения</a>
+					</li>
+					<li><a href="#">Сервис</a>
+					</li>
+					<li> <a href="#">оборудование для <br>нефтедобывающей отрасли</a>
+					</li>
+					<li> <a href="#">раздел находится<br> в разработке</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="hidden-menu_item">
+			<div class="hidden-menu_social">
+				<a class="fb-link" href="#">
+					<img class="fb-g" src="img/fb-icon-g.png">
+					<img class="fb-b" src="img/fb-icon.png">
+				</a>
+				<a class="twitt-link" href="#">
+					<img class="twitt-g" src="img/twitt-icon.png">
+					<img class="twitt-b" src="img/twitt-icon-b.png">
+				</a>
+				<a class="inst-link" href="#">
+					<img class="inst-g" src="img/inst-icon.png">
+					<img class="inst-b" src="img/inst-icon-b.png">
+				</a>
+				<a class="google-link" href="#">
+					<img class="google-g" src="img/g-icon.png">
+					<img class="google-b" src="img/g-icon-b.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-blur">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="header-main_bg"></div>
+			<div class="header-main_df">
+				<div class="header-main_inner container">
+					<div class="header-main_item">
+						<nav>
+							<ul>
+								<li><a class="btn-link" href="catalog.html">Продукция</a>
+								</li>
+								<li><a class="btn-link" href="product.html">Товар (тест)</a>
+								</li>
+								<li><a class="btn-link" href="product-list.html">Список товаров (тест)		</a>
+								</li>
+								<li><a class="btn-link" href="page.html">Сервис</a>
+								</li>
+								<li><a class="btn-link" href="company.html">О компании</a>
+								</li>
+								<li><a class="btn-link" href="news.html">Новости</a>
+								</li>
+								<li><a class="btn-link" href="partners.html">Наши партнеры		</a>
+								</li>
+								<li><a class="btn-link" href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-main_item">
+						<div class="dn" id="hidden"><a class="header-main_actions" href="#"><span class="line-l"></span><span class="line-r"></span> Акция</a>
+						</div>
+						<div class="header-main_search dn" id="main-search">
+							<input type="text">
+						</div>
+						<div class="header-main_phone dn"><a href="tel:+3432870666">(343) 2-870-666</a>
+						</div>
+						<div class="header-main_burger">
+							<div class="hamburger burger-main" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="header-main_logo">
+						<p class="animated fadeInLeft"><span>Company Group Senkrus </span>
+							<img class="main-logo animated fadeIn delay-1s" src="img/main-logo.png">
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="arrow-mob">
+				<div class="arrow"></div>
+			</div>
+			<div class="header-main_link"><a href="#">геологоразведочный<br> инструмент и оборудование
+            <div class="arrow"></div></a><a href="#">химические реагенты<br> для бурения
+            <div class="arrow"></div></a><a href="#">Сервис
+            <div class="arrow"></div></a><a href="#">оборудование для <br>нефтедобывающей отрасли
+            <div class="arrow"></div></a><a href="#">раздел находится <br>в разработке
+            <div class="arrow"></div></a>
+			</div>
+		</div>
+		<div class="sections" id="sections">
+			<div class="sections-item">
+				<div class="sections-item_over"></div>
+				<div class="sections-blur"></div>
+				<h2 class="sections-title">геологоразведочный <br> инструмент и оборудование</h2>
+				<div class="sections-arrow">
+					<div class="sections-arrow_inner"></div>
+				</div>
+				<div class="sections-item_arrow">
+					<div class="arrow"></div>
+				</div>
+				<div class="sections-menu">
+					<div class="sections-menu_item"><a class="sections-menu_btn" href="#">перейти в раздел</a>
+					</div>
+					<div class="sections-menu_item">
+						<ul class="sections-menu_links">
+							<li><a href="#">алмазный <br>инструмент</a>
+							</li>
+							<li><a href="#">колонковые наборы</a>
+							</li>
+							<li><a href="#">аварийный <br>инструмент</a>
+							</li>
+							<li><a href="#">овершот</a>
+							</li>
+							<li><a href="#">переходы</a>
+							</li>
+							<li><a href="#">ключи</a>
+							</li>
+						</ul>
+						<ul class="sections-menu_links">
+							<li><a href="#">бурильные, обсадные,<br> колонковые штанги</a>
+							</li>
+							<li><a href="#">вспомогательный <br>инструмент</a>
+							</li>
+							<li><a href="#">адвансер</a>
+							</li>
+							<li><a href="#">труборезка</a>
+							</li>
+							<li><a href="#">сальник</a>
+							</li>
+							<li><a href="#">пробка-вертлюг</a>
+							</li>
+							<li><a href="#">долото    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sections-item">
+				<div class="sections-item_over"></div>
+				<div class="sections-blur"></div>
+				<h2 class="sections-title">химические реагенты<br> для бурения</h2>
+				<div class="sections-arrow">
+					<div class="sections-arrow_inner"></div>
+				</div>
+				<div class="sections-item_arrow">
+					<div class="arrow"></div>
+				</div>
+				<div class="sections-menu">
+					<div class="sections-menu_item"><a class="sections-menu_btn" href="#">перейти в раздел</a>
+					</div>
+					<div class="sections-menu_item">
+						<ul class="sections-menu_links">
+							<li><a href="#">алмазный <br>инструмент</a>
+							</li>
+							<li><a href="#">колонковые наборы</a>
+							</li>
+							<li><a href="#">аварийный <br>инструмент</a>
+							</li>
+							<li><a href="#">овершот</a>
+							</li>
+							<li><a href="#">переходы</a>
+							</li>
+							<li><a href="#">ключи</a>
+							</li>
+						</ul>
+						<ul class="sections-menu_links">
+							<li><a href="#">бурильные, обсадные,<br> колонковые штанги</a>
+							</li>
+							<li><a href="#">вспомогательный <br>инструмент</a>
+							</li>
+							<li><a href="#">адвансер</a>
+							</li>
+							<li><a href="#">труборезка</a>
+							</li>
+							<li><a href="#">сальник</a>
+							</li>
+							<li><a href="#">пробка-вертлюг</a>
+							</li>
+							<li><a href="#">долото    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sections-item">
+				<div class="sections-item_over"></div>
+				<div class="sections-blur"></div>
+				<h2 class="sections-title">сервис</h2>
+				<div class="sections-arrow">
+					<div class="sections-arrow_inner"></div>
+				</div>
+				<div class="sections-item_arrow">
+					<div class="arrow"></div>
+				</div>
+				<div class="sections-menu">
+					<div class="sections-menu_item"><a class="sections-menu_btn" href="#">перейти в раздел</a>
+					</div>
+					<div class="sections-menu_item">
+						<ul class="sections-menu_links">
+							<li><a href="#">алмазный <br>инструмент</a>
+							</li>
+							<li><a href="#">колонковые наборы</a>
+							</li>
+							<li><a href="#">аварийный <br>инструмент</a>
+							</li>
+							<li><a href="#">овершот</a>
+							</li>
+							<li><a href="#">переходы</a>
+							</li>
+							<li><a href="#">ключи</a>
+							</li>
+						</ul>
+						<ul class="sections-menu_links">
+							<li><a href="#">бурильные, обсадные,<br> колонковые штанги</a>
+							</li>
+							<li><a href="#">вспомогательный <br>инструмент</a>
+							</li>
+							<li><a href="#">адвансер</a>
+							</li>
+							<li><a href="#">труборезка</a>
+							</li>
+							<li><a href="#">сальник</a>
+							</li>
+							<li><a href="#">пробка-вертлюг</a>
+							</li>
+							<li><a href="#">долото    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sections-item">
+				<div class="sections-item_over"></div>
+				<div class="sections-blur"></div>
+				<h2 class="sections-title">оборудование для <br>  нефтедобывающей отрасли</h2>
+				<div class="sections-arrow">
+					<div class="sections-arrow_inner"></div>
+				</div>
+				<div class="sections-item_arrow">
+					<div class="arrow"></div>
+				</div>
+				<div class="sections-menu">
+					<div class="sections-menu_item"><a class="sections-menu_btn" href="#">перейти в раздел</a>
+					</div>
+					<div class="sections-menu_item">
+						<ul class="sections-menu_links">
+							<li><a href="#">алмазный <br>инструмент</a>
+							</li>
+							<li><a href="#">колонковые наборы</a>
+							</li>
+							<li><a href="#">аварийный <br>инструмент</a>
+							</li>
+							<li><a href="#">овершот</a>
+							</li>
+							<li><a href="#">переходы</a>
+							</li>
+							<li><a href="#">ключи</a>
+							</li>
+						</ul>
+						<ul class="sections-menu_links">
+							<li><a href="#">бурильные, обсадные,<br> колонковые штанги</a>
+							</li>
+							<li><a href="#">вспомогательный <br>инструмент</a>
+							</li>
+							<li><a href="#">адвансер</a>
+							</li>
+							<li><a href="#">труборезка</a>
+							</li>
+							<li><a href="#">сальник</a>
+							</li>
+							<li><a href="#">пробка-вертлюг</a>
+							</li>
+							<li><a href="#">долото    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sections-item">
+				<div class="sections-item_over"></div>
+				<div class="sections-blur"></div>
+				<h2 class="sections-title">раздел находится<br> в разработке</h2>
+				<div class="sections-arrow">
+					<div class="sections-arrow_inner"></div>
+				</div>
+				<div class="sections-item_arrow">
+					<div class="arrow"></div>
+				</div>
+				<div class="sections-menu">
+					<div class="sections-menu_item"><a class="sections-menu_btn" href="#">перейти в раздел</a>
+					</div>
+					<div class="sections-menu_item">
+						<ul class="sections-menu_links">
+							<li><a href="#">алмазный <br>инструмент</a>
+							</li>
+							<li><a href="#">колонковые наборы</a>
+							</li>
+							<li><a href="#">аварийный <br>инструмент</a>
+							</li>
+							<li><a href="#">овершот</a>
+							</li>
+							<li><a href="#">переходы</a>
+							</li>
+							<li><a href="#">ключи</a>
+							</li>
+						</ul>
+						<ul class="sections-menu_links">
+							<li><a href="#">бурильные, обсадные,<br> колонковые штанги</a>
+							</li>
+							<li><a href="#">вспомогательный <br>инструмент</a>
+							</li>
+							<li><a href="#">адвансер</a>
+							</li>
+							<li><a href="#">труборезка</a>
+							</li>
+							<li><a href="#">сальник</a>
+							</li>
+							<li><a href="#">пробка-вертлюг</a>
+							</li>
+							<li><a href="#">долото    </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mainNews">
+			<div class="mainNews-cont">
+				<div class="mainNews-item">
+					<h2 class="main-title">О компании</h2>
+					<p>
+						Компания ООО «СЕНКРУС» была основана 2012 году, основным направлением было поставка шарошечных долот, инструмента и расходных запасных частей для геолого разведки. Компания стремительно развивалась и успешно зарекомендовала себя в качестве надёжного Поставщика.
+						Для отлаженной и успешной работы ООО «СЕНКРУС» организовала централизованные склады в городах: <b>Екатеринбург, Красноярск, Нижневартовск.</b>
+					</p>
+					<p>
+						В 2013 году компания ООО «СЕНКРУС» начала своё плодотворное сотрудничество с компанией ООО <b>«Технологическая Компания Шлюмберже» </b>по направлениям поставки химических реагентов для бурения и поставки оборудования системы очистки буровых растворов,
+						запасных частей и расходных материалов.</p>
+					<p>
+						В 2015 году была образованна Группа компаний «СЕНКРУС» состоящая из компаний <b>ООО «СЕНКРУС» и ООО «СЕНКРУС-РАЗВИТИЕ». </b>Дочерняя компания ООО «СЕНКРУС - РАЗВИТИЕ» была образована для развития нового направления по предоставлению услуг технологического
+						сервиса при строительстве скважин.</p><a class="btn" href="#">Перейти в раздел </a>
+				</div>
+				<div class="mainNews-item">
+					<div class="mainNews-item_inner">
+						<div class="mainNews-item_img">
+							<a href="#">
+								<img src="img/n1-bg.jpg">
+							</a>
+							<div class="line-arrow">
+								<div class="line-arrow_inner"></div>
+							</div>
+							<h2 class="main-title">Новости    </h2>
+						</div>
+					</div>
+					<div class="mainNews-item_inner">
+						<div class="mainNews-item_inner__top">
+							<div class="mainNews-item_img">
+								<a href="#">
+									<img src="img/n2-bg.jpg">
+								</a>
+							</div>
+							<div class="mainNews-item_img">
+								<a href="#">
+									<img src="img/n3-bg.jpg">
+								</a>
+								<h2 class="main-title">Lorem ipsum <br> dolor sit</h2>
+							</div>
+						</div>
+						<div class="mainNews-item_inner__bottom"><a class="main-title" href="#">Lorem ipsum dolor sit amet</a>
+							<p> <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo dolor.<br></b>Aenean massa. Cum sociis natoque penatibus et magnis dis parturien montes, us mus. Donec quam felis, ultricies nec
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-item_left">
+				<div class="footer-item_left__inner">
+					<div class="footer-nav_block">
+						<ul class="footer-nav footer-tab_link">
+							<li class="footer-tab_link_li"><a href="#footer-links_geo">Геологоразведочный<br> инструмент и оборудование</a>
+							</li>
+							<li><a href="#footer-links_service">Сервис</a>
+							</li>
+							<li><a href="#footer-links_equip">оборудование <br>для нефтедобывающей<br> отрасли</a>
+							</li>
+							<li><a href="#reagent">химические реагенты<br> для бурения</a>
+							</li>
+							<li><a href="#products">Продукция	</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_geo">
+							<li><a href="#">Алмазный инструмент</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_service">
+							<li><a href="#">Тест 1</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_equip">
+							<li><a href="#">Тест 2</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="reagent">
+							<li><a href="#">Бентонит</a>
+							</li>
+							<li><a href="#">Полимеры</a>
+							</li>
+							<li><a href="#">Смазка</a>
+							</li>
+							<li><a href="#">Сорбенты</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="products">
+							<li><a href="#">Тест3</a>
+							</li>
+							<li><a href="#">Тест</a>
+							</li>
+							<li><a href="#">Тест</a>
+							</li>
+							<li><a href="#">Тест					</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav_block">
+						<ul class="footer-nav">
+							<li><a href="#aboutComp">О компании</a>
+							</li>
+							<li><a href="#news">Новости	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-item_right">
+				<div class="footer-item_inner">
+					<div class="footer-contact_title">
+						<h3>Контакты:</h3>
+						<p>620100, Россия, г.Екатеринбург,
+							<br>Бизнес Комплекс "Клевер-парк"</p>
+					</div>
+					<div class="footer-contact_info">
+						<div class="footer-adress">
+							<p> <b>Адрес</b>
+							</p><span>ул. Ткачей 23, офис 503</span>
+						</div>
+						<p>Тел./Факс:</p><span>+7(343)2-870-666</span>
+						<p>Email</p><span>senkrus@gmail.com</span>
+					</div>
+					<div class="footer-social">
+						<a href="#">
+							<img src="img/fb-icon.png">
+						</a>
+						<a href="#">
+							<img src="img/twitt.png">
+						</a>
+						<a href="#">
+							<img src="img/inst.png">
+						</a>
+						<a href="#">
+							<img src="img/g-icon-b.png">
+						</a>
+					</div>
+					<div class="footer-copyright">
+						<p>© 2012 ООО «Сенкрус»</p>
+						<p>Копирование информации с сайта разрешено
+							<br>только с письменного согласия администрации</p>
+						<p> <a class="ipos-link" href="#"><span> <img class="ipos-g" src="img/ipos.png"><img class="ipos-b" src="img/ipos-b.png"></span><span>Разработка и продвижение сайта</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="overlay-wr"></div>
+			<div class="actions-bg"></div>
+		</div>
+		<div class="overlay"></div>
+		<div class="modal-form"></div>
+		<div class="modal-thanks"></div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/OwlCarousel/owl.carousel.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="libs/jscrollplane/jscrollplane.js"></script>
+		<script src="libs/jscrollplane/mousewheel.js"></script>
+		<script src="js/common.js"></script>
+	</div>
+</body>
+
+</html>

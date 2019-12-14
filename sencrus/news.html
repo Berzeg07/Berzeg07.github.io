@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Новости</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/OwlCarousel/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="libs/jscrollplane/jscrollplane.css">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="hidden-menu">
+		<div class="hidden-menu_item">
+			<div class="hamburger hidden-menu_close is-active" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span>
+			</div>
+			<div class="hidden-menu_phone"><a href="tel:+3432870666"><span>(343) </span>2-870-666</a>
+			</div>
+			<div class="hidden-menu_search">
+				<div class="search-menu">
+					<input type="text">
+				</div>
+			</div>
+			<ul class="hidden-menu_links">
+				<li><a class="hidden-menu_recallBtn" href="#">Заказать звонок</a>
+				</li>
+				<li> <a href="#">Наши партнеры</a>
+				</li>
+			</ul>
+		</div>
+		<div class="hidden-menu_item">
+			<div class="hidden-menu_form">
+				<div class="form-thanks">
+					<p>Спасибо!</p><span>Наши менеджеры свяжутся с вами</span>
+				</div>
+				<form>
+					<p class="main-title">Заполните поля,
+						<br>Наши менеджеры <span>бесплатно </span>проконсультируют вас</p>
+					<div class="contactRecall-inp">
+						<label>
+							<input type="text" placeholder="Имя*" required>
+						</label>
+						<label>
+							<input type="text" placeholder="Телефон*" required>
+						</label>
+					</div>
+					<div class="contactRecall-text">
+						<textarea placeholder="Добавить комментарий"></textarea>
+					</div>
+					<div class="capcha">
+						<img src="img/capcha.png">
+					</div>
+					<div class="privacy">
+						Нажав на кнопку “заказать обратный звонок” Вы соглашаетесь с условиями <a href="#">публичной оферты </a>и с условиями <a href="#">Политики обработки персональных данных</a>
+					</div>
+					<button class="form-btn btn" type="submit">Заказать обратный звонок</button>
+				</form>
+			</div>
+			<div class="hidden-menu_tabNav">
+				<ul class="hidden-menu_nav">
+					<li> <a href="company.html">О компании</a>
+					</li>
+					<li><a href="catalog.html">Продукция</a>
+					</li>
+					<li><a href="news.html">Новости</a>
+					</li>
+					<li> <a href="actions.html">Акции и скидки</a>
+					</li>
+				</ul>
+				<ul class="hidden-menu_nav">
+					<li> <a href="#">геологоразведочный <br>инструмент и оборудование</a>
+					</li>
+					<li><a href="#">химические реагенты <br>для бурения</a>
+					</li>
+					<li><a href="#">Сервис</a>
+					</li>
+					<li> <a href="#">оборудование для <br>нефтедобывающей отрасли</a>
+					</li>
+					<li> <a href="#">раздел находится<br> в разработке</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="hidden-menu_item">
+			<div class="hidden-menu_social">
+				<a class="fb-link" href="#">
+					<img class="fb-g" src="img/fb-icon-g.png">
+					<img class="fb-b" src="img/fb-icon.png">
+				</a>
+				<a class="twitt-link" href="#">
+					<img class="twitt-g" src="img/twitt-icon.png">
+					<img class="twitt-b" src="img/twitt-icon-b.png">
+				</a>
+				<a class="inst-link" href="#">
+					<img class="inst-g" src="img/inst-icon.png">
+					<img class="inst-b" src="img/inst-icon-b.png">
+				</a>
+				<a class="google-link" href="#">
+					<img class="google-g" src="img/g-icon.png">
+					<img class="google-b" src="img/g-icon-b.png">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-blur">
+		<div id="cube-loader">
+			<div class="caption">
+				<div class="cube-loader">
+					<div class="cube loader-1"></div>
+					<div class="cube loader-2"></div>
+					<div class="cube loader-4"></div>
+					<div class="cube loader-3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="header headerActions">
+			<div class="header-item header-item_left">
+				<div class="header-item_left__inner">
+					<div class="header-logo">
+						<img src="img/header-logo.png">
+					</div>
+					<p class="main-title">Новости</p>
+				</div>
+			</div>
+			<div class="header-item header-item_right">
+				<div class="header-item_right__inner">
+					<div class="header-item_inner" id="contactHeader"><a class="header-phone" href="tel:3432870666">(343) <span>2-870-666</span></a><a class="header-email hb-b" href="mailto:senkrus@gmail.com">
+                 e-mail: <span><b>senkrus@gmail.com</b></span></a>
+					</div>
+					<div class="header-item_inner headerRight-box">
+						<div class="header-main_search__item">
+							<input type="text">
+						</div>
+						<div class="header-catLink">
+							<img src="img/box-filled.png">
+						</div>
+						<div class="hamburger burger-actions burger-main" id="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mobBlock">
+			<div class="mobBlock-item" id="hidden">
+				<h1 class="main-title">Наши акции</h1>
+			</div>
+			<div class="mobBlock-item">
+				<div class="header-main_search">
+					<input type="text">
+				</div>
+			</div>
+		</div>
+		<div class="actions-container">
+			<div class="sortingBox">
+				<div class="sortingBox-item">
+					<div class="selectList">
+						<div class="selectList-item"><span>Сортировать</span>
+						</div>
+						<div class="selectList-item" id="select"><span>Сначала новые</span>
+							<ul class="selectList-dropdown">
+								<li><a href="#">Тест-1</a>
+								</li>
+								<li><a href="#">Тест-2</a>
+								</li>
+								<li><a href="#">Тест-3</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="sortingBox-item">
+					<div class="sortingBox-types">
+						<div class="sortingBox-types_box sortingBox-types_item active"><span></span><span></span><span></span><span></span>
+						</div>
+						<div class="sortingBox-types_stroke sortingBox-types_item"><span></span><span></span><span></span><span></span><span></span><span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="actionsList">
+				<div class="actionsList-item">
+					<div class="actionsList-flag"><span>40%</span>
+					</div>
+					<div class="actionsList-item_img">
+						<img src="img/news-1.jpg">
+					</div>
+					<div class="actionsList-item_article">
+						<h2 class="main-title">заголовок акции</h2>
+						<div class="actionsList-date">10.01.2018 г</div>
+						<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+						<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+					</div>
+					<div class="actionsModal">
+						<div class="actionsModal-title">
+							<p>Заголовок акции</p>
+						</div>
+						<div class="actionsModal-article">
+							<div class="actionsList-date">10.01.2018 г</div>
+							<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+							<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+							<button class="actionsModal-close btn">Свернуть</button>
+						</div>
+					</div>
+				</div>
+				<div class="actionsList-item">
+					<div class="actionsList-flag"><span>40%</span>
+					</div>
+					<div class="actionsList-item_img">
+						<img src="img/news-2.jpg">
+					</div>
+					<div class="actionsList-item_article">
+						<h2 class="main-title">заголовок акции</h2>
+						<div class="actionsList-date">10.01.2018 г</div>
+						<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+						<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+					</div>
+					<div class="actionsModal">
+						<div class="actionsModal-title">
+							<p>Заголовок акции</p>
+						</div>
+						<div class="actionsModal-article">
+							<div class="actionsList-date">10.01.2018 г</div>
+							<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+							<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+							<button class="actionsModal-close btn">Свернуть</button>
+						</div>
+					</div>
+				</div>
+				<div class="actionsList-item">
+					<div class="actionsList-flag active"><span>40%</span>
+					</div>
+					<div class="actionsList-item_img">
+						<img src="img/news-3.jpg">
+					</div>
+					<div class="actionsList-item_article">
+						<h2 class="main-title">заголовок акции</h2>
+						<div class="actionsList-date">10.01.2018 г</div>
+						<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+						<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+					</div>
+					<div class="actionsModal">
+						<div class="actionsModal-title">
+							<p>Заголовок акции</p>
+						</div>
+						<div class="actionsModal-article">
+							<div class="actionsList-date">10.01.2018 г</div>
+							<div class="actionsList-author">Ред. Фамилия имя, доп. информация</div>
+							<p>consectetuer adipiscing elit. Aenean commodo ligula eget Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla</p>
+							<button class="actionsModal-close btn">Свернуть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="anotherActions">
+			<div class="main-title">другие акции</div>
+		</div>
+		<div class="actionsSlide-container">
+			<div class="owl-carousel actionsSlide">
+				<div class="actionsSlide-item">
+					<div class="actionsSlide-item_img">
+						<img src="img/actions-sl.jpg">
+					</div>
+					<div class="actionsSlide-item_article">
+						<div class="actionsSlide-item_article__inner">
+							<h2 class="main-title">инф общая</h2>
+							<p>Viverra nulla ut metus varius <b>Aenean imperdiet.</b>
+							</p>
+						</div><a class="btn" href="#">перейти в каталог</a>
+					</div>
+				</div>
+				<div class="actionsSlide-item">
+					<div class="actionsSlide-item_img">
+						<img src="img/actions-sl.jpg">
+					</div>
+					<div class="actionsSlide-item_article">
+						<div class="actionsSlide-item_article__inner">
+							<h2 class="main-title">инф общая</h2>
+							<p>Viverra nulla ut metus varius <b>Aenean imperdiet.</b>
+							</p>
+						</div><a class="btn" href="#">перейти в каталог	</a>
+					</div>
+				</div>
+				<div class="actionsSlide-item">
+					<div class="actionsSlide-item_img">
+						<img src="img/actions-sl.jpg">
+					</div>
+					<div class="actionsSlide-item_article">
+						<div class="actionsSlide-item_article__inner">
+							<h2 class="main-title">инф общая</h2>
+							<p>Viverra nulla ut metus varius <b>Aenean imperdiet.</b>
+							</p>
+						</div><a class="btn" href="#">перейти в каталог	</a>
+					</div>
+				</div>
+				<div class="actionsSlide-item">
+					<div class="actionsSlide-item_img">
+						<img src="img/actions-sl.jpg">
+					</div>
+					<div class="actionsSlide-item_article">
+						<div class="actionsSlide-item_article__inner">
+							<h2 class="main-title">инф общая</h2>
+							<p>Viverra nulla ut metus varius <b>Aenean imperdiet.</b>
+							</p>
+						</div><a class="btn" href="#">перейти в каталог					 		</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-item_left">
+				<div class="footer-item_left__inner">
+					<div class="footer-nav_block">
+						<ul class="footer-nav footer-tab_link">
+							<li class="footer-tab_link_li"><a href="#footer-links_geo">Геологоразведочный<br> инструмент и оборудование</a>
+							</li>
+							<li><a href="#footer-links_service">Сервис</a>
+							</li>
+							<li><a href="#footer-links_equip">оборудование <br>для нефтедобывающей<br> отрасли</a>
+							</li>
+							<li><a href="#reagent">химические реагенты<br> для бурения</a>
+							</li>
+							<li><a href="#products">Продукция	</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_geo">
+							<li><a href="#">Алмазный инструмент</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_service">
+							<li><a href="#">Тест 1</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="footer-links_equip">
+							<li><a href="#">Тест 2</a>
+							</li>
+							<li><a href="#">Бурильные, обсадные, <br>колонковые штанги	</a>
+							</li>
+							<li><a href="#">Аварийный инструмент</a>
+							</li>
+							<li><a href="#">Овершот	</a>
+							</li>
+							<li><a href="#">Переходы</a>
+							</li>
+							<li><a href="#">Ключи</a>
+							</li>
+							<li><a href="#">Вспомогательный инструмент</a>
+							</li>
+							<li><a href="#">Адвансер		</a>
+							</li>
+							<li><a href="#">Труборезка		</a>
+							</li>
+							<li><a href="#">Сальник		</a>
+							</li>
+							<li><a href="#">Пробка-Вертлюг</a>
+							</li>
+							<li><a href="#">Долото</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="reagent">
+							<li><a href="#">Бентонит</a>
+							</li>
+							<li><a href="#">Полимеры</a>
+							</li>
+							<li><a href="#">Смазка</a>
+							</li>
+							<li><a href="#">Сорбенты</a>
+							</li>
+						</ul>
+						<ul class="footer-links footer-tab" id="products">
+							<li><a href="#">Тест3</a>
+							</li>
+							<li><a href="#">Тест</a>
+							</li>
+							<li><a href="#">Тест</a>
+							</li>
+							<li><a href="#">Тест					</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-nav_block">
+						<ul class="footer-nav">
+							<li><a href="#aboutComp">О компании</a>
+							</li>
+							<li><a href="#news">Новости	</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-item_right">
+				<div class="footer-item_inner">
+					<div class="footer-contact_title">
+						<h3>Контакты:</h3>
+						<p>620100, Россия, г.Екатеринбург,
+							<br>Бизнес Комплекс "Клевер-парк"</p>
+					</div>
+					<div class="footer-contact_info">
+						<div class="footer-adress">
+							<p> <b>Адрес</b>
+							</p><span>ул. Ткачей 23, офис 503</span>
+						</div>
+						<p>Тел./Факс:</p><span>+7(343)2-870-666</span>
+						<p>Email</p><span>senkrus@gmail.com</span>
+					</div>
+					<div class="footer-social">
+						<a href="#">
+							<img src="img/fb-icon.png">
+						</a>
+						<a href="#">
+							<img src="img/twitt.png">
+						</a>
+						<a href="#">
+							<img src="img/inst.png">
+						</a>
+						<a href="#">
+							<img src="img/g-icon-b.png">
+						</a>
+					</div>
+					<div class="footer-copyright">
+						<p>© 2012 ООО «Сенкрус»</p>
+						<p>Копирование информации с сайта разрешено
+							<br>только с письменного согласия администрации</p>
+						<p> <a class="ipos-link" href="#"><span> <img class="ipos-g" src="img/ipos.png"><img class="ipos-b" src="img/ipos-b.png"></span><span>Разработка и продвижение сайта</span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="overlay-wr"></div>
+			<div class="actions-bg"></div>
+		</div>
+		<div class="overlay"></div>
+		<div class="modal-form"></div>
+		<div class="modal-thanks"></div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/OwlCarousel/owl.carousel.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="libs/jscrollplane/jscrollplane.js"></script>
+		<script src="libs/jscrollplane/mousewheel.js"></script>
+		<script src="js/common.js"></script>
+	</div>
+</body>
+
+</html>
