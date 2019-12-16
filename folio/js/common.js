@@ -80,6 +80,10 @@ $(document).ready(function() {
         contentType: 'html',
     });
 
+    particlesJS.load('particles-js', 'libs/particles/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
     // $(document).snowfall({
     //     flakeCount: 100,
     //     // image: "assets/img/snow4.png",
