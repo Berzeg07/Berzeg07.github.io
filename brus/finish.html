@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Отделка</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owl.carusel-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/range/jQueryUI-style.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="header header-main wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="header__desctop">
+        <div class="logo">
+          <div class="logo__inner">
+            <div class="logo__img"><img src="img/logo-white.png"></div>
+            <ul class="logo__article">
+              <li>брусчатый <br>поселок</li>
+              <li>жилой комплекс</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__top">
+          <ul class="top-nav">
+            <li><a class="about-link" href="about.html">О комплексе</a></li>
+            <li><a class="photo-link" href="photos.html">Фотографии</a></li>
+            <li><a class="flat-link" href="flats.html">Выбрать квартиру</a></li>
+            <li><a class="spec-link" href="ipoteca.html">
+                 Спецпредложения<span class="spec-link__count"> <b>6</b></span></a></li>
+            <li><a class="var-link" href="inner.html">Варианты покупки</a></li>
+            <li><a class="contact-link" href="contacts.html">Контакты</a></li>
+          </ul><a class="phone-header" href="tel:74950322127">+7 (495) 032-21-27</a>
+        </div>
+        <div class="header__bottom">
+          <ul class="bottom-nav">
+            <li><a class="oneroom-link" href="#">1-комнатные квартиры</a></li>
+            <li><a class="tworoom-link" href="#">2-комнатные квартиры</a></li>
+            <li><a class="threeroom-link" href="#">3-комнатные квартиры</a></li>
+            <li><a class="finish-link" href="#">квартиры с отделкой</a></li>
+          </ul><a class="recept-btn" href="#">Записаться на просмотр</a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__top"><a class="phone-header_mob" href="tel:74954320777">+7 495 432-07-77</a></div>
+        <div class="mobile-menu__bottom">
+          <div class="burger"></div><a class="spec-link spec-link_mob" href="#">Спецпредложения<span class="spec-link__count"> <b>6</b></span></a>
+          <div class="icon filter-popup"></div>
+        </div>
+      </div>
+      <div class="dropdownmenu">
+        <div class="dropdownmenu__top">           
+          <div class="logo-mob">
+            <div class="logo-mob__img"><img src="img/logo-green.png"></div>
+            <ul class="logo-mob__article">
+              <li>брусчатый <br>поселок</li>
+              <li>жилой комплекс</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdownmenu__middle">
+          <div class="dropdownmenu__title">Информация для клиентов:</div>
+          <ul class="mobile-nav mobile-nav__top">
+            <li><a class="about-link_mob" href="#">О комплексе</a></li>
+            <li><a class="photo-link_mob" href="#">Фотографии</a></li>
+            <li><a class="flat-link_mob" href="#">Выбрать квартиру</a></li>
+            <li><a class="var-link_mob" href="#">Варианты покупки</a></li>
+            <li><a class="contact-link_mob" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="dropdownmenu__bottom">
+          <div class="dropdownmenu__title">Квартиры в продаже:</div>
+          <ul class="mobile-nav mobile-nav__bottom">
+            <li><a class="oneroom-link" href="#">1-комнатные квартиры</a></li>
+            <li><a class="tworoom-link" href="#">2-комнатные квартиры</a></li>
+            <li><a class="threeroom-link" href="#">3-комнатные квартиры</a></li>
+            <li><a class="finish-link" href="#">квартиры с отделкой</a></li>
+          </ul><a class="dropdownmenu__btn" href="#">Выбрать квартиру</a>
+        </div>
+      </div>
+      <div class="modal modal_filter">
+        <div class="modal__inner">
+          <button class="modal-close" type="button"></button>
+          <form class="filter" action="#">
+            <div class="select-custom">
+              <select>
+                <option>Корпус №8</option>
+                <option>Корпус №7</option>
+              </select>
+            </div>
+            <div class="filter-title">Количество комнат</div>
+            <ul class="filter-rooms">
+              <li class="filter-rooms__item"><span>1</span></li>
+              <li class="filter-rooms__item"><span>2</span></li>
+              <li class="filter-rooms__item"><span>3            </span></li>
+            </ul>
+            <div class="filter-title">Этаж</div>
+            <ul class="filter-floor">
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+            </ul>
+            <div class="filter-title">
+               Площадь м<sup>2</sup></div>
+            <ul class="filter-square">
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+            </ul>
+            <ul class="filter-switch">
+              <li>Только с отделкой</li>
+              <li>
+                <input class="switch" type="checkbox" id="s3">
+                <label class="slider-v2" for="s3"> </label>
+              </li>
+            </ul>
+            <ul class="filter-switch">
+              <li>Квартиры по акции</li>
+              <li>
+                <input class="switch" type="checkbox" id="s4">
+                <label class="slider-v2" for="s4"> </label>
+              </li>
+            </ul>
+            <div class="filter-title">Стоимость, &#8381;</div>
+            <ul class="filter-range">
+              <li>
+                <div class="result-polzunok" id="result-polzunok"></div>
+              </li>
+              <li>
+                <div id="polzunok"></div>
+              </li>
+            </ul>
+            <div class="filter-title filter-title_bold">Вид из окон</div>
+            <ul class="filter-check"> 
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" checked id="yard">
+                <label for="yard">Во двор</label>
+              </li>
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" id="street">
+                <label for="street">На ул. Народного Ополчения</label>
+              </li>
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" id="center">
+                <label for="center">На Центральный проезд</label>
+              </li>
+            </ul>
+            <ul class="filter-btns">
+              <li>
+                <button class="filter-btn filter-btn_red" type="submit">Показать 25 квартир</button>
+              </li>
+              <li>
+                <button class="filter-btn filter-btn_white" type="button">Сбросить фильтры</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumbs wow fadeIn" data-wow-duration="1.5s"><a href="#">Главная</a><a href="#">Отделка</a></div>
+    <h1 class="main-title main-title_finish wow fadeIn" data-wow-duration="1.5s">Отделка квартиры под ключ</h1>
+    <div class="finish-cont wow fadeIn" data-wow-duration="1.5s">
+      <div class="finish-cont__item finish-cont__item_pd">
+        <h2 class="inner-text__title">В качестве дополнительной опции ЖК «Брусчатый поселок» предлагает Вам отделку квартиры White box:</h2>
+        <ul class="finish-cont__list">
+          <li>Мы закупаем качественные отделочные материалы оптом у проверенных поставщиков – Вы имеете возможность сэкономить на ремонте.</li>
+          <li>Отсутствие необходимости заниматься закупками самостоятельно.</li>
+          <li>Экономия Вашего времени и быстрое заселение.</li>
+          <li>Отсутствие «черновых» работ в квартире, без строительного мусора, пыли и шума перфоратора.</li>
+          <li>Профессиональная разводка электросиловой линии по всей квартире.</li>
+          <li>Гарантия качества и соблюдение всех сроков.</li>
+          <li>Быстрота воплощений собственного индивидуального дизайна квартиры.</li>
+        </ul>
+        <div class="finish-cont__btn-wrap"><a class="finish-cont__btn" href="#">Выбрать квартиру с отделкой</a></div>
+      </div>
+      <div class="finish-cont__item">
+        <div class="cont-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/finish-slide.jpg"></div>
+            <div class="swiper-slide"><img src="img/finish-slide.jpg"></div>
+            <div class="swiper-slide"><img src="img/finish-slide.jpg"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="finish-cont__item finish-cont__item_banner"><img src="img/finish-banner.jpg"></div>
+      <div class="finish-cont__item finish-cont__item_pd finish-cont__item_last">
+        <div class="inner-text">
+          <p>Ремонт своими руками – это поиск бригады специалистов, составление плана работ, сметы, «плавающие» сроки сдачи и постоянные непредвиденные расходы. Поэтому Мы предлагаем качественную предчистовую отделку от Застройщика с экономией до 30% Вашего бюджета и 100% экономией Вашего времени.</p>
+          <p>Ремонт своими руками – это поиск бригады специалистов, составление плана работ, сметы, «плавающие» сроки сдачи и постоянные непредвиденные расходы. Поэтому Мы предлагаем качественную предчистовую отделку от Застройщика с экономией до 30% Вашего бюджета и 100% экономией Вашего времени.   </p>
+          <h2 class="inner-text__title">Три вида отделки квартиры "под ключ" на Ваш выбор.</h2>
+          <p>Сейчас нашими дизайнерами разрабатывается несколько вариантов чистовой отделки. Мы делаем акцент на универсальность, долговечность и актуальность дизайна. </p>
+          <p>Опытные инженеры-дизайнеры предоставят на выбор несколько типовых решений и предложат создание своего индивидуального проекта именно для Вас.</p>
+        </div>
+      </div>
+    </div>
+    <form class="recept-form wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="form-action">
+        <div class="form-action__inner">
+          <div class="form-action__date">Только до 31 октября!</div>
+          <ul class="form-action__list">
+            <li>Квартиры от</li>
+            <li>
+              <ul class="form-action__price">
+                <li>3,39</li>
+                <li>
+                  млн <br>
+                  руб.       
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="recept-form__main">
+        <div class="recept-form__title">Запишитесь на просмотр квартиры!</div>
+        <ul class="recept-form__inner">
+          <li><span class="recept-form__list-title">Офис застройщика работает ежедневно, без выходных:</span>
+            <ul class="recept-form__list">
+              <li>C понедельника по пятницу с 9:00 до 21:00</li>
+              <li>
+                  суббота и воскресенье с 10:00 до 17:00</li>
+              <li>Записаться можно по телефону:  <b>+7(495) 123-45-67 </b>или онлайн</li>
+            </ul>
+          </li>
+          <li class="form-action__inp-block">
+            <input class="inp recept-form__inp" type="text" placeholder="Имя">
+            <input class="inp recept-form__inp phone-inp" type="text" placeholder="Телефон">
+            <button class="form-btn" type="submit">Отправить заявку</button>
+            <div class="checkbox-block recept-form__check">
+              <input type="checkbox" id="check" checked>
+              <label for="check">Я согласен на обработку<br> персональных данных        </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <div class="footer wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <div class="footer__item">
+              <div class="logo-mob footer__logo">
+                <div class="logo-mob__img"><img src="img/logo-green.png"></div>
+              </div>
+              <ul class="logo-mob__article">
+                <li>брусчатый <br>поселок</li>
+                <li>жилой комплекс</li>
+              </ul>
+              <ul class="footer__list">
+                <li><span class="consult-icon">Нужна консультация? Звоните сейчас!</span></li>
+                <li><a class="phone-black" href="tel:74950322127">+7 (495) 032-21-27</a></li>
+                <li><span class="string-bold"> ЖК «Брусчатый посёлок» - официальный сайт:</span></li>
+                <li>Красногорск, ул. Народного Ополчения, д. 2б</li>
+              </ul>
+              <ul class="footer__list">
+                <li><span class="string-bold">Офис продаж: </span>Красногорск, ул. Народного ополчения, д. 2Б, корп. 2, оф. 16</li>
+                <li><span class="string-bold">Email: </span><a class="email-link" href="mailto:sale@bruschaty.ru">sale@bruschaty.ru</a></li>
+                <li><span class="string-bold"> ЖК «Брусчатый посёлок» - официальный сайт:</span></li>
+                <li>Красногорск, ул. Народного Ополчения, д. 2б</li>
+              </ul><span class="string-bold string-bold_mb">График работы офиса продаж:</span>
+              <ul>
+                <li>C понедельника по пятницу <span class="string-bold">с 9:00 до 21:00</span></li>
+                <li>Cуббота и воскресенье <span class="string-bold">с 10:00 до 17:00          </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">                   
+            <div class="footer__item">
+              <div class="footer__title">Категории:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Однокомнатные</a></li>
+                <li><a href="#">Двухкомнатные</a></li>
+                <li><a href="#">Трехкомнатные </a></li>
+                <li><a href="#">Квартиры с отделкой</a></li>
+                <li><a href="#">Спецпредложение</a></li>
+                <li><a href="#">Шахматка корп.7, корп. 8</a></li>
+              </ul><a class="btn" href="#">Заявка на просмотр         </a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__title">Варианты покупки:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Материнский капитал </a></li>
+                <li><a href="#">Субсидии</a></li>
+                <li><a href="#">Жилищные сертификаты</a></li>
+                <li><a href="#">Военная ипотека</a></li>
+              </ul><a class="btn" href="#">Рассчитать ипотеку</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__title">Информация:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="#">Ход строительства</a></li>
+                <li><a href="#">Инфраструктура </a></li>
+                <li><a href="#">О застройщике</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul><a class="btn" href="#">Задать вопрос</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom"><a class="inst-link" href="#"><img src="img/inst.png"></a>
+          <div class="metrika">   <img src="img/metr.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="libs/range/range-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+    <script src="libs/wow/wow.js"></script>
+    <script src="libs/mask/jquery.maskedinput.min.js"></script>
+    <script src="libs/autosize/autosize.min.js"></script>
+    <script src="libs/owl.carusel-2.3.4/owl.carousel.min.js"></script>
+    <script src="libs/table-sorter/jquery.tablesorter.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

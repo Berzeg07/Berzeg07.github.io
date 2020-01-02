@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;display=swap&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="libs/owl.carusel-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/range/jQueryUI-style.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="header header-main wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="header__desctop">
+        <div class="logo">
+          <div class="logo__inner">
+            <div class="logo__img"><img src="img/logo-white.png"></div>
+            <ul class="logo__article">
+              <li>брусчатый <br>поселок</li>
+              <li>жилой комплекс</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__top">
+          <ul class="top-nav">
+            <li><a class="about-link" href="about.html">О комплексе</a></li>
+            <li><a class="photo-link" href="photos.html">Фотографии</a></li>
+            <li><a class="flat-link" href="flats.html">Выбрать квартиру</a></li>
+            <li><a class="spec-link" href="ipoteca.html">
+                 Спецпредложения<span class="spec-link__count"> <b>6</b></span></a></li>
+            <li><a class="var-link" href="inner.html">Варианты покупки</a></li>
+            <li><a class="contact-link" href="contacts.html">Контакты</a></li>
+          </ul><a class="phone-header" href="tel:74950322127">+7 (495) 032-21-27</a>
+        </div>
+        <div class="header__bottom">
+          <ul class="bottom-nav">
+            <li><a class="oneroom-link" href="#">1-комнатные квартиры</a></li>
+            <li><a class="tworoom-link" href="#">2-комнатные квартиры</a></li>
+            <li><a class="threeroom-link" href="#">3-комнатные квартиры</a></li>
+            <li><a class="finish-link" href="#">квартиры с отделкой</a></li>
+          </ul><a class="recept-btn" href="#">Записаться на просмотр</a>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-menu__top"><a class="phone-header_mob" href="tel:74954320777">+7 495 432-07-77</a></div>
+        <div class="mobile-menu__bottom">
+          <div class="burger"></div><a class="spec-link spec-link_mob" href="#">Спецпредложения<span class="spec-link__count"> <b>6</b></span></a>
+          <div class="icon filter-popup"></div>
+        </div>
+      </div>
+      <div class="dropdownmenu">
+        <div class="dropdownmenu__top">           
+          <div class="logo-mob">
+            <div class="logo-mob__img"><img src="img/logo-green.png"></div>
+            <ul class="logo-mob__article">
+              <li>брусчатый <br>поселок</li>
+              <li>жилой комплекс</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdownmenu__middle">
+          <div class="dropdownmenu__title">Информация для клиентов:</div>
+          <ul class="mobile-nav mobile-nav__top">
+            <li><a class="about-link_mob" href="#">О комплексе</a></li>
+            <li><a class="photo-link_mob" href="#">Фотографии</a></li>
+            <li><a class="flat-link_mob" href="#">Выбрать квартиру</a></li>
+            <li><a class="var-link_mob" href="#">Варианты покупки</a></li>
+            <li><a class="contact-link_mob" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="dropdownmenu__bottom">
+          <div class="dropdownmenu__title">Квартиры в продаже:</div>
+          <ul class="mobile-nav mobile-nav__bottom">
+            <li><a class="oneroom-link" href="#">1-комнатные квартиры</a></li>
+            <li><a class="tworoom-link" href="#">2-комнатные квартиры</a></li>
+            <li><a class="threeroom-link" href="#">3-комнатные квартиры</a></li>
+            <li><a class="finish-link" href="#">квартиры с отделкой</a></li>
+          </ul><a class="dropdownmenu__btn" href="#">Выбрать квартиру</a>
+        </div>
+      </div>
+      <div class="modal modal_filter">
+        <div class="modal__inner">
+          <button class="modal-close" type="button"></button>
+          <form class="filter" action="#">
+            <div class="select-custom">
+              <select>
+                <option>Корпус №8</option>
+                <option>Корпус №7</option>
+              </select>
+            </div>
+            <div class="filter-title">Количество комнат</div>
+            <ul class="filter-rooms">
+              <li class="filter-rooms__item"><span>1</span></li>
+              <li class="filter-rooms__item"><span>2</span></li>
+              <li class="filter-rooms__item"><span>3            </span></li>
+            </ul>
+            <div class="filter-title">Этаж</div>
+            <ul class="filter-floor">
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+            </ul>
+            <div class="filter-title">
+               Площадь м<sup>2</sup></div>
+            <ul class="filter-square">
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="text">
+                </label>
+              </li>
+            </ul>
+            <ul class="filter-switch">
+              <li>Только с отделкой</li>
+              <li>
+                <input class="switch" type="checkbox" id="s3">
+                <label class="slider-v2" for="s3"> </label>
+              </li>
+            </ul>
+            <ul class="filter-switch">
+              <li>Квартиры по акции</li>
+              <li>
+                <input class="switch" type="checkbox" id="s4">
+                <label class="slider-v2" for="s4"> </label>
+              </li>
+            </ul>
+            <div class="filter-title">Стоимость, &#8381;</div>
+            <ul class="filter-range">
+              <li>
+                <div class="result-polzunok" id="result-polzunok"></div>
+              </li>
+              <li>
+                <div id="polzunok"></div>
+              </li>
+            </ul>
+            <div class="filter-title filter-title_bold">Вид из окон</div>
+            <ul class="filter-check"> 
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" checked id="yard">
+                <label for="yard">Во двор</label>
+              </li>
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" id="street">
+                <label for="street">На ул. Народного Ополчения</label>
+              </li>
+              <li class="checkbox-block filter__checkbox">
+                <input type="radio" name="filter-radio" id="center">
+                <label for="center">На Центральный проезд</label>
+              </li>
+            </ul>
+            <ul class="filter-btns">
+              <li>
+                <button class="filter-btn filter-btn_red" type="submit">Показать 25 квартир</button>
+              </li>
+              <li>
+                <button class="filter-btn filter-btn_white" type="button">Сбросить фильтры</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="banner-slider__wrap wow fadeIn" data-wow-duration="1s">
+      <ul class="btn-block">
+        <li><a class="btn-icon btn-icon_yellow" href="#">Выбрать квартиру</a></li>
+        <li><a class="btn-icon btn-icon_green" href="#">Выбрать на генплане</a></li>
+        <li><a class="btn-icon btn-icon_purple" href="#">Аэрофотосъемка</a></li>
+      </ul><a class="banner-action" href="#">
+        <div class="tooltip banner-action__tooltip">
+          <div class="tooltip__inner"><span>Акция! Квартиры от 3,39 млн.руб.</span></div>
+        </div>
+        <div class="banner-action__img"><img src="img/action-img.png"></div></a>
+      <div class="banner-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-slider__item">
+              <div class="banner-slider__text">
+                <div class="banner-slider__title">ЖК «БРУСЧАТЫЙ ПОСЁЛОК» в Красногорске</div>
+                <div class="banner-slider__article">Квартиры в самом центре города от застройщика. Дома построены! </div>
+              </div>
+              <div class="banner-slider__img"><img src="img/sl-header.jpg"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner-slider__item">
+              <div class="banner-slider__text">
+                <div class="banner-slider__title">ЖК «БРУСЧАТЫЙ ПОСЁЛОК» в Красногорске</div>
+                <div class="banner-slider__article">Квартиры в самом центре города от застройщика. Дома построены! </div>
+              </div>
+              <div class="banner-slider__img"><img src="img/sl-header.jpg"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner-slider__item">
+              <div class="banner-slider__text">
+                <div class="banner-slider__title">ЖК «БРУСЧАТЫЙ ПОСЁЛОК» в Красногорске</div>
+                <div class="banner-slider__article">Квартиры в самом центре города от застройщика. Дома построены! </div>
+              </div>
+              <div class="banner-slider__img"><img src="img/sl-header.jpg"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="banner-slider__item">
+              <div class="banner-slider__text">
+                <div class="banner-slider__title">ЖК «БРУСЧАТЫЙ ПОСЁЛОК» в Красногорске</div>
+                <div class="banner-slider__article">Квартиры в самом центре города от застройщика. Дома построены! </div>
+              </div>
+              <div class="banner-slider__img"><img src="img/sl-header.jpg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="btn-mobile"><a class="btn-icon btn-icon_yellow" href="#">Выбрать квартиру</a></div>
+    </div>
+    <div class="text-content wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h1 class="main-title">Готовые новостройки в Красногорске от застройщика</h1>
+      <div class="text-content__article container">
+        <p> <b>«БРУСЧАТЫЙ ПОСЕЛОК» </b>- современный жилой комплекс, который строится в историческом центре Красногорска, в окружении великолепных лесопарковых зон, обеспечивающих не только комфортное проживание, но и прекрасную экологическую обстановку. Комплекс возводится по авторскому проекту, в разработке которого приняли участие ведущие российские архитекторы. </p>
+        <p>Изумительные виды из окон, продуманные и удобные планировки квартир, благоустроенные и безопасные дворы, развитая инфраструктура столицы Подмосковья, применяемые Застройщиком новейшие строительные технологии – все это вы найдете в жилом комплексе «БРУСЧАТЫЙ ПОСЕЛОК».</p>
+      </div>
+    </div>
+    <div class="action wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">   
+      <div class="action__inner container">
+        <div class="action__item">
+          <div class="action__img"><img src="img/an.png"></div>
+          <div class="action__article">
+            <div class="action__title action__title_lg">
+               Хотите выгодно купить квартиру в Красногорске? </div><b>Для ваc: ипотека от 9 банков, рассрочка от застройщика 0%. Принимаем материнский капитал, субсидии и жилищные сертификаты!        </b>
+          </div>
+        </div>
+        <div class="action__call"><span>Звоните в отдел продаж! </span><a href="tel:74951322575">+7 (495) 132-25-75 <br></a>
+          <button class="action__btn" type="button">Записаться на просмотр</button>
+        </div>
+      </div>
+    </div>
+    <div class="fast-action wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="container">
+        <h2 class="main-title main-title_red fast-action__title">Акция! 5 квартир по спец. цене только до 31 октября!</h2>
+        <form class="fast-action__item wow fadeIn" action="#" data-wow-duration="1.5s" data-wow-offset="20">
+          <div class="fast-action__top fast-action__top_mob">1-комнатная квартира №46</div>
+          <div class="fast-action__inner">
+            <div class="fast-action__slider-wrap fast-action__img">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item minimized" src-big="img/k_1.png"><img src="img/k_1-min.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/flat-1.png"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="fast-action__about">
+              <div class="fast-action__top fast-action__top_desc">1-комнатная квартира №46</div>
+              <ul class="fast-action__list">
+                <li>Красногорск, ЖК «Брусчатый посёлок»    </li>
+                <li>
+                  <ul class="flat-info">
+                    <li><span class="flat-info__item flat-info__floor">13 этаж,</span></li>
+                    <li><span class="flat-info__item flat-info__corp">7 корпус,</span></li>
+                    <li><span class="flat-info__item flat-info__section">1 секция</span></li>
+                  </ul>
+                </li>
+                <li>Общая площадь: <b>33 м<sup><small>2</small></sup></b></li>
+                <li>Площадь кухни:  <b>8 м<sup><small>2</small></sup></b></li>
+              </ul>
+              <div class="fast-action__price-title">
+                 Стоимость квартиры по акции:</div>
+              <ul class="fast-action__price-block">
+                <li><span class="fast-action__old-price">3 600 000 руб.</span></li>
+                <li><span class="fast-action__new-price">3 498 000 руб.</span></li>
+              </ul>
+            </div>
+            <div class="fast-action__form">
+              <div class="fast-action__form-title">Заявка на просмотр</div>
+              <label class="inp-icon inp-icon_name">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label class="inp-icon inp-icon_phone">
+                <input class="phone-inp" type="text" placeholder="Телефон">
+              </label>
+              <label class="inp-icon inp-icon_date">
+                <input type="text" placeholder="Укажите дату и время просмотра">
+              </label>
+              <div class="fast-action__btn-block">
+                <button class="btn fast-action__btn" type="submit">Записаться на просмотр</button>
+              </div>
+            </div>
+            <div class="fast-action__slider-wrap">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s1.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s2.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s3.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s4.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s5.jpg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="fast-action__item wow fadeIn" action="#" data-wow-duration="1.5s" data-wow-offset="20">
+          <div class="fast-action__top fast-action__top_mob">1-комнатная квартира №3</div>
+          <div class="fast-action__inner">
+            <div class="fast-action__slider-wrap fast-action__img">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/k_2-min.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/flat-2.png"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="fast-action__about">
+              <div class="fast-action__top fast-action__top_desc">1-комнатная квартира №3</div>
+              <ul class="fast-action__list">
+                <li>Красногорск, ЖК «Брусчатый посёлок»    </li>
+                <li>
+                  <ul class="flat-info">
+                    <li><span class="flat-info__item flat-info__floor">2 этаж,</span></li>
+                    <li><span class="flat-info__item flat-info__corp">7 корпус,</span></li>
+                    <li><span class="flat-info__item flat-info__section">1 секция</span></li>
+                  </ul>
+                </li>
+                <li>Общая площадь: <b>42,2 м<sup><small>2</small></sup></b></li>
+                <li>Площадь кухни:  <b>9,9 м<sup><small>2</small></sup></b></li>
+              </ul>
+              <div class="fast-action__price-title">
+                 Стоимость квартиры по акции:</div>
+              <ul class="fast-action__price-block">
+                <li><span class="fast-action__old-price">4 500 600 руб.</span></li>
+                <li><span class="fast-action__new-price">4 346 600 руб.</span></li>
+              </ul>
+            </div>
+            <div class="fast-action__form">
+              <div class="fast-action__form-title">Заявка на просмотр</div>
+              <label class="inp-icon inp-icon_name">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label class="inp-icon inp-icon_phone">
+                <input class="phone-inp" type="text" placeholder="Телефон">
+              </label>
+              <label class="inp-icon inp-icon_date">
+                <input type="text" placeholder="Укажите дату и время просмотра">
+              </label>
+              <div class="fast-action__btn-block">
+                <button class="btn fast-action__btn" type="submit">Записаться на просмотр</button>
+              </div>
+            </div>
+            <div class="fast-action__slider-wrap">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s1.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s2.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s3.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s4.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s5.jpg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">                   </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="fast-action__item wow fadeIn" action="#" data-wow-duration="1.5s" data-wow-offset="20">
+          <div class="fast-action__top fast-action__top_mob">2-комнатная квартира №13</div>
+          <div class="fast-action__inner">
+            <div class="fast-action__slider-wrap fast-action__img">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/k_3-min.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/flat-3.png"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="fast-action__about">
+              <div class="fast-action__top fast-action__top_desc">2-комнатная квартира №13</div>
+              <ul class="fast-action__list">
+                <li>Красногорск, ЖК «Брусчатый посёлок»    </li>
+                <li>
+                  <ul class="flat-info">
+                    <li><span class="flat-info__item flat-info__floor">5 этаж,</span></li>
+                    <li><span class="flat-info__item flat-info__corp">7 корпус,</span></li>
+                    <li><span class="flat-info__item flat-info__section">1 секция</span></li>
+                  </ul>
+                </li>
+                <li>Общая площадь: <b>50,8 м<sup><small>2</small></sup></b></li>
+                <li>Площадь кухни:  <b>8,2 м<sup><small>2</small></sup></b></li>
+              </ul>
+              <div class="fast-action__price-title">
+                 Стоимость квартиры по акции:</div>
+              <ul class="fast-action__price-block">
+                <li><span class="fast-action__old-price">5 500 400 руб.</span></li>
+                <li><span class="fast-action__new-price">5 232 400 руб.</span></li>
+              </ul>
+            </div>
+            <div class="fast-action__form">
+              <div class="fast-action__form-title">Заявка на просмотр</div>
+              <label class="inp-icon inp-icon_name">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label class="inp-icon inp-icon_phone">
+                <input class="phone-inp" type="text" placeholder="Телефон">
+              </label>
+              <label class="inp-icon inp-icon_date">
+                <input type="text" placeholder="Укажите дату и время просмотра">
+              </label>
+              <div class="fast-action__btn-block">
+                <button class="btn fast-action__btn" type="submit">Записаться на просмотр</button>
+              </div>
+            </div>
+            <div class="fast-action__slider-wrap">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s1.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s2.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s3.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s4.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s5.jpg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">                                                      </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="fast-action__item wow fadeIn" action="#" data-wow-duration="1.5s" data-wow-offset="20">
+          <div class="fast-action__top fast-action__top_mob">2-комнатная квартира №129</div>
+          <div class="fast-action__inner">
+            <div class="fast-action__slider-wrap fast-action__img">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/k_4-min.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/flat-4.png"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="fast-action__about">
+              <div class="fast-action__top fast-action__top_desc">2-комнатная квартира №129</div>
+              <ul class="fast-action__list">
+                <li>Красногорск, ЖК «Брусчатый посёлок»    </li>
+                <li>
+                  <ul class="flat-info">
+                    <li><span class="flat-info__item flat-info__floor">2 этаж,</span></li>
+                    <li><span class="flat-info__item flat-info__corp">8 корпус,</span></li>
+                    <li><span class="flat-info__item flat-info__section">3 секция</span></li>
+                  </ul>
+                </li>
+                <li>Общая площадь: <b>69,8 м<sup><small>2</small></sup></b></li>
+                <li>Площадь кухни:  <b>8 м<sup><small>2</small></sup></b></li>
+              </ul>
+              <div class="fast-action__price-title">
+                 Стоимость квартиры по акции:</div>
+              <ul class="fast-action__price-block">
+                <li><span class="fast-action__old-price">7 550 400 руб.</span></li>
+                <li><span class="fast-action__new-price">7 189 400 руб.</span></li>
+              </ul>
+            </div>
+            <div class="fast-action__form">
+              <div class="fast-action__form-title">Заявка на просмотр</div>
+              <label class="inp-icon inp-icon_name">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label class="inp-icon inp-icon_phone">
+                <input class="phone-inp" type="text" placeholder="Телефон">
+              </label>
+              <label class="inp-icon inp-icon_date">
+                <input type="text" placeholder="Укажите дату и время просмотра">
+              </label>
+              <div class="fast-action__btn-block">
+                <button class="btn fast-action__btn" type="submit">Записаться на просмотр</button>
+              </div>
+            </div>
+            <div class="fast-action__slider-wrap">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s1.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s2.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s3.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s4.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s5.jpg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">                                                      </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="fast-action__item wow fadeIn" action="#" data-wow-duration="1.5s" data-wow-offset="20">
+          <div class="fast-action__top fast-action__top_mob">3-комнатная квартира №46</div>
+          <div class="fast-action__inner">
+            <div class="fast-action__slider-wrap fast-action__img">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/k_5-min.png"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/flat-5.png"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="fast-action__about">
+              <div class="fast-action__top fast-action__top_desc">3-комнатная квартира №46</div>
+              <ul class="fast-action__list">
+                <li>Красногорск, ЖК «Брусчатый посёлок»    </li>
+                <li>
+                  <ul class="flat-info">
+                    <li><span class="flat-info__item flat-info__floor">11 этаж,</span></li>
+                    <li><span class="flat-info__item flat-info__corp">7 корпус,</span></li>
+                    <li><span class="flat-info__item flat-info__section">1 секция</span></li>
+                  </ul>
+                </li>
+                <li>Общая площадь: <b>70 м<sup><small>2</small></sup></b></li>
+                <li>Площадь кухни:  <b>10,2 м<sup><small>2</small></sup></b></li>
+              </ul>
+              <div class="fast-action__price-title">
+                 Стоимость квартиры по акции:</div>
+              <ul class="fast-action__price-block">
+                <li><span class="fast-action__old-price">7 620 000 руб.</span></li>
+                <li><span class="fast-action__new-price">7 210 000 руб.</span></li>
+              </ul>
+            </div>
+            <div class="fast-action__form">
+              <div class="fast-action__form-title">Заявка на просмотр</div>
+              <label class="inp-icon inp-icon_name">
+                <input type="text" placeholder="Имя">
+              </label>
+              <label class="inp-icon inp-icon_phone">
+                <input class="phone-inp" type="text" placeholder="Телефон">
+              </label>
+              <label class="inp-icon inp-icon_date">
+                <input type="text" placeholder="Укажите дату и время просмотра">
+              </label>
+              <div class="fast-action__btn-block">
+                <button class="btn fast-action__btn" type="submit">Записаться на просмотр</button>
+              </div>
+            </div>
+            <div class="fast-action__slider-wrap">
+              <div class="fast-action__slider swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s1.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s2.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s3.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s4.jpg"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="fast-action__slider-item"><img src="img/s5.jpg"></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination">                                                                  </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="advantages container wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">Ваши преимущества при покупке квартиры в «ЖК Брусчатый поселок»</h2>
+      <div class="advantages-slider-wrap">
+        <div class="advantages-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="advantages-slider__item">
+                <div class="advantages-slider__img"><img src="img/fl-1.jpg"></div>
+                <ul class="advantages-slider__article">
+                  <li>Красивый вид</li>
+                  <li>на Губайловский парк</li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantages-slider__item">
+                <div class="advantages-slider__img"><img src="img/fl-2.jpg"></div>
+                <div class="advantages-slider__article advantages-slider__article_check advantages-slider__article_darken">
+                  <ul>
+                    <li>Дома</li>
+                    <li>уже построены</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantages-slider__item">
+                <div class="advantages-slider__img"><img src="img/fl-3.jpg"></div>
+                <div class="advantages-slider__article advantages-slider__article_key">
+                  <ul>
+                    <li>Ключи</li>
+                    <li>в 2020 г </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantages-slider__item advantages-slider__item_metro">
+                <div class="advantages-slider__img"><img src="img/fl-4.jpg"></div>
+                <div class="advantages-slider__article advantages-slider__article_darken">
+                  <ul>
+                    <li>Рядом</li>
+                    <li>метро и МЦД</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantages-slider__item">
+                <div class="ipoteca-slide">
+                  <ul class="ipoteca-slide__list-top">
+                    <li>Рассрочка</li>
+                    <li>0%</li>
+                    <li>От застройщика</li>
+                  </ul>
+                  <ul class="ipoteca-slide__list-bottom">
+                    <li>9</li>
+                    <li><span> <b>Ипотека <br></b>банков</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="advantages-slider__item">
+                <div class="advantages-slider__img"><img src="img/fl-5.jpg"></div>
+                <div class="advantages-slider__article advantages-slider__article_darken">
+                  <ul>
+                    <li>Отделка</li>
+                    <li>квартиры "под ключ"                </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next-unique"></div>
+        <div class="swiper-button-prev-unique"></div>
+      </div>
+    </div>
+    <div class="banks container wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">Ипотека от 9 ведущих банков с первым взносом от 10%</h2>
+      <div class="banks-slider-wrap">
+        <div class="banks-slider swiper-container">
+          <div class="swiper-wrapper swiper-wrapper_bank">
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/sber.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/vtb.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/ab-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/rf-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/voz-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/mos-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/sv-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/kr-bank.png"></div>
+            </div>
+            <div class="swiper-slide swiper-slide_bank">
+              <div class="banks-slider__item"><img src="img/ros-bank.png"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next-bank"></div>
+        <div class="swiper-button-prev-bank">               </div>
+      </div>
+      <div class="banks__link"><a class="btn banks__btn" href="#">Рассчитать ипотеку    </a></div>
+    </div>
+    <div class="flat-plans wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">Квартиры от 33 до 70м2 - 20 вариантов планировок:</h2>
+      <ul class="plans-list">
+        <li>
+          <div class="plans-list__item">
+            <div class="plans-list__img"><img src="img/plan-1.png"></div>
+            <div class="plans-list__price"><span>от <b>3,39</b></span><span>млн руб.</span></div>
+            <div class="plans-list__link"><a href="#">1 - комнатные</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="plans-list__item">
+            <div class="plans-list__img"><img src="img/plan-2.png"></div>
+            <div class="plans-list__price"><span>от <b>5,18</b></span><span>млн руб.</span></div>
+            <div class="plans-list__link"><a href="#">2 - комнатные</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="plans-list__item">
+            <div class="plans-list__img"><img src="img/plan-3.png"></div>
+            <div class="plans-list__price"><span>от <b>7,07</b></span><span>млн руб.</span></div>
+            <div class="plans-list__link"><a href="#">3 - комнатные</a></div>
+          </div>
+        </li>
+        <li>
+          <div class="plans-list__item">
+            <div class="plans-list__img"><img src="img/plan-4.png"></div>
+            <div class="plans-list__price plans-list__price_green">отделка <br>под ключ</div>
+            <div class="plans-list__link"><a href="#">с отделкой</a></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="corpuses wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">Выберите квартиру в «ЖК Брусчатый поселок»:</h2>
+      <ul class="plan-select">
+        <li>
+          <button class="plan-select__btn plan-select__btn_genplan plan-choose is-active" type="button" data-tab="#genplan">Выбрать на генплане</button>
+        </li>
+        <li> 
+          <button class="plan-select__btn plan-select__shahmat plan-choose" type="button" data-tab="#shahmat">Выбрать на шахматке</button>
+        </li>
+      </ul>
+      <div class="genplan-tab" id="genplan">
+        <div class="genplan-banner"><img class="genplan-mob" src="img/genplan-mob.jpg"><img class="genplan-desc" src="img/genplan.jpg"><a class="genplan-banner__link genplan-banner__link_8" href="#"><span>Корпус №8</span><span>Дом построен</span></a><a class="genplan-banner__link genplan-banner__link_7" href="#"><span>Корпус №7</span><span>Дом построен</span></a></div>
+      </div>
+      <div class="genplan-tab" id="shahmat">
+        <div class="corpuses__content">
+          <div class="corpuses__slide-tabs">
+            <button class="plan-select__btn plan-select__btn_8" data-tab="#section8" data-adress="Центральный проезд">Выбрать корпус №8</button>
+            <button class="plan-select__btn plan-select__btn_7" data-tab="#section7" data-adress="ул. Народного Ополчения">Выбрать корпус №7</button>
+          </div>
+          <div class="corpuses__inner">
+            <ul class="corpuses__floors">
+              <li data-floor="17">17</li>
+              <li data-floor="16">16</li>
+              <li data-floor="15">15</li>
+              <li data-floor="14">14</li>
+              <li data-floor="13">13</li>
+              <li data-floor="12">12</li>
+              <li data-floor="11">11</li>
+              <li data-floor="10">10</li>
+              <li data-floor="9">9</li>
+              <li data-floor="8">8</li>
+              <li data-floor="7">7</li>
+              <li data-floor="6">6</li>
+              <li data-floor="5">5</li>
+              <li data-floor="4">4</li>
+              <li data-floor="3">3</li>
+              <li data-floor="2">2</li>
+              <li data-floor="1">1</li>
+            </ul>
+            <div class="corpuses__slider-wrap" id="section8">
+              <div class="corpuses-title">Корпус №8</div>
+              <div class="corpuses-slider corpuses-slider_8 owl-carousel">
+                <div class="item">
+                  <div class="corpuses__slider-slide">
+                    <div class="corpuses__block-title">Секция 1</div>
+                    <ul class="corpuses-slider__list">
+                      <li class="small"><a class="sales" href="#" data-floor="17" data-room="2" data-sail="sales" data-tooltip="Продана">2</a><span class="corpuse__tooltip">Продана</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale-action" href="#" data-floor="17" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве">1</a><span class="corpuse__tooltip">В резерве</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="corpuses__slider-slide">
+                    <div class="corpuses__block-title">Секция 2</div>
+                    <ul class="corpuses-slider__list">
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="sales" href="#" data-floor="5" data-room="2" data-sail="sales" data-tooltip="Продано">2</a><span class="corpuse__tooltip">Продано</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="corpuses__slider-slide corpuses__slider-slide_big">
+                    <div class="corpuses__block-title">Секция 3</div>
+                    <ul class="corpuses-slider__list">
+                      <li class="big"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="sales" href="#" data-floor="17" data-room="1" data-sail="sales" data-tooltip="Продана">1</a><span class="corpuse__tooltip">Продана</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="sales" href="#" data-floor="16" data-room="1" data-sail="sales" data-tooltip="Продана">1</a><span class="corpuse__tooltip">Продана</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale-action" href="#" data-floor="16" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве">1</a><span class="corpuse__tooltip">В резерве</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale-action" href="#" data-floor="15" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве">1</a><span class="corpuse__tooltip">В резерве</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="1-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп">нп</a><span class="corpuse__tooltip">Нежилое помещение №8</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп">нп</a><span class="corpuse__tooltip">Нежилое помещение №8</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп">нп</a><span class="corpuse__tooltip">Нежилое помещение №8</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="1" data-room="1" data-sail="on-sale" data-tooltip="нп">нп</a><span class="corpuse__tooltip">Нежилое помещение №8</span></li>
+                      <li class="big"><a class="on-sale" href="#" data-floor="1" data-room="2" data-sail="on-sale" data-tooltip="нп">нп</a><span class="corpuse__tooltip">Нежилое помещение №8</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="corpuses__slider-wrap" id="section7">
+              <div class="corpuses-title">Корпус №7</div>
+              <div class="corpuses-slider corpuses-slider_7 owl-carousel">
+                <div class="item">
+                  <div class="corpuses__slider-slide">
+                    <div class="corpuses__block-title">Секция 1</div>
+                    <ul class="corpuses-slider__list">
+                      <li class="small"><a class="sales" href="#" data-floor="17" data-room="3" data-sail="sales" data-tooltip="Продана">3</a><span class="corpuse__tooltip">Продана</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale-action" href="#" data-floor="17" data-room="1" data-sail="on-sale-action" data-tooltip="В резерве">1</a><span class="corpuse__tooltip">В резерве</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="3" data-sail="on-sale" data-tooltip="3-комнатная №105">3</a><span class="corpuse__tooltip">3-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="corpuses__slider-slide">
+                    <div class="corpuses__block-title">Секция 2</div>
+                    <ul class="corpuses-slider__list">
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="17" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="16" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="15" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="14" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="13" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="12" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="11" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="10" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="9" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="8" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="7" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="6" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="5" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="sales" href="#" data-floor="5" data-room="2" data-sail="sales" data-tooltip="Продано">2</a><span class="corpuse__tooltip">Продано</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="4" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="3" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="1" data-sail="on-sale" data-tooltip="1-комнатная №105">1</a><span class="corpuse__tooltip">1-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="2" data-room="2" data-sail="on-sale" data-tooltip="2-комнатная №105">2</a><span class="corpuse__tooltip">2-комнатная №105</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                      <li class="small"><a class="on-sale" href="#" data-floor="1" data-room="нп" data-sail="on-sale" data-tooltip="Нежилое помещение №9">нп</a><span class="corpuse__tooltip">Нежилое помещение №9</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="corpuse-adress corpuse-adress_mob">Центральный проезд </div>
+        <ul class="flat-about">
+          <li><span class="flat-about__on-sale">- Свободные</span></li>
+          <li><span class="flat-about__sold">- Проданные</span></li>
+          <li><span class="flat-about__rezerv">- Квартира в резерве</span></li>
+          <li>
+            <div class="corpuse-adress">Центральный проезд                                         </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="const-progress wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">Ход строительства</h2>
+      <div class="const-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c1.jpg">
+                <div class="const-slider__article">Октябрь 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c2.jpg">
+                <div class="const-slider__article">Сентябрь 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c3.jpg">
+                <div class="const-slider__article">Август 2019 </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c4.jpg">
+                <div class="const-slider__article">Июль 2019</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c5.jpg">
+                <div class="const-slider__article">Июнь 2019 </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="const-slider__item">
+              <div class="const-slider__img"><img src="img/c6.jpg">
+                <div class="const-slider__article">Май 2019               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="map-block wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <h2 class="main-title">ЖК расположен в самом центре Красногорска - рядом вся инфраструктура</h2>
+      <div class="infrastructure_wrapperMap">
+        <div class="infrastructure_fillter">
+          <ul class="infrastructure_list">
+            <li>
+              <button class="infrastructure_item" data-group="shop">
+                <div class="infrastructure_icon infrastructure_icon-shop"><img src="img/small_group_14.png"></div>
+                <div class="infrastructure_subtitle">Магазины</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="med">
+                <div class="infrastructure_icon infrastructure_icon-med"><img src="img/small_group_15.png"></div>
+                <div class="infrastructure_subtitle">Поликлиники / Больницы</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="kids">
+                <div class="infrastructure_icon infrastructure_icon-kids"><img src="img/small_group_16.png"></div>
+                <div class="infrastructure_subtitle">Детские сады</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="shcool">
+                <div class="infrastructure_icon infrastructure_icon-shcool"><img src="img/small_group_17.png"></div>
+                <div class="infrastructure_subtitle">Школы / ВУЗы</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="park">
+                <div class="infrastructure_icon infrastructure_icon-park"><img src="img/small_group_18.png"></div>
+                <div class="infrastructure_subtitle">Парки </div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="food">
+                <div class="infrastructure_icon infrastructure_icon-food"><img src="img/small_group_19.png"></div>
+                <div class="infrastructure_subtitle">Кафе / Бары</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="bank">
+                <div class="infrastructure_icon infrastructure_icon-bank"><img src="img/small_group_20.png"></div>
+                <div class="infrastructure_subtitle">Банки</div>
+              </button>
+            </li>
+            <li>
+              <button class="infrastructure_item" data-group="sport">
+                <div class="infrastructure_icon infrastructure_icon-sport"><img src="img/small_group_21.png"></div>
+                <div class="infrastructure_subtitle">Фитнес залы</div>
+              </button>
+            </li>
+          </ul>
+          <div class="infrastructure_control">
+            <button class="infrastructure_btn infrastructure_btnShow active">Показать все</button>
+            <button class="infrastructure_btn infrastructure_btnHide">Скрыть все</button>
+          </div>
+        </div>
+        <div id="map" data-latlag="55.834977,37.317508" data-markers="/infrastructure/place.json" style="position:relative;"></div>
+      </div>
+    </div>
+    <form class="recept-form wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="form-action">
+        <div class="form-action__inner">
+          <div class="form-action__date">Только до 31 октября!</div>
+          <ul class="form-action__list">
+            <li>Квартиры от</li>
+            <li>
+              <ul class="form-action__price">
+                <li>3,39</li>
+                <li>
+                  млн <br>
+                  руб.       
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="recept-form__main">
+        <div class="recept-form__title">Запишитесь на просмотр квартиры!</div>
+        <ul class="recept-form__inner">
+          <li><span class="recept-form__list-title">Офис застройщика работает ежедневно, без выходных:</span>
+            <ul class="recept-form__list">
+              <li>C понедельника по пятницу с 9:00 до 21:00</li>
+              <li>
+                  суббота и воскресенье с 10:00 до 17:00</li>
+              <li>Записаться можно по телефону:  <b>+7(495) 123-45-67 </b>или онлайн</li>
+            </ul>
+          </li>
+          <li class="form-action__inp-block">
+            <input class="inp recept-form__inp" type="text" placeholder="Имя">
+            <input class="inp recept-form__inp phone-inp" type="text" placeholder="Телефон">
+            <button class="form-btn" type="submit">Отправить заявку</button>
+            <div class="checkbox-block recept-form__check">
+              <input type="checkbox" id="check" checked>
+              <label for="check">Я согласен на обработку<br> персональных данных</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <div class="footer wow fadeIn" data-wow-duration="1.5s" data-wow-offset="20">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <div class="footer__item">
+              <div class="logo-mob footer__logo">
+                <div class="logo-mob__img"><img src="img/logo-green.png"></div>
+              </div>
+              <ul class="logo-mob__article">
+                <li>брусчатый <br>поселок</li>
+                <li>жилой комплекс</li>
+              </ul>
+              <ul class="footer__list">
+                <li><span class="consult-icon">Нужна консультация? Звоните сейчас!</span></li>
+                <li><a class="phone-black" href="tel:74950322127">+7 (495) 032-21-27</a></li>
+                <li><span class="string-bold"> ЖК «Брусчатый посёлок» - официальный сайт:</span></li>
+                <li>Красногорск, ул. Народного Ополчения, д. 2б</li>
+              </ul>
+              <ul class="footer__list">
+                <li><span class="string-bold">Офис продаж: </span>Красногорск, ул. Народного ополчения, д. 2Б, корп. 2, оф. 16</li>
+                <li><span class="string-bold">Email: </span><a class="email-link" href="mailto:sale@bruschaty.ru">sale@bruschaty.ru</a></li>
+                <li><span class="string-bold"> ЖК «Брусчатый посёлок» - официальный сайт:</span></li>
+                <li>Красногорск, ул. Народного Ополчения, д. 2б</li>
+              </ul><span class="string-bold string-bold_mb">График работы офиса продаж:</span>
+              <ul>
+                <li>C понедельника по пятницу <span class="string-bold">с 9:00 до 21:00</span></li>
+                <li>Cуббота и воскресенье <span class="string-bold">с 10:00 до 17:00          </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">                   
+            <div class="footer__item">
+              <div class="footer__title">Категории:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Однокомнатные</a></li>
+                <li><a href="#">Двухкомнатные</a></li>
+                <li><a href="#">Трехкомнатные </a></li>
+                <li><a href="#">Квартиры с отделкой</a></li>
+                <li><a href="#">Спецпредложение</a></li>
+                <li><a href="#">Шахматка корп.7, корп. 8</a></li>
+              </ul><a class="btn" href="#">Заявка на просмотр         </a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__title">Варианты покупки:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Материнский капитал </a></li>
+                <li><a href="#">Субсидии</a></li>
+                <li><a href="#">Жилищные сертификаты</a></li>
+                <li><a href="#">Военная ипотека</a></li>
+              </ul><a class="btn" href="#">Рассчитать ипотеку</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__title">Информация:</div>
+              <ul class="footer__nav">
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="#">Ход строительства</a></li>
+                <li><a href="#">Инфраструктура </a></li>
+                <li><a href="#">О застройщике</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul><a class="btn" href="#">Задать вопрос</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom"><a class="inst-link" href="#"><img src="img/inst.png"></a>
+          <div class="metrika">   <img src="img/metr.png"></div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>
+    <script src="libs/range/range-touch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+    <script src="libs/wow/wow.js"></script>
+    <script src="libs/mask/jquery.maskedinput.min.js"></script>
+    <script src="libs/autosize/autosize.min.js"></script>
+    <script src="libs/owl.carusel-2.3.4/owl.carousel.min.js"></script>
+    <script src="libs/table-sorter/jquery.tablesorter.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/bank-slider.js"></script>
+  </body>
+</html>
