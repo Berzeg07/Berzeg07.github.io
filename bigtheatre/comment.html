@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Отзывы</title>
+    <link rel="stylesheet" href="libs/owl.carusel-2.3.4/css/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-mobile">
+        <div class="header-mobile__top">
+          <div class="header-mobile__logo"><img src="img/logo-white.png"><span>Большой театр</span></div><a class="header-mobile__call" href="tel:74954320777">+7 495 432-07-77</a>
+        </div>
+        <div class="header-mobile__bottom">
+          <div class="burger"><span></span><span></span><span></span><span></span></div>
+          <form class="search">
+            <input type="text" placeholder="Балет Щелкунчик">
+            <button type="submit"><span>Найти                </span></button>
+          </form>
+          <button class="date-btn" type="button"></button>
+        </div>
+      </div>
+      <div class="mobile-info mob-hidden">
+        <div class="mobile-info__close">
+          <div class="close-btn"></div>
+        </div>
+        <div class="poster">
+          <div class="sidebar__title">Афиша по месяцам</div>
+          <ol class="sidebar-list sidebar-list_month">
+            <li><a href="#">Январь (12)</a></li>
+            <li><a href="#">Февраль (8)</a></li>
+            <li><a href="#">Март (3)</a></li>
+            <li><a href="#">Апрель (15)</a></li>
+            <li><a href="#">Май (9)</a></li>
+            <li><a href="#">Июнь (2)</a></li>
+            <li><a href="#">Июль (14)</a></li>
+            <li><a href="#">Август (7)</a></li>
+            <li><a href="#">Сентябрь (4)</a></li>
+            <li><a href="#">Октябрь (12)</a></li>
+            <li><a href="#">Ноябрь (10)</a></li>
+            <li><a href="#">Декабрь (8)</a></li>
+          </ol>
+        </div>
+        <div class="calendar">
+           <table class="calendar-table" id="calendarMob"  border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr><td><b>‹</b><td colspan="5"><td><b>›</b>
+<tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс</td>
+</thead>
+<tbody></tbody>
+</table>
+        </div>
+      </div>
+      <div class="menu-mobile mob-hidden">
+        <div class="menu-mobile__close">
+          <div class="close-btn"></div>
+        </div>
+        <div class="menu-mobile__inner">
+          <ul class="menu-mobile__list">
+            <li><a href="#">О театре</a></li>
+            <li><a href="#">Премьеры</a></li>
+            <li><a href="#">Основная сцена</a></li>
+          </ul>
+          <ul class="menu-mobile__list">      
+            <li><a href="#">Репертуар</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Новая сцена </a></li>
+          </ul>
+        </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a class="afisha" href="afisha.html">Афиша большого театра                        </a></li>
+            <li><a class="opera" href="#">Опера </a></li>
+            <li><a class="balet" href="#">Балет </a></li>
+            <li><a class="hall" href="#">Схема зала </a></li>
+            <li><a class="travel" href="#">Схема проезда</a></li>
+            <li><a class="company" href="#">О компании</a></li>
+            <li><a class="contacts" href="#">Контакты  </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-desktop">
+        <div class="header-desktop__top">
+          <ul class="info-menu">
+            <li><a href="#">О театре</a></li>
+            <li><a href="inner.html">Репертуар</a></li>
+            <li><a href="premiera.html">Премьеры</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Основная сцена</a></li>
+            <li><a href="#">Новая сцена</a></li>
+            <li><a class="call" href="tel:74954113073">+7 (495) 411-30-73    </a></li>
+          </ul>
+        </div>
+        <div class="header-desktop__bottom">
+          <div class="header-desktop__main container">
+            <div class="main-logo">
+              <div class="main-logo__img"><img src="img/logo.png"></div>
+              <div class="main-logo__text">Большой<br> театр</div>
+            </div>
+            <form class="search">
+              <input type="text" placeholder="Балет Щелкунчик">
+              <button type="submit"><span>Найти</span></button>
+            </form>
+            <div class="cart-block"><a class="online-pay" href="#">Онлайн оплата</a><a class="cart" href="basket.html">
+                <div class="cart__inner">
+                  <div class="cart-img"><img src="img/cart.png">
+                    <div class="cart-count">4</div>
+                  </div><span>1200 руб.</span>
+                </div></a></div><a class="call" href="tel:74954113073">+7 (495) 411-30-73</a>
+          </div>
+          <nav class="main-menu main-menu_header">
+            <ul>
+              <li><a class="afisha" href="#">Афиша большого театра                        </a></li>
+              <li><a class="opera" href="inner.html">Опера </a></li>
+              <li><a class="balet" href="inner.html">Балет </a></li>
+              <li><a class="hall" href="#">Схема зала </a></li>
+              <li><a class="travel" href="#">Схема проезда</a></li>
+              <li><a class="company" href="#">О компании</a></li>
+              <li><a class="contacts" href="#">Контакты              </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-cont container">
+        <div class="sidebar">
+          <div class="poster">
+            <div class="sidebar__title">Афиша по месяцам</div>
+            <ol class="sidebar-list sidebar-list_month">
+              <li><a href="#">Январь (12)</a></li>
+              <li><a href="#">Февраль (8)</a></li>
+              <li><a href="#">Март (3)</a></li>
+              <li><a href="#">Апрель (15)</a></li>
+              <li><a href="#">Май (9)</a></li>
+              <li><a href="#">Июнь (2)</a></li>
+              <li><a href="#">Июль (14)</a></li>
+              <li><a href="#">Август (7)</a></li>
+              <li><a href="#">Сентябрь (4)</a></li>
+              <li><a href="#">Октябрь (12)</a></li>
+              <li><a href="#">Ноябрь (10)</a></li>
+              <li><a href="#">Декабрь (8)</a></li>
+            </ol>
+          </div>
+          <div class="calendar">
+             <table class="calendar-table" id="calendar"  border="0" cellspacing="0" cellpadding="1">
+<thead>
+<tr><td><b>‹</b><td colspan="5"><td><b>›</b>
+<tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс</td>
+</thead>
+<tbody></tbody>
+</table>
+          </div>
+          <div class="recommend">
+            <div class="sidebar__title">Рекомендуем   </div>
+            <ul class="sidebar-list sidebar-list_recomended">
+              <li><a href="#">Лебединое озеро</a></li>
+              <li><a href="#">Драгоценности</a></li>
+              <li><a href="#">Иван Грозный</a></li>
+              <li><a href="#">Путешествие в Реймс</a></li>
+              <li><a href="#">Русалка</a></li>
+              <li><a href="#">Дон Карлос</a></li>
+              <li><a href="#">Онегин</a></li>
+              <li><a href="#">Раймонда</a></li>
+              <li><a href="#">Дон Кихот</a></li>
+              <li><a href="#">Нуреев</a></li>
+              <li><a href="#">Сильфида</a></li>
+              <li><a href="#">Пиковая дама</a></li>
+            </ul><a class="btn btn_poster" href="#">Вся афиша                </a>
+          </div>
+          <div class="news">
+            <div class="sidebar__title">Новости</div>
+            <ul class="news-list">
+              <li>
+                <div class="news-date">05 сентября</div><a href="#">В ГАБТ пройдет гала-концерт в честь Елены Образцовой!   </a>
+              </li>
+              <li>
+                <div class="news-date">27 августа</div><a href="#">Балет ГАБТ завершил гастроли в Лондоне</a>
+              </li>
+              <li>
+                <div class="news-date">05 сентября</div><a href="#">В ГАБТ пройдет гала-концерт в честь Елены Образцовой!   </a>
+              </li>
+              <li>
+                <div class="news-date">27 августа</div><a href="#">Балет ГАБТ завершил гастроли в Лондоне    </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="breadcrumbs"><a href="#">Главная</a><a href="#">Репертуар</a><a href="#">Афиша</a><a href="#">Лебединое озеро</a><a href="#">Комментарии</a></div>
+          <h1 class="main-title">Лебединое озеро комментарии зрителей    </h1>
+          <div class="comments">
+            <div class="comments__item">
+              <div class="comments__date">06 марта 2013</div>
+              <div class="comments__author">Женя</div>
+              <div class="comments__article">Очень красивый балет, мне понравился! Но билеты по космическим ценам продают!   </div>
+            </div>
+            <div class="comments__item">
+              <div class="comments__date">13 января 2013</div>
+              <div class="comments__author">Арина</div>
+              <div class="comments__article">Посмотрела Лебединое озеро в Большом театре. Смотрю этот балет уже 2-ой раз. Замечательно! Рекомендую всем. Когда я первый раз ходила,билеты в партер стояли 5000 руб за билет, а сейчас 10.000 руб, это только номинал! Жаль что не все могут позволить себе купить билеты на хорошие места. Но если смотреть этот балет на новой сцене стоимость будет дешевле.</div>
+            </div>
+            <div class="comments__item">
+              <div class="comments__date">19 марта 2013</div>
+              <div class="comments__author">Лариса</div>
+              <div class="comments__article">Посмотрела балет Лебединое озеро в Большом театре и пишу свой отзыв! 16 марта. Балерина Светлана Захарова - восхитительная утонченность, верх мастерства и технического, и актёрского. Премьер Александр Волчков предупредителен аж до дыхания партнёрши, истинный принц. Премьер Николай Цискаридзе - Мастер. Состояние экстаза! Шелест пачек, приглушенное: тук-тук, тук-тук,- пуантов, роскошь костюмов! Музыка, оркестр потрясающе! Волшебная арфа... Послевкусие, как от коньяка XO.. Просто какое-то неописуемое счастье увидеть всё это! Единственно, что, мне кажется негармоничным, - это танец в стиле ансамбля "Берёзки" русской невесты в кокошнике, как-то не балет^^ Но в целом -супер!!! Спасибо большое:)))         </div>
+            </div>
+          </div>
+          <form class="comment-form" action="#">
+            <div class="comment-form__inner">
+              <div class="comment-form__title">Здесь Вы можете оставить свой комментарий:</div>
+              <label class="inp-wrap">
+                <input class="inp" type="text" placeholder="Имя">
+              </label>
+              <label class="text-wrap">   
+                <textarea class="textarea">Комментарий</textarea>
+              </label>
+              <div class="comment-form__btn">
+                <button class="btn" type="submit">Отправить</button>
+                <div class="custom-check custom-check_white">
+                  <input type="checkbox" style="display: none" checked id="checkPrivacy">
+                  <label for="checkPrivacy">Я согласен на обработку <br> персональных данных </label>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="link-tickets"><a href="#">Купить билеты в Большой театр</a></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__item">
+        <div class="footer-info">
+          <div class="footer-info__item footer-column">
+            <div class="main-logo main-logo_footer hidden-xs">
+              <div class="main-logo__img"><img src="img/logo-footer.png"></div>
+              <div class="main-logo__text">Большой<br> театр</div>
+            </div>
+            <div class="footer-contact"><a class="footer-call" href="tel:74954113073">+7 (495) 411-30-73</a>
+              <div class="footer-adress">Москва, Богатырская, 12</div>
+            </div><a class="btn btn_footer" href="#">Заказать билет           </a>
+          </div>
+          <div class="footer-info__item">
+            <form class="search footer-search hidden-xs">
+              <input type="text" placeholder="Балет Щелкунчик">
+              <button type="submit"> <span>Найти</span></button>
+            </form>
+            <div class="main-menu main-menu_footer">
+              <ul>
+                <li><a class="afisha" href="#">Афиша большого театра                        </a></li>
+                <li><a class="opera" href="#">Опера </a></li>
+                <li><a class="balet" href="#">Балет </a></li>
+                <li><a class="hall" href="#">Схема зала</a></li>
+              </ul>
+              <ul>
+                <li><a class="travel" href="#">Схема проезда</a></li>
+                <li><a class="company" href="#">О компании</a></li>
+                <li><a class="contacts" href="#">Контакты          </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info__item footer-column">
+            <div class="info-title info-title_top">Информация для зрителей</div>
+            <div class="footer-link">
+              <ul>
+                <li><a href="#">О театре</a></li>
+                <li><a href="#">Репертуар</a></li>
+                <li><a href="#">Премьеры</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Основная сцена</a></li>
+                <li><a href="#">Новая сцена</a></li>
+              </ul>
+            </div>
+            <div class="info-title info-title_bottom">Способ оплаты</div>
+            <div class="payment"><img src="img/visa_mir.png"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="capcha"><img src="img/capcha.jpg"></div>
+          <div class="footer-bottom__inner">       
+            <div class="footer-bottom__item">
+              <div class="copyright">2010-2019 Сайт не является официальным ресурсом Большого театра</div>
+            </div>
+            <div class="footer-bottom__item">   
+              <div class="development">
+                <div class="development__article"><span>Создание и продвижение сайта        </span></div>
+                <div class="development__img"><img src="img/e-studio.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>     
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+    <script src="libs/owl.carusel-2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
