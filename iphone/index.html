@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/owl.carousel/assets/owl.carousel.css" />
+	<link type="text/css" href="css/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/owl.carousel/owl.carousel.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+	<script src="js/responsiveTabs.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/db.js"></script>
+
+	
+
+<section class="section section_padding dd-header">
+	<div class="dd-burg-wrap">
+		<div class="dd-burg">
+			<img src="img/burg.png" alt="">
+		</div>
+	</div>
+	<div class="my-container">
+
+		<div class="dd-main-menu" id="menu">
+			<ul>
+				<li><a href="#product">Товары</a></li>
+				<li><a href="#about">О нас</a></li>
+				<li><a href="#testimon">Отзывы</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</div>
+		
+
+
+		<div class="dd-apple dd-dis-none">
+			<img src="img/apple.png" alt="">
+		</div>
+
+		<div class="dd-title dd-dis-none">
+			<h2>Продажа Оригинальных </h2>
+			<h2>iphone в Санкт Петербурге</h2>
+		</div>
+
+		<div class="dd-phone dd-dis-none">
+			<img class="img-responsive" src="img/ph.jpg" alt="">
+		</div>
+
+		<!-- slider -->
+		<div class="dd-slide-wrap">
+			<div id="slider">
+				
+				<div class="item">
+					<img class="img-responsive" src="img/p1.png" alt="">
+				</div>	
+
+
+
+				<div class="item">
+					<img class="img-responsive" src="img/p1.png" alt="">
+				</div>
+
+				<div class="item">
+					<img class="img-responsive" src="img/p2.png" alt="">
+				</div>
+				
+			</div>
+
+		</div>
+		<!-- end slider -->
+
+		<div class="dd-our-wrap our-wrap">
+			<div class="dd-title dis-block">
+				<div class="dd-img_apple_2">
+					<img src="img/ap2.png" alt="">
+				</div>
+				<h2>Продажа Оригинальных </h2>
+				<h2>iphone в Санкт Петербурге</h2>
+			</div>
+			<div class="dd-box_h">
+				<span></span><br>
+				<span class="dd-sp_1">Более 7 лет на рынке</span><br>
+				<span class="dd-kr"></span><br>
+				<span class="dd-sp_1">Цены ниже чем</span><br>
+				<span class="dd-sp_1">чем у официальных представителей</span>
+			</div>	
+			<div class="dd-timer_my">
+				<span class="dd-timer-title">успей сделать заказ</span>
+				<div class="dd-times">
+					<div class="dd-div">
+						<span class="dd-hours dd-hours1">0</span>
+						<span class="dd-hours dd-hours2">0</span>
+						<br>
+					</div>
+					<div class="dd-div dd-div-margin">
+						<span class="dd-min dd-min1">1</span>
+						<span class="dd-min dd-min2">1</span><br>
+					</div>
+					<div class="dd-div dd-div-margin">
+						<span class="dd-sec dd-sec1">1</span>
+						<span class="dd-sec dd-sec2">7</span><br>
+					</div>
+				</div>
+				<span class="dd-timer-bot">и получи подарок!</span>
+			</div>
+			<div class="dd-but-wrap">
+				<a href="#js-form1" name="js-modal" class="button2 ">Заказать</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+</section>
+
+
+<script>
+		/* Slider
+		=====================*/
+		var owl2 = $("#slider");
+		owl2.owlCarousel({
+			loop:true,
+			nav:true, 
+			autoplay:true,
+			smartSpeed:1000,
+			margin:25,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="nav-left"></span>','<span class="nav-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},
+        	480:{
+        		items:1 
+        	},
+        	990:{
+        		items:1
+        	},      
+
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+</script>
+<script>
+	$('.dd-burg').click(function(){
+		$('.dd-main-menu').slideToggle(500);
+	});
+</script>
+
+<section class="section dfsection_padding" id="product">
+	<div class="dfcontainer">
+
+		<div class="dfcatalogblock">
+
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 4</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog1.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+					<div class="dfgift">
+						<img src="img/gift.png" alt="" color="Black">
+						<span>Подарок</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>			
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 4s</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog2.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490">32Gb </a>
+							/<a href="#" price="11 490">64Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>
+					<a href="img/catalog3.png" class="dfcol3" color="Orange"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 5</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog3.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+							/<a href="#" price="11 490" >64Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i> <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog3.png" class="dfcol2" color="Grey"></a>
+					<a href="img/catalog2.png" class="dfcol3" color="Orange"></a>
+					<a href="img/catalog3.png" class="dfcol4" color="White"></a>
+					<a href="img/catalog5.png" class="dfcol5" color="Pink"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 5c</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog4.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490"  class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+							/<a href="#" price="11 490">64Gb </a>
+							/<a href="#" price="17 490">128Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 5</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog5.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>					
+				</div>
+				<div class="clear"></div>
+			</div>			
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 5s</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog2.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490">32Gb </a>
+							/<a href="#" price="11 490">64Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<a href="img/catalog1.png" class="dfcol1" color="Black"></a>
+					<a href="img/catalog2.png" class="dfcol2" color="Grey"></a>					
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 6</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog3.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490" class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+							/<a href="#" price="11 490" >64Gb </a>
+							/<a href="#" price="17 490">128Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i> <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="dfboxproduct">
+				<div class="dfcolorbox">
+					<div class="dfborder"><a href="img/catalog1.png" class="dfcol1" color="Black"></a></div>
+					<a href="img/catalog3.png" class="dfcol2" color="Grey"></a>
+				
+				</div>
+				<div class="dfwidth">
+					<h4 class="dfboxcaption">iPhone 6s</h4>
+					<div class="dfcatalogimg">
+						<img src="img/catalog4.png" alt="" color="Black">
+					</div>
+					<div class="dfcharacteristics">
+						<div class="dfgigs">
+							<a href="#" price="5 490"  class="dfactivelink">16Gb</a>
+							/<a href="#" price="7 490" >32Gb </a>
+							/<a href="#" price="11 490">64Gb </a>
+							/<a href="#" price="17 490">128Gb </a>
+						</div>
+						<h3 class="dfprice"><i>5 490</i>  <b></b></h3>
+						<a href="#js-form1" class="dfbutton" name="js-modal">Заказать</a>
+					</div>
+
+					
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>	
+	</div>
+</section>
+
+<section class="section section_padding our" id="about">
+	<div class="col-md-7 our-right hidden-md hidden-lg">
+		<div class="container">
+			<h2 class="our-title hidden-lg hidden-md">Наши преимущества</h2>
+			<div class="our-item our-item1"><div class="our-img-wrap"><img src="img/our-item1.png" alt="" class="our-img"></div><span class="our-item-text">На все телефоны 1 год гарантии.</span></div>
+			<div class="our-item our-item2"><div class="our-img-wrap"><img src="img/our-item2.png" alt="" class="our-img"></div><span class="our-item-text">Работаем более 7-ми лет. Мы надежны  и не пропадем как новые магазины.</span></div>
+			<div class="our-item our-item3"><div class="our-img-wrap"><img src="img/our-item3.png" alt="" class="our-img"></div> <span class="our-item-text">Гарантийное обслуживание проходит  в собственном сервисном центре.</span></div>
+			<div class="our-item our-item4"><div class="our-img-wrap"><img src="img/our-item4.png" alt="" class="our-img"></div><span class="our-item-text">Ремонт обычно занимает не больше одной недели.</span></div>
+		</div>
+	</div>
+	<div class=" container">
+		<div class="row">
+			<div class="col-md-5 our-left hidden-xs hidden-sm">
+				<h2 class="our-title">Наши преимущества</h2>
+				<div class="col-md-12 our-wrap">
+					<div class="dd-timer dd-timer2">
+						<span class="dd-timer-title">успей сделать заказ</span>
+						<div class="dd-times">
+							<div class="dd-div">
+								<span class="dd-hours dd-hours1">0</span>
+								<span class="dd-hours dd-hours2">0</span>
+								<br>
+							</div>
+							<div class="dd-div dd-div-margin">
+								<span class="dd-min dd-min1">1</span>
+								<span class="dd-min dd-min2">1</span><br>
+							</div>
+							<div class="dd-div dd-div-margin">
+								<span class="dd-sec dd-sec1">1</span>
+								<span class="dd-sec dd-sec2">7</span><br>
+							</div>
+						</div>
+						<span class="dd-timer-bot">и получи подарок!</span>
+					</div>
+					<a href="#js-form1" name="js-modal" class="button1 our-btn">Заказать</a>
+				</div>
+			</div>
+			<div class="col-md-7 our-right hidden-xs hidden-sm">
+				<h2 class="our-title hidden-lg hidden-md">Наши преимущества</h2>
+				<div class="our-item our-item1"><div class="our-img-wrap"><img src="img/our-item1.png" alt="" class="our-img"></div><span class="our-item-text">На все телефоны 1 год гарантии.</span></div>
+				<div class="our-item our-item2"><div class="our-img-wrap"><img src="img/our-item2.png" alt="" class="our-img"></div><span class="our-item-text">Работаем более 7-ми лет. Мы надежны  и не пропадем как новые магазины.</span></div>
+				<div class="our-item our-item3"><div class="our-img-wrap"><img src="img/our-item3.png" alt="" class="our-img"></div> <span class="our-item-text">Гарантийное обслуживание проходит  в собственном сервисном центре.</span></div>
+				<div class="our-item our-item4"><div class="our-img-wrap"><img src="img/our-item4.png" alt="" class="our-img"></div><span class="our-item-text">Ремонт обычно занимает не больше одной недели.</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-5  our-left hidden-md hidden-lg">
+		<div class="our-wrap">
+			<div class="dd-timer dd-timer2">
+				<span class="dd-timer-title">успей сделать заказ</span>
+				<div class="dd-times">
+					<div class="dd-div">
+						<span class="dd-hours dd-hours1">0</span>
+						<span class="dd-hours dd-hours2">0</span>
+						<br>
+					</div>
+					<div class="dd-div dd-div-margin">
+						<span class="dd-min dd-min1">1</span>
+						<span class="dd-min dd-min2">1</span><br>
+					</div>
+					<div class="dd-div dd-div-margin">
+						<span class="dd-sec dd-sec1">1</span>
+						<span class="dd-sec dd-sec2">7</span><br>
+					</div>
+				</div>
+				<span class="dd-timer-bot">и получи подарок!</span>
+			</div>
+			<a href="#" class="button1 our-btn">Заказать</a>
+		</div>
+	</div>
+</section>
+
+<section class="section section_padding nothing">
+<div class=" container">
+	<div class="row">
+		<div class="col-md-6 nothing-left">
+			<div class="nothing-text-block hidden-md hidden-lg">
+				<p class="nothing-title">Нам нечего скрывать</p>
+				<p class="nothing-text">Вы можете вскрыть упаковку и проверить 
+				Ваш новый Iphone на работоспособность. 
+				Залогиниться в своем Apple ID</p>
+			</div>
+		</div>
+		<div class="col-md-6 nothing-right">
+			<div class="nothing-text-block hidden-xs hidden-sm">
+				<p class="nothing-title">Нам нечего скрывать</p>
+				<p class="nothing-text">Вы можете вскрыть упаковку и проверить 
+				Ваш новый Iphone на работоспособность. 
+				Залогиниться в своем Apple ID</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="section section_padding section_db-fast-view">
+<div class=" container db-all-fast">
+	<div class="row">
+		<div class="col-md-12">
+		<h1 class="db-fast-h1">Быстрый заказ</h1>
+		<form action="#" method="post" class="db-fast-form js-submit">
+			<input type="text" name="uname" placeholder="Имя" required><br>
+			<input type="text" name="phone" placeholder="Телефон" class="js-phone" required>
+			<input type="submit" name="submit" value="Заказать" class="button1">
+		</form>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="section section_padding cons">
+<div class="col-md-6 cons-right hidden-md hidden-lg">
+			<div class="cons-text-block">
+				<p class="cons-text">Консультанты в магазине Всегда 
+					окажут консультации, зарегистрируют 
+					Apple ID или расскажут о всех 
+					возможностях Iphone, в том числе 
+					скрытых. 
+				</p>
+			</div>
+		</div>
+<div class=" container">
+	<div class="row">
+		<div class="col-md-6 hidden-xs hidden-sm"></div>
+		<div class="col-md-6 cons-right hidden-xs hidden-sm">
+			<div class="cons-text-block">
+				<p class="cons-text">Консультанты в магазине Всегда 
+					окажут консультации, зарегистрируют 
+					Apple ID или расскажут о всех 
+					возможностях Iphone, в том числе 
+					скрытых. 
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hidden-md hidden-lg cons-hidden"></div>
+</section>
+
+<section class="section section_padding section_testimonials_db" id="testimon">
+	<div class=" container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="img/db-circle.png" alt="img"><br>
+				<h1 class="db-h1-testimonials">Отзывы наших покупателей</h1><br>
+				<img src="img/db-circle.png" alt="img">
+			</div>
+			<div class="clearfix"></div>
+			<div class="slider-db">
+				<div class="item">
+					<img src="img/db-testimonials-one.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span>Илона Мирная</span><br>
+						Гипотеза понимает под собой<br> 
+						гравитационный парадокс. Можно <br>
+						предположить, что александрийская <br>
+						школа подрывает конфликт.
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>	
+				<div class="item">
+					<img src="img/db-testimonials-two.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span class="db-span-testimonials-middle">Илона Мирная</span>
+						Дедуктивный метод ясен не всем. <br>
+						Знак, по определению, <br>
+						преобразует закон внешнего мира. <br> 
+						Культ джайнизма включает <br>
+						в себя поклонение Махавире <br>
+						и другим тиртханкарам, поэтому <br>
+						созерцание подрывает мир, <br>
+						ломая рамки привычных <br>
+						представлений. 
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>	
+				<div class="item">
+					<img src="img/db-testimonials-three.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span>Илья Мирный</span><br>
+						Гипотеза понимает под собой<br> 
+						гравитационный парадокс. Можно <br>
+						предположить.
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>	
+				<div class="item">
+					<img src="img/db-testimonials-one.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span>Илона Мирная</span><br>
+						Гипотеза понимает под собой<br> 
+						гравитационный парадокс. Можно <br>
+						предположить, что александрийская <br>
+						школа подрывает конфликт.
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>	
+				<div class="item">
+					<img src="img/db-testimonials-two.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span class="db-span-testimonials-middle">Илона Мирная</span>
+						Дедуктивный метод ясен не всем. <br>
+						Знак, по определению, <br>
+						преобразует закон внешнего мира. <br> 
+						Культ джайнизма включает <br>
+						в себя поклонение Махавире <br>
+						и другим тиртханкарам, поэтому <br>
+						созерцание подрывает мир, <br>
+						ломая рамки привычных <br>
+						представлений. 
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>	
+				<div class="item">
+					<img src="img/db-testimonials-three.png" alt="img" class="db-img-testimonials"><br>
+					<p class="db-p-testimonials">
+						<span>Илья Мирный</span><br>
+						Гипотеза понимает под собой<br> 
+						гравитационный парадокс. Можно <br>
+						предположить.
+						<img src="img/db-circle.png" alt="img" class="db-img-testimonials2">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section section_padding section_first_view">
+<div class=" container">
+	<div class="row">
+		<div class="col-md-12">
+		<h1 class="db-first-h1">При первой покупке получите подарок!</h1>
+		 <div class="dd-timer dd-timer1 db-timer">
+                        <span class="dd-timer-title db-timer-title">успей сделать заказ</span>
+                        <div class="dd-times">
+                            <div class="dd-div">
+                                <span class="dd-hours dd-hours1">0</span>
+                                <span class="dd-hours dd-hours2">0</span>
+                                <br>
+                            </div>
+                            <div class="dd-div dd-div-margin">
+                                <span class="dd-min dd-min1">1</span>
+                                <span class="dd-min dd-min2">1</span><br>
+                            </div>
+                            <div class="dd-div dd-div-margin">
+                                <span class="dd-sec dd-sec1">1</span>
+                                <span class="dd-sec dd-sec2">7</span><br>
+                            </div>
+                        </div>
+                        <span class="dd-timer-bot db-timer-bot">и получи подарок!</span>
+                    </div>
+                    <a href="#js-form1" name="js-modal" class="button1 db-first-a">Заказать</a>
+           <p class="db-first-p">Постоянным клиентам скидка!!!</p>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="section section_padding delivery">
+<div class="col-md-7 delivery-right hidden-md hidden-lg">
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap1"></div>
+				<p class="delivery-text delivery-text1">Точка выдачи заказов в центре СПб  на Невском Проспекте. Удобная развязка.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap2"></div>
+				<p class="delivery-text delivery-text2">Магазин работает каждый день с 10 до 21.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap3"></div>
+				<p class="delivery-text">Если Вам необходима доставка, то она  осуществляется в этот же день.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap4"></div>
+				<p class="delivery-text">Все модели представленные на сайте есть  в наличии на складе.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap5"></div>
+				<p class="delivery-text">Обрабатываем Вашу заявку течение 30 минут,  после нажатия на кнопку отправить.</p>
+			</div>
+		</div>
+		<div class="col-sm-12 hidden-md hidden-lg delivery-bottom"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-5 delivery-left"></div>
+		<div class="col-md-7 delivery-right hidden-xs hidden-sm">
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap1"></div>
+				<p class="delivery-text delivery-text1">Точка выдачи заказов в центре СПб  на Невском Проспекте. Удобная развязка.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap2"></div>
+				<p class="delivery-text delivery-text2">Магазин работает каждый день с 10 до 21.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap3"></div>
+				<p class="delivery-text">Если Вам необходима доставка, то она  осуществляется в этот же день.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap4"></div>
+				<p class="delivery-text">Все модели представленные на сайте есть  в наличии на складе.</p>
+			</div>
+			<div class="delivery-item">
+				<div class="delivery-imgwrap delivery-imgwrap5"></div>
+				<p class="delivery-text">Обрабатываем Вашу заявку течение 30 минут,  после нажатия на кнопку отправить.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section class="section section_padding map">
+	<div id="map" class="map-wrap"></div>
+</div>
+</section>
+
+<section class="section section_padding db_footer-view" id="contacts">
+	<div class=" container">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="db-footer_p_one">
+					2-ая линия Васильевского острова 61/30, <br>
+					Василеостровский район, <br>
+					Санкт-Петербург, Россия 
+				</p>
+			</div>
+			<div class="col-md-6">
+				<p class="db-footer_p_two">
+					<span class="footer-span-one">+7 812 380-40-11</span><br>
+					<span class="footer-span-two">Сделано в </span><a href="#"><img src="img/db-studia.png" alt="img"></a>
+					<div class="clearfix"></div>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- MASK -->
+<div class="mask" id="js-mask"></div>
+<!-- POPAPS -->
+<div class="js-window" id="js-form1">
+	<div class="db-form1">
+		<h1 class="db-fast-h1">Быстрый заказ</h1>
+		<img src="img/kres.png" alt="img" class="kres js-cres">
+		<form action="#" method="post" class="db-fast-form js-submit">
+			<input type="text" name="uname" placeholder="Имя" required><br>
+			<input type="text" name="phone" placeholder="Телефон" class="js-phone">
+			<input type="submit" name="submit" value="Заказать" class="button1">
+			<input type="hidden" name="name">
+			<input type="hidden" name="price">
+			<input type="hidden" name="size">
+			<input type="hidden" name="color">
+		</form>
+	</div>
+</div>
+<div class="js-window" id="js-form2">
+	<div class="db-form2">
+	<img src="img/kres.png" alt="img" class="kres2 js-cres">
+	<h1 class="db-fast-h1">Спасибо за заявку! </h1>
+			<p>Наш менеджер свяжется с вами.</p>
+		</div>
+	</div>
+<a href="#js-form2" name="js-modal"></a>
+
+</body>
+</html>
