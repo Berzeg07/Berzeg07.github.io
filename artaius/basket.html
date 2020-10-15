@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="libs/animate/animate.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="libs/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="column">
+            <div class="select select_city">
+              <select>
+                <option>Санкт-Петербург</option>
+                <option>Москва</option>
+                <option>Саратов</option>
+              </select>
+            </div>
+            <div class="shipping-action">Бесплатная доставка*</div>
+            <ul class="top-nav">
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="social">
+              <div class="social__title">Связаться с нами</div>
+              <ul class="social-list social-list_header">
+                <li><a href="#"> 
+                    <svg class="icon icon-inst-icon inst-icon inst-header">
+                      <use xlink:href="/img/svg/sprite.svg#inst-icon"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg class="icon icon-vk-icon vk-icon vk-header">
+                      <use xlink:href="/img/svg/sprite.svg#vk-icon"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg class="icon icon-whatsup-icon whatsup-icon whatsup-header">
+                      <use xlink:href="/img/svg/sprite.svg#whatsup-icon"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="login"><a href="#">Вход </a><span>/ </span><a href="#">Регистрация</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle container">
+        <div class="column">
+          <button class="burger" type="button"></button>
+          <div class="logo logo_header"><img src="img/logo.svg"></div>
+          <form class="search search_header" action="#" method="POST">
+            <input class="search__inp" type="text" placeholder="Начните поиск">
+            <button class="search__btn" type="submit"> <span>Найти</span></button>
+          </form>
+        </div>
+        <div class="column">
+          <ul class="header__phone">
+            <li><a class="phone-link phone-link_header" href="tel:78126699665">+7 (812) 669-96-65</a></li>
+            <li>
+              <div class="sub-info">Пн — Вс: 10:30 — 19:00</div>
+            </li>
+          </ul>
+          <ul class="header__basket">
+            <li><a class="favor-link" href="#">
+                <svg class="icon icon-favor favor-icon favor-grey">
+                  <use xlink:href="/img/svg/sprite.svg#favor"></use>
+                </svg></a></li>
+            <li><a class="login-icon" href="#">
+                <svg class="icon icon-login-icon login-icon login-icon-grey">
+                  <use xlink:href="/img/svg/sprite.svg#login-icon"></use>
+                </svg></a></li>
+            <li>
+              <div class="basket"><a class="basket__item" href="#">
+                  <svg class="icon icon-basket basket-icon basket-icon-grey">
+                    <use xlink:href="/img/svg/sprite.svg#basket"></use>
+                  </svg></a>
+                <div class="basket__item">
+                  <div class="basket__price">
+                     8 967 <span>&#8381;</span></div>
+                  <div class="sub-info">3 товара          </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <button class="catalog-btn" type="button">Каталог</button>
+          <ul class="main-nav">
+            <li><a href="#">Парикмахерский инструмент</a>
+              <div class="dropdownmenu dropdownmenu_desctop">
+                <div class="dropdownmenu__inner">
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="commercial commercial_md">
+                    <div class="commercial__item">
+                      <div class="commercial__img"><a href="#"><img src="img/commerce-prod.jpg"/></a></div>
+                      <div class="action-tooltip action-tooltip_red">Скидка -40%</div>
+                      <div class="commercial__firm">Suntachi</div>
+                      <div class="commercial__title"><a href="#">Прямые ножницы ZG-B PETROL</a></div>
+                      <div class="commercial__price">
+                        <div class="commercial__price-old">
+                          <strike>12 500</strike>
+                        </div>
+                        <div class="commercial__price-new">
+                          10 300 <span>&#8381;</span></div>
+                      </div>
+                    </div>
+                    <div class="tags"><a href="#">Ножницы Suntachi</a><a href="#">Брашинги</a><a href="#">Фен Dyson</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Для волос</a>
+              <div class="dropdownmenu dropdownmenu_desctop">
+                <div class="dropdownmenu__inner">
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="commercial commercial_md">
+                    <div class="commercial__item">
+                      <div class="commercial__img"><a href="#"><img src="img/commerce-prod.jpg"/></a></div>
+                      <div class="action-tooltip action-tooltip_red">Скидка -40%</div>
+                      <div class="commercial__firm">Suntachi</div>
+                      <div class="commercial__title"><a href="#">Прямые ножницы ZG-B PETROL</a></div>
+                      <div class="commercial__price">
+                        <div class="commercial__price-old">
+                          <strike>12 500</strike>
+                        </div>
+                        <div class="commercial__price-new">
+                          10 300 <span>&#8381;</span></div>
+                      </div>
+                    </div>
+                    <div class="tags"><a href="#">Ножницы Suntachi</a><a href="#">Брашинги</a><a href="#">Фен Dyson</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li> <a href="#">Для лица</a>
+              <div class="dropdownmenu dropdownmenu_desctop">
+                <div class="dropdownmenu__inner">
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="commercial commercial_md">
+                    <div class="commercial__item">
+                      <div class="commercial__img"><a href="#"><img src="img/commerce-prod.jpg"/></a></div>
+                      <div class="action-tooltip action-tooltip_red">Скидка -40%</div>
+                      <div class="commercial__firm">Suntachi</div>
+                      <div class="commercial__title"><a href="#">Прямые ножницы ZG-B PETROL</a></div>
+                      <div class="commercial__price">
+                        <div class="commercial__price-old">
+                          <strike>12 500</strike>
+                        </div>
+                        <div class="commercial__price-new">
+                          10 300 <span>&#8381;</span></div>
+                      </div>
+                    </div>
+                    <div class="tags"><a href="#">Ножницы Suntachi</a><a href="#">Брашинги</a><a href="#">Фен Dyson</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a class="main-nav__action" href="#">Акции</a></li>
+            <li> <a class="main-nav__popular" href="#">Популярные</a></li>
+            <li><a href="#">Мастера рекомендуют</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="menu-laptop">
+      <div class="menu-laptop__inner">
+        <div class="menu-laptop__main">
+          <ul class="menu-laptop__list">
+            <li class="is-active"><span>Парикмахерский инструмент</span>
+              <div class="dropdownmenu dropdownmenu_laptop">
+                <div class="dropdownmenu__inner">
+                  <button class="dropdownmenu__close btn-close" type="button"></button>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><span>Для волос</span>
+              <div class="dropdownmenu dropdownmenu_laptop">
+                <div class="dropdownmenu__inner">
+                  <button class="dropdownmenu__close btn-close" type="button"></button>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><span>Для лица</span>
+              <div class="dropdownmenu dropdownmenu_laptop">
+                <div class="dropdownmenu__inner">
+                  <button class="dropdownmenu__close btn-close" type="button"></button>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><span>Бренды</span>
+              <div class="dropdownmenu dropdownmenu_laptop">
+                <div class="dropdownmenu__inner">
+                  <button class="dropdownmenu__close btn-close" type="button"></button>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">3 класс</a></li>
+                      <li><a href="#">4 класс</a></li>
+                      <li><a href="#">5 класс</a></li>
+                      <li><a href="#">5+ класс</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_column">
+                      <li><a href="#">Масло</a></li>
+                      <li><a href="#">Чехлы</a></li>
+                      <li><a href="#">Кобура</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Suntachi Classic</a></li>
+                      <li><a href="#">Suntachi Classic Gold</a></li>
+                      <li><a href="#">Suntachi Salon</a></li>
+                      <li><a href="#">Suntachi Salin Design</a></li>
+                      <li><a href="#">Suntachi LUX</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Ideal</a></li>
+                      <li><a href="#">Suntachi Elite</a></li>
+                      <li><a href="#">Akitz</a></li>
+                      <li><a href="#">Suntachi Premium</a></li>
+                      <li><a href="#">Takara</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdownmenu__item">
+                    <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Кисти</a></li>
+                      <li><a href="#">Миски</a></li>
+                      <li><a href="#">Шпатели и лопатки</a></li>
+                      <li><a href="#">Выжиматели</a></li>
+                      <li><a href="#">Диспансеры</a></li>
+                      <li><a href="#">Наборы</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Расчески</a></li>
+                      <li><a href="#">Щетки</a></li>
+                      <li><a href="#">Брашинги</a></li>
+                      <li><a href="#">Очистители расчесок и брашингов</a></li>
+                    </ul>
+                    <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Для выпрямления</a></li>
+                      <li><a href="#">Гофре</a></li>
+                      <li><a href="#">Для завивки</a></li>
+                    </ul>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                    <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                    <ul class="dropdownmenu__list">
+                      <li><a href="#">Машинки для стрижки волос</a></li>
+                      <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                      <li><a href="#">Триммеры</a></li>
+                      <li><a href="#">Шейверы</a></li>
+                      <li><a href="#">Принадлежности к машинкам</a></li>
+                    </ul>
+                    <ul class="dropdownmenu__list dropdownmenu__list_black">
+                      <li><a href="#">Фены</a></li>
+                      <li><a href="#">Бритвы и лезвия</a></li>
+                      <li><a href="#">Принадлежности и аксессуары</a></li>
+                      <li><a href="#">Наборы для парикмахера</a></li>
+                      <li><a href="#">Инструменты для окрашивания</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="commercial commercial_laptop">
+            <div class="commercial__item">
+              <div class="commercial__img"><a href="#"><img src="img/commerce-prod.jpg"></a></div>
+              <div class="action-tooltip action-tooltip_purple">Лучшая цена</div>
+              <div class="commercial__firm">Suntachi</div>
+              <div class="commercial__title"><a href="#">Прямые ножницы ZG-B PETROL</a></div>
+              <div class="commercial__price">
+                <div class="commercial__price-old">
+                  <strike>12 500</strike>
+                </div>
+                <div class="commercial__price-new">
+                  10 300 <span>&#8381;</span></div>
+              </div>
+            </div>
+            <div class="tags tags_black"><a href="#">Ножницы Suntachi</a><a href="#">Брашинги</a><a href="#">Фен Dyson</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mob-menu">
+      <div class="mob-menu__item">
+        <div class="mob-menu__top">
+          <ul class="mob-menu__list mob-menu__list_main">
+            <li class="mob-menu__cat"><span class="mob-menu__cat-link">Парикмахерский инструмент</span>
+              <div class="mob-menu__dropdown">
+                <div class="mob-menu__back">Парикмахерский инструмент</div>
+                <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                <ul class="mob-menu__list-hidden">
+                  <li><span class="mob-menu__cat-link">Ножницы</span>
+                    <div class="mob-menu__dropdown">
+                      <div class="mob-menu__back">Ножницы</div>
+                      <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                      <ul class="mob-menu__list-hidden">
+                        <li><span class="mob-menu__cat-link">Прямые ножницы</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Прямые ножницы</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Филировочные ножницы</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Филировочные ножницы</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Комплекты ножниц</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Комплекты ножниц</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Аксессуары для ножниц</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Аксессуары для ножниц</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><span class="mob-menu__cat-link">Ножницы для левшей</span>
+                    <div class="mob-menu__dropdown">
+                      <div class="mob-menu__back">Ножницы для левшей</div>
+                      <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                      <ul class="mob-menu__list-hidden">
+                        <li><span class="mob-menu__cat-link">Прямые ножницы</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Прямые ножницы</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Филировочные ножницы</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Филировочные ножницы</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Комплекты ножниц</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Комплекты ножниц</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Аксессуары для ножниц</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Аксессуары для ножниц</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">3 класс</a></li>
+                              <li><a href="#">4 класс</a></li>
+                              <li><a href="#">5 класс</a></li>
+                              <li><a href="#">5+ класс</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><span class="mob-menu__cat-link">Расходники</span>
+                    <div class="mob-menu__dropdown">
+                      <div class="mob-menu__back">Расходники</div>
+                      <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                      <ul class="mob-menu__list-hidden">
+                        <li><span class="mob-menu__cat-link">Расчески, щетки, брашинги</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Расчески, щетки, брашинги</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">Расчески</a></li>
+                              <li><a href="#">Щетки</a></li>
+                              <li><a href="#">Брашинги</a></li>
+                              <li><a href="#">Очистители расчесок и брашингов</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="#">Кисти</a></li>
+                        <li><a href="#">Миски</a></li>
+                        <li><a href="#">Шпатели</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><span class="mob-menu__cat-link">Приборы для волос</span>
+                    <div class="mob-menu__dropdown">
+                      <div class="mob-menu__back">Приборы для волос</div>
+                      <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                      <ul class="mob-menu__list-hidden">
+                        <li><span class="mob-menu__cat-link">Щипцы для волос</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Щипцы для волос</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">Для выпрямления</a></li>
+                              <li><a href="#">Гофре</a></li>
+                              <li><a href="#">Для завивки</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><span class="mob-menu__cat-link">Машинки</span>
+                          <div class="mob-menu__dropdown">
+                            <div class="mob-menu__back">Машинки</div>
+                            <div class="all-product-link"> <a href="#">Посмотреть все товары</a></div>
+                            <ul class="mob-menu__list-hidden">
+                              <li><a href="#">Машинки для стрижки волос</a></li>
+                              <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                              <li><a href="#">Триммеры</a></li>
+                              <li><a href="#">Шейверы</a></li>
+                              <li><a href="#">Принадлежности к машинкам</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="#">Фены</a></li>
+                        <li><a href="#">Бритвы и лезвия</a></li>
+                        <li><a href="#">Принадлежности и аксессуары</a></li>
+                        <li><a href="#">Наборы для парикмахера</a></li>
+                        <li><a href="#">Инструменты для окрашивания</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mob-menu__cat"><span class="mob-menu__cat-link">Для волос</span></li>
+            <li class="mob-menu__cat"><span class="mob-menu__cat-link">Для лица</span></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Популярное</a></li>
+            <li><a href="#">Мастера рекомендуют</a></li>
+            <li><a href="#">Все бренды</a></li>
+          </ul>
+          <div class="placemark mob-menu__mark">Санкт-Петербург</div>
+          <ul class="mob-menu__links">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+          <ul class="social-mob">
+            <li><a href="#"><img src="img/inst-bl.svg"></a></li>
+            <li><a href="#"><img src="img/vk-bl.svg"></a></li>
+            <li><a href="#"><img src="img/wh-bl.svg"></a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__bottom"><a class="mob-menu__phone" href="tel:78126699665">+7 (812) 669-96-65</a></div>
+      </div>
+    </div>
+    <div class="sticky-panel">
+      <div class="container">
+        <ul class="sticky-panel__nav">
+          <li><a href="#">Парикмахерский инструмент</a>
+            <div class="dropdownmenu dropdownmenu_desctop sticky-panel__dropdown">
+              <div class="dropdownmenu__inner">
+                <div class="dropdownmenu__item">
+                  <div class="dropdownmenu__title"> <a href="#">Ножницы</a></div>
+                  <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">3 класс</a></li>
+                    <li><a href="#">4 класс</a></li>
+                    <li><a href="#">5 класс</a></li>
+                    <li><a href="#">5+ класс</a></li>
+                  </ul>
+                  <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">3 класс</a></li>
+                    <li><a href="#">4 класс</a></li>
+                    <li><a href="#">5 класс</a></li>
+                    <li><a href="#">5+ класс</a></li>
+                  </ul>
+                  <div class="dropdownmenu__title"> <a href="#">Ножницы для левшей</a></div>
+                  <div class="dropdownmenu__sub-title"><a href="#">Прямые Ножницы</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">3 класс</a></li>
+                    <li><a href="#">4 класс</a></li>
+                    <li><a href="#">5 класс</a></li>
+                    <li><a href="#">5+ класс</a></li>
+                  </ul>
+                  <div class="dropdownmenu__sub-title"><a href="#">Филировочные ножницы</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">3 класс</a></li>
+                    <li><a href="#">4 класс</a></li>
+                    <li><a href="#">5 класс</a></li>
+                    <li><a href="#">5+ класс</a></li>
+                  </ul>
+                </div>
+                <div class="dropdownmenu__item">
+                  <div class="dropdownmenu__sub-title"><a href="#">Комплекты ножниц</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">3 класс</a></li>
+                    <li><a href="#">4 класс</a></li>
+                    <li><a href="#">5 класс</a></li>
+                    <li><a href="#">5+ класс</a></li>
+                  </ul>
+                  <div class="dropdownmenu__sub-title"><a href="#">Аксессуары для ножниц</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_column">
+                    <li><a href="#">Масло</a></li>
+                    <li><a href="#">Чехлы</a></li>
+                    <li><a href="#">Кобура</a></li>
+                  </ul>
+                  <div class="dropdownmenu__title"> <a href="#">Расходники</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_black">
+                    <li><a href="#">Кисти</a></li>
+                    <li><a href="#">Миски</a></li>
+                    <li><a href="#">Шпатели и лопатки</a></li>
+                    <li><a href="#">Выжиматели</a></li>
+                    <li><a href="#">Диспансеры</a></li>
+                    <li><a href="#">Наборы</a></li>
+                  </ul>
+                  <div class="dropdownmenu__sub-title"><a href="#">Расчески, щетки, брашинги</a></div>
+                  <ul class="dropdownmenu__list dropdownmenu__list_black">
+                    <li><a href="#">Расчески</a></li>
+                    <li><a href="#">Щетки</a></li>
+                    <li><a href="#">Брашинги</a></li>
+                    <li><a href="#">Очистители расчесок и брашингов</a></li>
+                  </ul>
+                </div>
+                <div class="dropdownmenu__item">
+                  <div class="dropdownmenu__title"> <a href="#">Приборы для волос</a></div>
+                  <div class="dropdownmenu__sub-title"><a href="#">Щипцы для волос</a></div>
+                  <ul class="dropdownmenu__list">
+                    <li><a href="#">Для выпрямления</a></li>
+                    <li><a href="#">Гофре</a></li>
+                    <li><a href="#">Для завивки</a></li>
+                  </ul>
+                  <div class="dropdownmenu__sub-title"><a href="#">Машинки для создания локонов</a></div>
+                  <div class="dropdownmenu__sub-title"><a href="#">Машинки</a></div>
+                  <ul class="dropdownmenu__list">
+                    <li><a href="#">Машинки для стрижки волос</a></li>
+                    <li><a href="#">Машинки для стрижки секущихся концов</a></li>
+                    <li><a href="#">Триммеры</a></li>
+                    <li><a href="#">Шейверы</a></li>
+                    <li><a href="#">Принадлежности к машинкам</a></li>
+                  </ul>
+                  <ul class="dropdownmenu__list dropdownmenu__list_black">
+                    <li><a href="#">Фены</a></li>
+                    <li><a href="#">Бритвы и лезвия</a></li>
+                    <li><a href="#">Принадлежности и аксессуары</a></li>
+                    <li><a href="#">Наборы для парикмахера</a></li>
+                    <li><a href="#">Инструменты для окрашивания</a></li>
+                  </ul>
+                </div>
+                <div class="dropdownmenu__item">
+                  <div class="dropdownmenu__title"> <a href="#">Модельный ряд ножниц</a></div>
+                  <ul class="dropdownmenu__list">
+                    <li><a href="#">Suntachi Classic</a></li>
+                    <li><a href="#">Suntachi Classic Gold</a></li>
+                    <li><a href="#">Suntachi Salon</a></li>
+                    <li><a href="#">Suntachi Salin Design</a></li>
+                    <li><a href="#">Suntachi LUX</a></li>
+                    <li><a href="#">Suntachi Ideal</a></li>
+                    <li><a href="#">Suntachi Ideal</a></li>
+                    <li><a href="#">Suntachi Elite</a></li>
+                    <li><a href="#">Akitz</a></li>
+                    <li><a href="#">Suntachi Premium</a></li>
+                    <li><a href="#">Takara</a></li>
+                  </ul>
+                </div>
+                <div class="commercial commercial_md">
+                  <div class="commercial__item">
+                    <div class="commercial__img"><a href="#"><img src="img/commerce-prod.jpg"></a></div>
+                    <div class="commercial__action">Скидка -40%</div>
+                    <div class="commercial__firm">Suntachi</div>
+                    <div class="commercial__title"><a href="#">Прямые ножницы ZG-B PETROL</a></div>
+                    <div class="commercial__price">
+                      <div class="commercial__price-old">
+                        <strike>12 500</strike>
+                      </div>
+                      <div class="commercial__price-new">
+                        10 300 <span>&#8381;</span></div>
+                    </div>
+                  </div>
+                  <div class="tags"><a href="#">Ножницы Suntachi</a><a href="#">Брашинги</a><a href="#">Фен Dyson</a></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#">Для волос</a></li>
+          <li><a href="#">Для лица</a></li>
+        </ul>
+        <form class="search sticky-panel__search" action="#" method="POST">
+          <input class="search__inp" type="text" placeholder="Начните поиск">
+          <button class="search__btn" type="submit"><span>Найти</span></button>
+        </form>
+        <ul class="header__basket sticky-panel__basket">
+          <li><a class="favor-link" href="#"><img src="img/favor.svg"></a></li>
+          <li><a class="login-icon" href="#"><img src="img/login-icon.svg"></a></li>
+          <li>
+            <div class="basket"><a class="basket__item" href="#"><img src="img/basket.svg"></a>
+              <div class="basket__item">
+                <div class="basket__price">
+                   8 967 <span>&#8381;</span></div>
+                <div class="sub-info">3 товара</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="brends-links container"><a class="brends-links__all" href="#">Все бренды</a><a class="brends-link__num" href="#">0-9</a>
+      <ul class="brends-list">
+        <li><a href="#">a</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">b</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">c</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">d</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">e</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">f</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">g</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">h</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">i</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">j</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">k</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">l</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">m</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">n</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">o</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">p</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">q</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">r</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">s</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">t</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">u</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">v</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">w</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">x</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">y</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">z</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">а</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">б</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">в</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">г</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">д</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">е</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ж</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">з</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">и</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">к</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">л</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">м</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">н</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">о</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">п</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">р</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">с</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">т</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">у</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ф</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">х</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ц</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ч</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ш</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">щ</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">э</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">ю</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+        <li><a href="#">я</a>
+          <ul class="brends-list__modal">
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+            <li><a href="#">Suntachi Classic</a></li>
+            <li><a href="#">Suntachi Classic Gold</a></li>
+            <li><a href="#">Suntachi Salon</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi Salin Design</a></li>
+            <li><a href="#">Suntachi LUX</a></li>
+            <li><a href="#">Suntachi ideal</a></li>
+            <li><a href="#">Suntachi Elite</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="basket-cont container">
+      <div class="breadcrumbs"><a href="#">Главная</a><span>Личный кабинет</span></div>
+      <div class="basket-cont__top">
+        <h2 class="lk-title basket-cont__title">Корзина</h2>
+        <div class="basket-cont__count">3 товара</div>
+      </div>
+      <div class="basket-cont__columns">
+        <div class="column">
+          <div class="basket-cont__list">
+            <div class="purchase">
+              <div class="purchase__img"><img src="img/basket-1.jpg"></div>
+              <ul class="purchase__info">
+                <li>
+                  <div class="purchase__tooltip action-tooltip action-tooltip_red">sale</div>
+                  <div class="purchase__brend">Suntachi Salon</div>
+                  <div class="purchase__name">Прямые ножницы ZG-B PETROL 7 категория</div>
+                  <div class="purchase__articule">Арт. 345-111</div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="switch-counter">
+                      <button class="switch-counter__btn switch-counter__btn_minus" type="button">-</button>
+                      <input type="text" value="3" disabled="disabled">
+                      <button class="switch-counter__btn switch-counter__btn_plus" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="purchase__prices">
+                      <div class="purchase__price-new">
+                         1 282 <span>руб.</span></div>
+                      <div class="purchase__price-old"><b>1 610 <span>руб.</span></b></div>
+                    </div>
+                    <div class="purchase__price-prod">402 <span>руб/шт.</span></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="purchase__buttons">
+                <div class="addfavor"></div>
+                <button class="purchase__delete" type="button"></button>
+              </div>
+            </div>
+            <div class="purchase">
+              <div class="purchase__img"><img src="img/basket-1.jpg"></div>
+              <ul class="purchase__info">
+                <li>
+                  <div class="purchase__tooltip action-tooltip action-tooltip_red">sale</div>
+                  <div class="purchase__brend">Suntachi Salon</div>
+                  <div class="purchase__name">Прямые ножницы ZG-B PETROL 7 категория</div>
+                  <div class="purchase__articule">Арт. 345-111</div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="switch-counter">
+                      <button class="switch-counter__btn switch-counter__btn_minus" type="button">-</button>
+                      <input type="text" value="3" disabled="disabled">
+                      <button class="switch-counter__btn switch-counter__btn_plus" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="purchase__prices">
+                      <div class="purchase__price-new">
+                         1 282 <span>руб.</span></div>
+                      <div class="purchase__price-old"><b>1 610 <span>руб.</span></b></div>
+                    </div>
+                    <div class="purchase__price-prod">402 <span>руб/шт.</span></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="purchase__buttons">
+                <div class="addfavor"></div>
+                <button class="purchase__delete" type="button"></button>
+              </div>
+            </div>
+            <div class="purchase">
+              <div class="purchase__img"><img src="img/basket-1.jpg"></div>
+              <ul class="purchase__info">
+                <li>
+                  <div class="purchase__tooltip action-tooltip action-tooltip_red">sale</div>
+                  <div class="purchase__brend">Suntachi Salon</div>
+                  <div class="purchase__name">Прямые ножницы ZG-B PETROL 7 категория</div>
+                  <div class="purchase__articule">Арт. 345-111</div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="switch-counter">
+                      <button class="switch-counter__btn switch-counter__btn_minus" type="button">-</button>
+                      <input type="text" value="3" disabled="disabled">
+                      <button class="switch-counter__btn switch-counter__btn_plus" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="purchase__prices">
+                      <div class="purchase__price-new">
+                         1 282 <span>руб.</span></div>
+                      <div class="purchase__price-old"><b>1 610 <span>руб.</span></b></div>
+                    </div>
+                    <div class="purchase__price-prod">402 <span>руб/шт.</span></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="purchase__buttons">
+                <div class="addfavor"></div>
+                <button class="purchase__delete" type="button"></button>
+              </div>
+            </div>
+            <div class="purchase">
+              <div class="purchase__img"><img src="img/basket-1.jpg"></div>
+              <ul class="purchase__info">
+                <li>
+                  <div class="purchase__tooltip action-tooltip action-tooltip_red">sale</div>
+                  <div class="purchase__brend">Suntachi Salon</div>
+                  <div class="purchase__name">Прямые ножницы ZG-B PETROL 7 категория</div>
+                  <div class="purchase__articule">Арт. 345-111</div>
+                </li>
+                <li>
+                  <div class="column">
+                    <div class="switch-counter">
+                      <button class="switch-counter__btn switch-counter__btn_minus" type="button">-</button>
+                      <input type="text" value="3" disabled="disabled">
+                      <button class="switch-counter__btn switch-counter__btn_plus" type="button">+</button>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="purchase__prices">
+                      <div class="purchase__price-new">
+                         1 282 <span>руб.</span></div>
+                      <div class="purchase__price-old"><b>1 610 <span>руб.</span></b></div>
+                    </div>
+                    <div class="purchase__price-prod">402 <span>руб/шт.</span></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="purchase__buttons">
+                <div class="addfavor"></div>
+                <button class="purchase__delete" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <form class="purchase-form" action="#">
+            <div class="purchase-form__title">Ваша корзина</div>
+            <ul class="basket-totalinfo">
+              <li><span>Товаров в корзине</span><span>3 шт</span></li>
+              <li><span>На общую сумму</span><span>32 290 <i>руб.</i></span></li>
+              <li><span>Вы экономите</span><span class="basket-total__econom">- 2 300 <i>руб.</i></span></li>
+            </ul>
+            <ul class="basket-totalblock">
+              <li>
+                 Итого</li>
+              <li> 
+                <div class="basket-totalblock__price">32 000 <span>руб.</span></div>
+              </li>
+            </ul>
+            <button class="purchase-form__btn btn" type="submit">Оформить заказ</button>
+            <div class="action-shipping">
+              <div class="action-shipping__img"><img src="img/shipping-icon.svg"></div>
+              <div class="action-shipping__article">Для вас доставка курьером <span>бесплатна</span></div>
+            </div>
+          </form>
+          <div class="purchase-action">
+            <div class="purchase-action__article">Добавьте товаров<br> на <span>500 руб. </span>и получите <span>скидку 10% </span>на весь заказ! </div>
+            <div class="purchase-action__img"><img src="img/p-action.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="column">
+            <div class="footer__item footer__item_top">
+              <ul class="footer__contact">
+                <li><a class="email-link" href="mailto:starline.office@gmail.com">starline.office@gmail.com</a></li>
+                <li><a class="phone-link" href="tel:79219506264">+7 (921) 950-62-64</a></li>
+                <li><a class="phone-link" href="tel:78126699665">+7 (812) 669-96-65</a></li>
+              </ul>
+              <div class="sub-info sub-info_footer">Пн — Вс: 10:30 — 19:00</div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__title">Социальные сети</div>
+              <ul class="social-list social-list_footer">
+                <li><a href="#">
+                    <svg class="icon icon-vk-icon vk-icon vk-footer">
+                      <use xlink:href="/img/svg/sprite.svg#vk-icon"></use>
+                    </svg></a></li>
+                <li><a href="#">
+                    <svg class="icon icon-inst-icon inst-icon inst-footer">
+                      <use xlink:href="/img/svg/sprite.svg#inst-icon"></use>
+                    </svg></a></li>
+              </ul>
+              <ul class="payment payment_top">
+                <li>
+                  <svg class="icon icon-paypal paypal-icon">
+                    <use xlink:href="/img/svg/sprite.svg#paypal"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="icon icon-visa visa-icon">
+                    <use xlink:href="/img/svg/sprite.svg#visa"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="footer__list-title">О компании</div>
+            <ul class="footer__list">
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Реквизиты</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Публичная оферта</a></li>
+              <li><a href="#">Карта сайта</a></li>
+              <li><a href="#">Сертификаты</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="footer__list-title">Сервис</div>
+            <ul class="footer__list">
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Отзывы и предложения</a></li>
+              <li><a href="#">Где купить</a></li>
+              <li><a href="#">Как оформить заказ</a></li>
+            </ul>
+          </div>
+          <div class="column"> 
+            <div class="footer__list-title">Для вас</div>
+            <ul class="footer__list">
+              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#">История заказов</a></li>
+              <li><a href="#">Избранное</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Уход за инструментом</a></li>
+              <li><a href="#">Подарочные сертификаты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <ul class="payment payment_bottom">
+            <li>
+              <svg class="icon icon-paypal paypal-icon">
+                <use xlink:href="/img/svg/sprite.svg#paypal"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon icon-visa visa-icon">
+                <use xlink:href="/img/svg/sprite.svg#visa"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="copy">Artaius© 2020</div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="modal-lk modal-lk_addadress">
+      <form action="#">
+        <button class="close-modal" type="button"></button>
+        <div class="addadress-column-left">
+          <div class="modal-lk__title">Введите адрес или выберите на карте</div>
+          <div class="modal-lk__inputs">
+            <input class="modal-lk__inp" type="text" placeholder="Адрес">
+            <input class="modal-lk__inp" type="text" placeholder="Квартира">
+            <input class="modal-lk__inp" type="text" placeholder="Этаж">
+            <input class="modal-lk__inp" type="text" placeholder="Подъезд">
+            <input class="modal-lk__inp" type="text" placeholder="Индекс">
+          </div>
+          <textarea class="modal-lk__textarea" placeholder="Комментарий"></textarea>
+          <button class="btn-black modal-lk__btn" type="submit">Привезти сюда</button>
+        </div>
+        <div class="addadress-column-right">
+          <div class="map-adress" id="addAdress"></div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-lk modal-lk_check">
+      <button class="close-modal" type="button"></button>
+      <div class="modal-tablist">
+        <button type="button" data-tab="#addadress">Курьером</button>
+        <button type="button" data-tab="#addpickup">Самовывоз</button>
+      </div>
+      <div class="modal-lk__tab" id="addadress">
+        <div class="addadress-column-left">
+          <form action="#">
+            <div class="modal-lk__title">Введите адрес или выберите на карте</div>
+            <div class="modal-lk__inputs">
+              <input class="modal-lk__inp" type="text" placeholder="Адрес">
+              <input class="modal-lk__inp" type="text" placeholder="Квартира">
+              <input class="modal-lk__inp" type="text" placeholder="Этаж">
+              <input class="modal-lk__inp" type="text" placeholder="Подъезд">
+              <input class="modal-lk__inp" type="text" placeholder="Индекс">
+            </div>
+            <textarea class="modal-lk__textarea" placeholder="Комментарий"></textarea>
+            <button class="btn-black modal-lk__btn" type="submit">Привезти сюда</button>
+          </form>
+        </div>
+        <div class="addadress-column-right">
+          <div class="map-adress" id="adressmap"></div>
+        </div>
+      </div>
+      <div class="modal-lk__tab" id="addpickup">
+        <div class="addadress-column-left">
+          <form action="#">
+            <div class="modal-lk__title">Выберите пункт самовывоза</div>
+            <div class="modal-pickupwrap">
+              <div class="modal-pickup">
+                <ul class="modal-pickup__list">
+                  <li>
+                    <div class="modal-pickup__item">пр-т Богатырский, 35, корп. 1</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">ул. Елецкая, 3</div>
+                  </li>
+                  <li>
+                    <div class="modal-pickup__item">пр. Энгельса, 18</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">ул. Планерная, 63/1</div>
+                  </li>
+                  <li>
+                    <div class="modal-pickup__item">пр-кт Среднеохтинский,, 25/19, литер А, пом. 10-Н</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">ул. Гаванская, 42, лит. А, пом. 15Н</div>
+                  </li>
+                  <li>
+                    <div class="modal-pickup__item">ул. Торфяная дорога, 2, корп. 1, 2.1/1</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">пр. Энгельса, 18</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">ул. Планерная, 63/1</div>
+                  </li>
+                  <li>
+                    <div class="modal-pickup__item">пр-кт Среднеохтинский,, 25/19, литер А, пом. 10-Н</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">ул. Гаванская, 42, лит. А, пом. 15Н</div>
+                  </li>
+                  <li>
+                    <div class="modal-pickup__item">ул. Торфяная дорога, 2, корп. 1, 2.1/1</div>
+                  </li>
+                  <li> 
+                    <div class="modal-pickup__item">пр. Энгельса, 18</div>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn-black modal-lk__btn" type="submit">Заберу отсюда</button>
+            </div>
+          </form>
+        </div>
+        <div class="addadress-column-right">
+          <div class="map-adress" id="mappickup"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-basket" id="modalphone">
+      <form action="#">
+        <button class="close-modal" type="button"></button>
+        <div class="modal__title">Оформление заказа</div>
+        <div class="modal-breadcrumbs"><a href="#">Корзина</a><a href="#">Вход</a><span>Доставка</span></div>
+        <div class="modal__inpblock">
+          <input class="modal__inp phoneinp" type="text" placeholder="+7 (___) ___-__-__">
+        </div>
+        <button class="btn modal-basket__btn" type="submit">Войти и оформить заказ</button>
+        <div class="modal__article">
+          Для оформления заказа в Artarius используется телефон, вы получите бесплатное SMS с кодом для подтверждения. 
+          После этого вы сможете заполнить адрес доставки и закончить оформление заказа. 
+          Вы также можете авторизоваться используя <a href="#">электронную почту.</a>
+        </div>
+        <div class="modal__subtitle">или войти через</div>
+        <div class="social-auth"><a href="#"><img src="img/vk-auth.svg" width="54" height="54"></a><a href="#"><img src="img/google-auth.svg" width="54" height="54"></a><a href="#"><img src="img/yandex-auth.svg" width="54" height="54"></a></div>
+      </form>
+    </div>
+    <div class="modal modal-basket" id="modalsms">
+      <form action="#">
+        <button class="close-modal" type="button"></button>
+        <div class="modal__title">Оформление заказа</div>
+        <div class="modal-breadcrumbs"><a href="#">Корзина</a><a href="#">Вход</a><span>Доставка</span></div>
+        <div class="modal__inpblock">
+          <input class="modal__inp phoneinp" type="text" placeholder="+7 (___) ___-__-__">
+          <input class="modal__inp smsinp" type="text" placeholder="Код из SMS">
+          <ul class="sms-status">
+            <li><a href="#">Не получили SMS?</a></li>
+            <li>Отправить повторно через:  <span class="sms-status__count">124</span></li>
+          </ul>
+        </div>
+        <button class="btn modal-basket__btn" type="submit">Войти и оформить заказ</button>
+        <div class="modal__article">
+          Для оформления заказа в Artarius используется телефон, вы получите бесплатное SMS с кодом для подтверждения. 
+          После этого вы сможете заполнить адрес доставки и закончить оформление заказа. 
+          Вы также можете авторизоваться используя <a href="#">электронную почту.</a>
+        </div>
+        <div class="modal__subtitle">или войти через</div>
+        <div class="social-auth"><a href="#"><img src="img/vk-auth.svg" width="54" height="54"></a><a href="#"><img src="img/google-auth.svg" width="54" height="54"></a><a href="#"><img src="img/yandex-auth.svg" width="54" height="54"></a></div>
+      </form>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="libs/wow/wow.js"></script>
+    <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="libs/selectric/jquery.selectric.min.js"></script>
+    <script src="libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
