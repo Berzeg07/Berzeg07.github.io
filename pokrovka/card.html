@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="header header-inner">
+      <div class="header__inner">
+        <div class="header__item">
+          <button class="burger" type="button"></button>
+        </div>
+        <p class="company-name company-name_desc">Двухуровневые апартаменты №13</p>
+        <div class="header__item">
+          <ul class="company-info">
+            <li>
+              <p class="company-adress">Москва, Покровка, 43, стр 8</p>
+            </li>
+            <li><a class="company-phone company-phone_desc" href="#tel:74952719500">+7 (495) 271-95-00</a></li>
+            <li>
+              <button class="recall-btn recall" type="button">Заказать звонок</button>
+            </li>
+          </ul>
+        </div>
+        <button class="phone-mob recall" type="button"></button>
+      </div>
+      <ul class="header__mob-info">
+        <li><a class="company-phone" href="#tel:74952719500">+7 (495) 271-95-00</a></li>
+        <li>
+          <p class="company-name">Двухуровневые апартаменты №13</p>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown-menu">
+      <ul class="dropdown-menu__links">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Расположение</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Выбор апартаментов</a></li>
+        <li><a href="#">Условия покупки</a></li>
+      </ul>
+      <ul class="dropdown-menu__apartaments">
+        <li><a href="#">Одноуровневые апартаменты</a></li>
+        <li><a href="#">Двухуровневые апартаменты</a></li>
+        <li><a href="#">Апартаменты с отдельным входом</a></li>
+        <li><a href="#">Апартаменты с террасой</a></li>
+      </ul>
+      <ul class="dropdown-menu__info">
+        <li>
+          <p class="company-adress">Москва, Покровка, 43, стр 8</p>
+        </li>
+        <li><a class="company-phone" href="#tel:74952719500">+7 (495) 271-95-00</a></li>
+        <li>
+          <button class="recall-btn recall" type="button">Заказать звонок</button>
+        </li>
+      </ul>
+      <ul class="dropdown-menu__links dropdown-menu__links_bottom">
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Документация</a></li>
+      </ul>
+    </div>
+    <div class="bg-dropdown">
+      <div class="bg-dropdown__inner">
+        <div class="bg-dropdown__item">
+          <button class="close-menu" type="button"></button>
+          <p class="company-name">Дом на покровке<br> быть в центре</p>
+        </div>
+      </div>
+    </div><section class="level-selection">
+<p class="back-to-apps"><a href="#">Вернуться к выбору апартаментов</a></p>
+<div class="level-selection-column">
+<div class="level-selection-block">
+<div class="level-selection-tab">
+<ul>
+<li class="level-selection-active" data-num="#level-selection-tab1"><a>Первый уровень</a></li>
+<li data-num="#level-selection-tab2"><a>Второй уровень</a></li>
+</ul>
+</div>
+<div id="level-selection-tab1" class="level-selection-tab__box">
+<div class="level-selection-tab__inner">
+<p class="level-selection-tab__img">
+<img src="img/inner-ap-1.png" alt="Аппартаменты №13">
+</p>
+</div>
+<div class="level-selection-tab__inner">
+<ul>
+<li>
+<span>Кол-во <br>уровней</span>
+<span>2</span>
+</li>
+<li>
+<span>Этаж</span>
+<span>2-3</span>
+</li>
+<li>
+<span>Общая<br> площадь</span>
+<span>63,1 <span class="sup-block">м<sup>2</sup></span></span>
+</li>
+<li>
+<span>Площадь<br> террасы</span>
+<span>4,0 <span class="sup-block">м<sup>2</sup></span></span>
+</li>
+</ul>
+</div>
+</div>
+<div id="level-selection-tab2" class="level-selection-tab__box">
+<div class="level-selection-tab__inner">
+<p class="level-selection-tab__img">
+<img src="img/inner-ap-1.png" alt="Аппартаменты №13">
+</p>
+</div>
+<div class="level-selection-tab__inner">
+<ul>
+<li>
+<span>Кол-во <br>уровней</span>
+<span>2</span>
+</li>
+<li>
+<span>Этаж</span>
+<span>2-3</span>
+</li>
+<li>
+<span>Общая<br> площадь</span>
+<span>63,1 <span class="sup-block">м<sup>2</sup></span></span>
+</li>
+<li>
+<span>Площадь<br> террасы</span>
+<span>4,0 <span class="sup-block">м<sup>2</sup></span></span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="level-selection-block">
+<form class="main-form">
+<h2 class="main-form__caption level-selection__caption">Онлайн заявка</h2>
+<label aria-label="Ваше имя">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Ваше имя">
+</label>
+<label aria-label="Контактный телефон">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Контактный телефон">
+</label>
+<label aria-label="Комментарий">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Комментарий">
+</label>
+<input class="main-form__input-checkbox" id="main-form__input-checkbox" type="checkbox" checked>
+<label class="main-form__agree level-selection-block__agree" for="main-form__input-checkbox">Согласен на обработку персональных <br> данных</label>
+<button class="btn btn_orange main-form__submit" type="submit">Записаться на просмотр</button>
+</form>
+</div>
+</div><!-- end level-selection-column-->
+</section><!-- end level-selection -->
+<section class="appartaments">
+<div id="appartaments-tab1" class="appartaments-tab__box">
+<!-- Swiper -->
+<div class="swiper-container appartaments-tab1">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+</div>
+<div class="nav-block">
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div>
+</div>
+<div id="appartaments-tab2" class="appartaments-tab__box">
+<!-- Swiper -->
+<div class="swiper-container appartaments-tab1">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+</div>
+<div class="nav-block">
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div>
+</div>
+</div>
+<div id="appartaments-tab3" class="appartaments-tab__box">
+<!-- Swiper -->
+<div class="swiper-container appartaments-tab1">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps2.jpg" alt="Апартаменты 2">
+</p>
+</div>
+<div class="swiper-slide">
+<p class="appartaments-img">
+<img src="img/apps1.jpg" alt="Апартаменты 1">
+</p>
+</div>
+</div>
+<div class="nav-block">
+<!-- Add Pagination -->
+<div class="swiper-pagination"></div>
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="appartaments-tab">
+<ul>
+<li><a href="#appartaments-tab1" class="appartaments-active"><span>Классика</span></a></li>
+<li><a href="#appartaments-tab2"><span>Минимализм</span></a></li>
+<li><a href="#appartaments-tab3"><span>Классика и минимализм</span></a></li>
+</ul>
+</div>
+</section>
+<section class="offer">
+<h1 class="main-title offer__caption">Получите спецпредложение от застройщика!</h1>
+<div class="offer__block">
+<div class="offer__column">
+<h2 class="offer__subtitle">Офис застройщика работает ежедневно, без выходных</h2>
+<ul class="offer__list">
+<li>С понедельника по пятницу с 9:00 до 21:00</li>
+<li>суббота и воскресенье с 10:00 до 17:00</li>
+<li>Записаться можно по телефону: +7 (495) 271-95-00 или онлайн</li>
+</ul>
+</div>
+<div class="offer__column">
+<div class="offer-form">
+<form class="main-form">
+<h2 class="main-form__caption level-selection__caption">Онлайн заявка</h2>
+<label aria-label="Ваше имя">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Ваше имя">
+</label>
+<label aria-label="Контактный телефон">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Контактный телефон">
+</label>
+<label aria-label="Комментарий" class="offer-form__label">
+<input class="main-form__input-text level-selection____input-text" type="text" placeholder="Комментарий">
+</label>
+<input class="main-form__input-checkbox" id="main-form__input-checkbox2" type="checkbox" checked>
+<label class="main-form__agree level-selection-block__agree" for="main-form__input-checkbox2">Согласен на обработку персональных <br> данных</label>
+<button class="btn btn_orange main-form__submit" type="submit">Записаться на просмотр</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="map2">
+<p class="map__img2">
+<img src="img/map.jpg" alt="Карта">
+</p>
+<div class="map__block2">
+<span class="map__baloon2">
+<img src="img/baloon2.png" alt="Дом на парковке">
+</span>
+<span class="map__boat"></span>
+<span class="map__lounge">Барвиха Lounge</span>
+<span class="map__wine">I like wine</span>
+<span class="map__kitchen">Честная кухня</span>
+<span class="map__spa">Pokrovka Royal Spa</span>
+<span>Чистопрудный бульвар</span>
+<span>ул. Покровка</span>
+<span>ул. Садовая - Спасская</span>
+</div>
+</section>
+    <div class="footer">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <ul class="footer-info">
+            <li>
+              <div class="company-adress">Москва, Покровка, 43, стр 8</div>
+            </li>
+            <li><a class="company-phone" href="#tel:74952719500">+7 (495) 271-95-00</a></li>
+            <li>
+              <button class="recall-btn recall" type="button">Заказать звонок</button>
+            </li>
+          </ul>
+          <ul class="footer-nav footer-nav_left">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Документация</a></li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <div class="footer__top">
+            <ul class="footer-nav footer-nav_top">
+              <li><a href="#">О проекте</a></li>
+              <li><a href="#">Расположение</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Выбор апартаментов</a></li>
+              <li><a href="#">Условия покупки</a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer__column">
+              <p class="footer__title">Одноуровневые апартаменты</p>
+              <ul class="footer__links footer__links_left">
+                <li><a href="#">Апартаменты №1 - 28,6 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №2 - 29,9 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №3 - 29,9 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №4 - 31,2 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №5 - 18,2 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №6 - 21,8 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №7 - 21,8 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №8 - 18,9 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №9 - 28,7 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №10 - 29,9 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №11 - 29,9 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №12 - 31,2 м<sup>2</sup></a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <p class="footer__title">Двухуровневые апартаменты</p>
+              <ul class="footer__links">
+                <li><a href="#">Апартаменты №13 - 63,1 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №14 - 71,2 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №15 - 71,2 м<sup>2</sup></a></li>
+                <li><a href="#">Апартаменты №16 - 75,3 м<sup>2</sup></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">© 2020 Клубный дом на Покровке</div>
+    </div>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
