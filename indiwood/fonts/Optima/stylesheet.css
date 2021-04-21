@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Optima Cyr';
+    src: url('Optima.eot');
+    src: url('Optima.eot?#iefix') format('embedded-opentype'),
+        url('Optima.woff') format('woff'),
+        url('Optima.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

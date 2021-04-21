@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-Humburger_button_-_black">
+      <rect width="35" height="35"/>
+    </clipPath>
+  </defs>
+  <g id="Humburger_button_-_black" data-name="Humburger button - black" clip-path="url(#clip-Humburger_button_-_black)">
+    <g id="Group_1" data-name="Group 1" transform="translate(93 108.209)">
+      <path id="Path_71883" data-name="Path 71883" d="M25.212,124.86H1.1a1.1,1.1,0,1,1,0-2.192H25.212a1.1,1.1,0,1,1,0,2.192Zm0,0" transform="translate(-89 -214.252)"/>
+      <path id="Path_71884" data-name="Path 71884" d="M25.212,2.192H1.1A1.1,1.1,0,0,1,1.1,0H25.212a1.1,1.1,0,1,1,0,2.192Zm0,0" transform="translate(-89 -99.209)"/>
+      <path id="Path_71885" data-name="Path 71885" d="M25.212,247.524H1.1a1.1,1.1,0,0,1,0-2.192H25.212a1.1,1.1,0,0,1,0,2.192Zm0,0" transform="translate(-89 -329.291)"/>
+    </g>
+  </g>
+</svg>

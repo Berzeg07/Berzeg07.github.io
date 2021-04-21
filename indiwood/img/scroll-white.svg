@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-Scroll_-_White">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_-_White" data-name="Scroll - White" clip-path="url(#clip-Scroll_-_White)">
+    <g id="Group_2" data-name="Group 2" transform="translate(-840 -1188.5)">
+      <path id="Path_72039" data-name="Path 72039" d="M-5356.51-22034l6,5.943,6.2-5.943" transform="translate(6216.01 23264.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <path id="Path_72040" data-name="Path 72040" d="M-5356.51-22028.055l6-5.943,6.2,5.943" transform="translate(6216.01 23224.498)" fill="none" stroke="#fff" stroke-width="1"/>
+      <text id="SCROLL" transform="translate(842 1218)" fill="#fff" font-size="11" font-family="Avenir-Heavy, Avenir" font-weight="800" letter-spacing="0.1em"><tspan x="0" y="0">SCROLL</tspan></text>
+    </g>
+  </g>
+</svg>
