@@ -140,6 +140,9 @@ img {
 }
 
 body {
+	max-width: 1920px;
+	width: 100%;
+	margin 0 auto;
   overflow-x: hidden;
 }
 
@@ -248,6 +251,9 @@ textarea {
 }
 
 body {
+	max-width: 1920px;
+	width:100%;
+	margin:0 auto;
   font-family: "Gilroy-Regular";
   color: #464646;
 }
