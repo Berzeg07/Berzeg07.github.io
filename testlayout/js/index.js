@@ -17951,9 +17951,9 @@
       var onLoadHandler = function onLoadHandler() {
         loader.hideLoader();
         Object(_modules_menu__WEBPACK_IMPORTED_MODULE_2__["initMenu"])();
-        if ($('.calendar')) {
-          Object(_modules_calendar__WEBPACK_IMPORTED_MODULE_4__["initCalendar"])();
-        }
+        // if ($('.calendar')) {
+        Object(_modules_calendar__WEBPACK_IMPORTED_MODULE_4__["initCalendar"])();
+        // }
         Object(_modules_plus__WEBPACK_IMPORTED_MODULE_5__["initPlus"])();
         _fancyapps_ui__WEBPACK_IMPORTED_MODULE_6__["Fancybox"].bind('#review-gallery a');
         Object(_modules_carousel__WEBPACK_IMPORTED_MODULE_0__["default"])();
@@ -18034,16 +18034,23 @@
 
         document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function () {
           Calendar2('calendar2', document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) - 1);
+          chooseDate();
         }; // переключатель плюс месяц
 
 
         document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function () {
           Calendar2('calendar2', document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month) + 1);
+          chooseDate();
         };
-        $('.fz-big').click(function () {
-          $('.fz-big').removeClass('is-active');
-          $(this).addClass('is-active');
-        })
+
+        function chooseDate() {
+          $('.fz-big').click(function () {
+            $('.fz-big').removeClass('is-active');
+            $(this).addClass('is-active');
+          })
+        }
+        chooseDate();
+
       };
 
       /***/
@@ -18285,19 +18292,29 @@
           }
         });
 
+        function disableTrue(){
+          $('.plot-block-content-item__elem').attr('disabled', 'true');
+        }
+
+        function disableFalse(){
+          $('.plot-block-content-item__elem').removeAttr('disabled');
+        }
+
         $('.plot-block-content-item__elem').click(function () {
           $('.plot-block-content-item__elem').removeClass('is-active');
+          disableTrue();
+          setTimeout(disableFalse, 400);
           $(this).addClass('is-active');
           var tab = $(this).attr('data-tab');
           $('.plot-block-img').not(tab).css({ 'display': 'none' });
-          $(tab).fadeIn(400);
+          $(tab).fadeIn();
         });
-        $('.plot-block-content-item div:first').trigger('click');
+        $('.plot-block-content-item button:first').trigger('click');
 
         plotCarousel.on('slideChangeTransitionEnd', function () {
           $('.swiper-slide-active .plot-block-content-item div:first').trigger('click');
           var attrActive = $('.swiper-slide-active').attr('data-swiper-slide-index');
-          console.log(attrActive);
+          // console.log(attrActive);
         });
       };
 
