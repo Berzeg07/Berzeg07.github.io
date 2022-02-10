@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#okko2022</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(87011166, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/87011166" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div class="stepblocks">
+
+            <transition name="slide-fade">
+                <div class="step-wrap _five" :class="{ 'active' : steps.step5 }" v-if="step == 5">
+                    <div class="step step-5 container">
+                        <!-- <div class="festooned">
+                            <div class="festooned__img">
+                                <img src="img/LightsBG.svg">
+                                <img class="green" src="img/Green.svg">
+                                <img class="red" src="img/Red.svg">
+                                <img class="white" src="img/White.svg">
+                                <img class="yellow" src="img/Yellow.svg">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="okko">
+                        </div> -->
+                        <div class="step__title">Сессия истекла</div>
+                        <div class="step__article">
+                            Пожалуйста, отсканируйте <br>QR-код заново
+                        </div>
+                    </div>
+                </div>
+            </transition>
+
+            <transition name="slide-fade">
+                <div class="step-wrap _four" :class="{ 'active' : steps.step4, 'scrollhidden' : overflowClass.step5 }"
+                    v-if="step == 4">
+                    <div class="step step-4 container">
+                        <!-- <div class="festooned">
+                            <div class="festooned__img">
+                                <img src="img/LightsBG.svg">
+                                <img class="green" src="img/Green.svg">
+                                <img class="red" src="img/Red.svg">
+                                <img class="white" src="img/White.svg">
+                                <img class="yellow" src="img/Yellow.svg">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="okko">
+                        </div> -->
+                        <div class="stepend">
+                            <div class="stepend__image">
+                                <img src="img/camera.png">
+                            </div>
+                            <div class="stepend__title">Камера, мотор!</div>
+                            <div class="stepend__article">
+                                Выкладывайте фото и видео<br> в Instagram с хештегом<br> <strong>#Okko2022</strong> и
+                                отмечайте<br>
+                                нас
+                                в сторис
+                                <strong>@okkomovies</strong>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/" class="btninst _long-text">
+                            Открыть instagram
+                        </a>
+                    </div>
+                </div>
+            </transition>
+
+            <transition name="slide-fade">
+                <div class="step-wrap _three" :class="{ 'active' : steps.step3, 'scrollhidden' : overflowClass.step4 }"
+                    v-if="step == 3">
+                    <div class="step step-3 container">
+                        <!-- <div class="festooned">
+                            <div class="festooned__img">
+                                <img src="img/LightsBG.svg">
+                                <img class="green" src="img/Green.svg">
+                                <img class="red" src="img/Red.svg">
+                                <img class="white" src="img/White.svg">
+                                <img class="yellow" src="img/Yellow.svg">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <img src="img/logo.svg" alt="okko">
+                        </div> -->
+                        <div class="step__title">Шаг 3 из 3</div>
+                        <div class="step__article">
+                            выберите образ
+                        </div>
+                        <ul class="step__btn-list">
+                            <li>
+                                <button @click="checkStyle" :class="{ 'active' : style[0].check }"
+                                    class="step__btn _opacity _tv _text-left" data-index="0">Кино и сериалы</button>
+                            </li>
+                            <li>
+                                <button @click="checkStyle" :class="{ 'active' : style[1].check }"
+                                    class="step__btn _opacity _ball _text-left" data-index="1">Спорт</button>
+                            </li>
+                            <li>
+                                <button @click="checkStyle" :class="{ 'active' : style[2].check }"
+                                    class="step__btn _opacity _kids _text-left" data-index="2">Детский</button>
+                            </li>
+                        </ul>
+                        <button class="btnstep" @click="startSteps" data-step="4" v-if="finalStep">Зажечь!</button>
+                    </div>
+                </div>
+            </transition>
+
+            <transition name="slide-fade">
+                <div class="step-wrap _two" :class="{ 'active' : steps.step2, 'scrollhidden' : overflowClass.step3 }"
+                    v-if="step == 2">
+                    <div class="step step-2 container">
+                        <div class="step__title">Шаг 2 из 3</div>
+                        <div class="step__article">
+                            выберите фон для эмоций
+                        </div>
+                        <ul class="step__btn-list">
+                            <li>
+                                <button @click="startSteps" data-color="1" data-step="3"
+                                    class="step__btn _blue _fruit">Черничный</button>
+                            </li>
+                            <li>
+                                <button @click="startSteps" data-color="2" data-step="3"
+                                    class="step__btn _purple _tiger">Водяной тигр</button>
+                            </li>
+                            <li>
+                                <button @click="startSteps" data-color="3" data-step="3"
+                                    class="step__btn _green _tree">Хвойный</button>
+                            </li>
+                            <li>
+                                <button @click="startSteps" data-color="4" data-step="3"
+                                    class="step__btn _pink _smile">Нежный</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </transition>
+
+            <transition name="slide-fade">
+                <div class="step-wrap _one" :class="{ 'active' : steps.step1 }" v-if="step == 1">
+                    <div class="step step-1 container">
+                        <div class="step__title">Шаг 1 из 3</div>
+                        <div class="step__article">
+                            выберите эмоции
+                        </div>
+
+                        <ul class="emojylist">
+                            <li v-for="(item, index) in firstStepIconsNum" @click="iconActive" :key="'icon' + index"
+                                :data-index="index" :class="{ 'active' : firstStepIconsNum[index].checked }">
+                                <div class="emojylist__icon">
+                                    <img :src="'img/icon-' + item.imgNum + '.png'">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class=" btnstep" @click="startSteps" data-step="2" v-if="showEmojiBtn">Дальше</button>
+                    </div>
+                </div>
+            </transition>
+
+            <div class="topheader container">
+                <div class="festooned">
+                    <div class="festooned__img">
+                        <img src="img/LightsBG.svg">
+                        <img class="green" src="img/Green.svg">
+                        <img class="red" src="img/Red.svg">
+                        <img class="white" src="img/White.svg">
+                        <img class="yellow" src="img/Yellow.svg">
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="https://okko.tv/"><img src="img/logo.svg" alt="okko"></a>
+                </div>
+            </div>
+
+            <div class="startpage" :class="{ 'scrollhidden' : overflowClass.step1 }" v-if="step == 0">
+
+                <div class="header container">
+                    <!-- <div class="festooned">
+                    <div class="festooned__img">
+                        <img src="img/LightsBG.svg">
+                        <img class="green" src="img/Green.svg">
+                        <img class="red" src="img/Red.svg">
+                        <img class="white" src="img/White.svg">
+                        <img class="yellow" src="img/Yellow.svg">
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="okko">
+                </div> -->
+                    <div class="header__date">
+                        C 28 декабря по 25 января выигрывайте подарки от Okko!
+                    </div>
+                    <ul class="steplist">
+                        <li>
+                            <div class="steplist__item">
+                                <p class="steplist__title">1. Нарядите елку</p>
+                                <p class="steplist__article">и снимите себя около<br> неё на фото или видео</p>
+                            </div>
+                            <div class="steplist__img">
+                                <img src="img/icon-top-first.png" alt="нарядите елку">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="steplist__item">
+                                <p class="steplist__title">2. Поделитесь</p>
+                                <p class="steplist__article">
+                                    в Инстаграм с хештегом<br> <strong>#Okko2022</strong> + обязательно<br> отметьте
+                                    <strong>@okkomovies</strong>
+                                </p>
+                            </div>
+                            <div class="steplist__img">
+                                <img src="img/icon-top-second.png" alt="поделитесь">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="steplist__item">
+                                <p class="steplist__title">3. Ждите подарок</p>
+                                <p class="steplist__article">
+                                    каждую пятницу выбираем<br> 10 случайных участников,<br> которые получат подарки
+                                </p>
+                            </div>
+                            <div class="steplist__img">
+                                <img src="img/icon-top-third.png" alt="Ждите подарок">
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btnstep" @click="startSteps" data-step="1">Нарядить елку</button>
+
+                    <div class="arrowdown">
+                        <img src="img/arrow-down.svg">
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="container">
+                        <div class="maintitle">Что под елкой?</div>
+                        <div class="presents-about">
+                            <div class="presents-about__title">
+                                Вот, что можно получить<br> в розыгрыше:
+                            </div>
+                            <ul class="presentslist">
+                                <li>
+                                    <div class="presentslist__img">
+                                        <img src="img/present-first.svg">
+                                    </div>
+                                    <div class="presentslist__icon">
+                                        <img src="img/x60.svg">
+                                    </div>
+                                    <div class="presentslist__article">
+                                        Лимитированная версия игры «Имаджинариум» от Okko + 2 билета на шоу в Москвариум
+                                        «Новогодний
+                                        круиз Совершенство»
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="presentslist__img">
+                                        <img src="img/present-second.svg">
+                                    </div>
+                                    <div class="presentslist__icon">
+                                        <img src="img/x50.svg">
+                                    </div>
+                                    <div class="presentslist__article">
+                                        Книга «Манюня» с автографом автора
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="presentslist__img _third">
+                                        <img src="img/present-third.svg">
+                                    </div>
+                                    <div class="presentslist__icon">
+                                        <img src="img/x4.svg">
+                                    </div>
+                                    <div class="presentslist__article">
+                                        Счастливчик недели <br>получит бесплатную годовую подписку Okko «Премиум +
+                                        Спорт»
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="videoblock container">
+                        <div class="content-title">Как участвовать</div>
+                        <div style="padding:177.78% 0 0 0;position:relative;"><iframe
+                                src="https://player.vimeo.com/video/660489197?h=d27cb5c669&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="Okko_Vertical"></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                    <div class="mapblock container">
+                        <div class="content-title">Где найти ёлки Okko</div>
+                        <div class="select">
+                            <div class="select__main" @click.stop="toggleDropdown">
+                                {{currentTabText}}
+                            </div>
+                            <ul class="select__dropdown" v-if="selectDropdown">
+                                <li class="select__item" data-tab="tab1" @click="tabShow">
+                                    Никольские Ряды, Санкт-Петербург
+                                </li>
+                                <li class="select__item" data-tab="tab2" @click="tabShow">
+                                    Сокольники
+                                </li>
+                                <li class="select__item" data-tab="tab3" @click="tabShow">
+                                    Парк Горького
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="maps container">
+                            <div class="tabcontent" :class="{active: tabClass.tab1}" v-if="dataTab === 'tab1'">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae0b2d4a05d7ceb97523b2bea220eb4a175e328e8ae55a7d721a53d259bb64509&amp;source=constructor"
+                                    width="100%" height="585" frameborder="0"></iframe>
+                            </div>
+                            <div class="tabcontent" :class="{active: tabClass.tab2}" v-if="dataTab === 'tab2'">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A14e0f53e78c0c8134358003b18412f2de5510084f3b8a98da42991c41f74c6c5&amp;source=constructor"
+                                    width="100%" height="585" frameborder="0"></iframe>
+                            </div>
+                            <div class="tabcontent" :class="{active: tabClass.tab3}" v-if="dataTab === 'tab3'">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A889e885d678dea67eedd443130dd3e172234126463ef60e5db9b4f1baf1898f4&amp;source=constructor"
+                                    width="100%" height="585" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer container">
+                    <div class="footer__img">
+                        <img src="img/icon-top-third.png">
+                    </div>
+                    <div class="content-title">Розыгрыш подарков</div>
+                    <div class="footer__article">
+                        Подписывайтесь на <a href="https://www.instagram.com/okkomovies/">наш<br> Инстаграм</a> и
+                        следите за<br> результатами розыгрышей
+                    </div>
+                    <a href="https://www.instagram.com/okkomovies" class="btninst">
+                        @okkomovies
+                    </a>
+                    <ul class="drawlist">
+                        <li>
+                            <div class="drawlist__date">31 декабря</div>
+                            <div class="drawlist__article">розыгрыш №1</div>
+                        </li>
+                        <li>
+                            <div class="drawlist__date">7 января</div>
+                            <div class="drawlist__article">розыгрыш №2</div>
+                        </li>
+                        <li>
+                            <div class="drawlist__date">14 января</div>
+                            <div class="drawlist__article">розыгрыш №3</div>
+                        </li>
+                        <li>
+                            <div class="drawlist__date">21 января</div>
+                            <div class="drawlist__article">розыгрыш №4</div>
+                        </li>
+                        <li>
+                            <div class="drawlist__date">25 января</div>
+                            <div class="drawlist__article">дополнительный<br> финальный розыгрыш №5</div>
+                        </li>
+                    </ul>
+                    <div class="terms">
+                        <a href="https://elka2022.okko.tv/s/pravila.pdf
+                        ">Правила и условия участия</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="script/common.js"></script>
+</body>
+
+</html>
