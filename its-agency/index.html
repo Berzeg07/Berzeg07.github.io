@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое its.agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__column">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header__column">
+                    <div class="logo">
+                        <svg width="119" height="23" viewBox="0 0 119 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5496 14.8C15.8296 17.05 13.8496 19.3 10.3996 19.3C6.46961 19.3 3.49961 16.3 3.49961 11.5C3.49961 6.69995 6.46961 3.69995 10.3996 3.69995C13.0696 3.69995 15.4996 5.19995 16.5496 8.04995H19.8496C18.9796 4.29995 15.6496 0.699951 10.3996 0.699951C4.87961 0.699951 0.349609 5.04995 0.349609 11.5C0.349609 17.95 4.87961 22.3 10.3996 22.3C16.0696 22.3 19.1296 18.1 19.8496 14.8L16.5496 14.8Z" fill="#1F2020"/>
+                            <path d="M32.3137 22.3C37.8337 22.3 42.3637 17.95 42.3637 11.5C42.3637 5.04995 37.8337 0.699951 32.3137 0.699951C26.7937 0.699951 22.2637 5.04995 22.2637 11.5C22.2637 17.95 26.7937 22.3 32.3137 22.3ZM32.3137 3.69995C36.2437 3.69995 39.2137 6.69995 39.2137 11.5C39.2137 16.3 36.2437 19.3 32.3137 19.3C28.3837 19.3 25.4137 16.3 25.4137 11.5C25.4137 6.69995 28.3837 3.69995 32.3137 3.69995Z" fill="#1F2020"/>
+                            <path d="M45.9566 22L59.3066 22V19L49.1066 19V0.999951L45.9566 0.999951V22Z" fill="#1F2020"/>
+                            <path d="M70.1066 22.3C75.6266 22.3 80.1566 17.95 80.1566 11.5C80.1566 5.04995 75.6266 0.699951 70.1066 0.699951C64.5866 0.699951 60.0566 5.04995 60.0566 11.5C60.0566 17.95 64.5866 22.3 70.1066 22.3ZM70.1066 3.69995C74.0366 3.69995 77.0066 6.69995 77.0066 11.5C77.0066 16.3 74.0366 19.3 70.1066 19.3C66.1766 19.3 63.2066 16.3 63.2066 11.5C63.2066 6.69995 66.1766 3.69995 70.1066 3.69995Z" fill="#1F2020"/>
+                            <path d="M83.7496 22H86.8996V14.5H88.3996L95.8996 22L99.9496 22L92.4496 14.5H93.1996C96.6496 14.5 99.3496 11.83 99.3496 7.74995C99.3496 3.66995 96.6496 0.999951 93.1996 0.999951L83.7496 0.999951V22ZM86.8996 11.5V3.99995L93.0496 3.99995C94.7296 3.99995 96.1996 5.49995 96.1996 7.74995C96.1996 9.99995 94.7296 11.5 93.0496 11.5H86.8996Z" fill="#1F2020"/>
+                            <path d="M102.211 15.55C102.211 19.3 105.211 22.3 110.461 22.3C115.711 22.3 118.411 19.6 118.411 16.15C118.411 12.82 116.491 11.05 112.261 10.3L108.961 9.69995C106.681 9.24995 105.811 8.19995 105.811 6.84995C105.811 5.16995 107.311 3.69995 110.161 3.69995C113.161 3.69995 114.961 5.49995 114.961 7.44995H118.111C118.111 3.69995 115.411 0.699951 110.161 0.699951C105.511 0.699951 102.661 3.39995 102.661 6.84995C102.661 9.72995 104.281 11.8 107.611 12.4L111.661 13.15C114.061 13.6 115.261 14.62 115.261 16.15C115.261 17.95 113.911 19.3 110.461 19.3C107.341 19.3 105.361 17.5 105.361 15.55L102.211 15.55Z" fill="#1F2020"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="header__column">
+                    <ul class="main-menu">
+                        <li>
+                            <a class="main-menu__link" href="#">Продукты</a>
+                        </li>
+                        <li>
+                            <a class="main-menu__link" href="#">Цвета</a>
+                        </li>
+                        <li>
+                            <a class="main-menu__link" href="#">Вдохновение</a>
+                        </li>
+                        <li>
+                            <a class="main-menu__link" href="#">Советы</a>
+                        </li>
+                        <li>
+                            <a class="main-menu__link" href="#">Найти магазин</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__column">
+                    <div class="callback">
+                        <a class="callback__phone" href="tel:74952217769">+7 (495) 221-77-69</a>
+                        <div class="callback__btn">
+                            Заказать звонок
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__column">
+                    <div class="external-controls">
+                        <button class="external-controls__item external-controls__item--search">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.5 17.5L13.875 13.875" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+
+                        <a class="external-controls__item external-controls__item--profile" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_8_30)">
+                                    <circle cx="11" cy="23" r="8.4" stroke="black" stroke-width="1.2"/>
+                                    <circle cx="11" cy="7" r="3.4" stroke="black" stroke-width="1.2"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_8_30">
+                                        <rect width="22" height="22" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                        <a class="external-controls__item external-controls__item--favorites" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.0009 19C10.745 19.0001 10.4978 18.9074 10.3052 18.739C9.57966 18.1047 8.87674 17.5067 8.25817 16.9802C6.65691 15.7048 5.16127 14.3023 3.78581 12.7865C2.67695 11.5918 2.0423 10.0341 2.00085 8.4053C1.97621 6.99164 2.48598 5.62067 3.42845 4.56595C3.88583 4.0681 4.44256 3.67154 5.06275 3.40184C5.68294 3.13214 6.35283 2.9953 7.0292 3.00012C8.05552 2.99541 9.053 3.3392 9.8581 3.97514C10.2942 4.31625 10.6791 4.71815 11.0009 5.16854C11.3231 4.71841 11.7082 4.31682 12.1446 3.97605C12.9489 3.34036 13.9453 2.99628 14.9708 3.00012C15.6472 2.9953 16.3171 3.13214 16.9372 3.40184C17.5574 3.67154 18.1142 4.0681 18.5715 4.56595C19.514 5.62067 20.0238 6.99164 19.9991 8.4053C19.9585 10.0337 19.3249 11.5915 18.2169 12.7865C16.8425 14.3013 15.3481 15.7028 13.7482 16.9775C13.1287 17.5049 12.4267 18.1029 11.6975 18.7399C11.5045 18.9081 11.257 19.0005 11.0009 19V19Z" stroke="black" stroke-width="1.2"/>
+                            </svg>
+                        </a>
+
+                        <button class="external-controls__item external-controls__item--basket" id="cartOpen">
+                            0
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumbs breadcrumbs--mobile container">
+        <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+                <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#">Продукты</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a>Краски</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="media-gallery container">
+        <div class="breadcrumbs breadcrumbs--desc">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item breadcrumbs__item--desc">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--desc">
+                    <a href="#">Продукты</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--desc">
+                    <a>Краски</a>
+                </li>
+            </ul>
+        </div>
+        <div class="media-gallery__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="media-gallery__slide swiper-slide">
+                    <div class="media-gallery__content">
+                        <img class="media-gallery__img" src="images/slide-1.jpg" alt="Slide 1">
+                        <div class="media-gallery__describe">
+                            <div class="media-gallery__title">
+                                Краски
+                            </div>
+                            <div class="media-gallery__article">
+                                Идеально подходят для стен и других поверхностей.<br> Найди свой идеальный цвет!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-gallery__slide swiper-slide">
+                    <div class="media-gallery__content">
+                        <img class="media-gallery__img" src="images/slide-1.jpg" alt="Slide 2">
+                        <div class="media-gallery__describe">
+                            <div class="media-gallery__title">
+                                Краски
+                            </div>
+                            <div class="media-gallery__article">
+                                Идеально подходят для стен и других поверхностей.<br> Найди свой идеальный цвет!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Стрелки -->
+            <div class="media-gallery__btn-next swiper-button-next"></div>
+            <div class="media-gallery__btn-prev swiper-button-prev"></div>
+
+            <!-- Dots -->
+            <div class="media-gallery__paginate swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="title-mobile container">
+        Краски
+    </div>
+
+    <div class="content container">
+        <div class="sidebar">
+            <div class="filter">
+                <div class="filter__item" data-value="new">
+                    <div class="filter__custom-radio"></div>
+                    Новинки
+                </div>
+                <div class="filter__item" data-value="count">
+                    <div class="filter__custom-radio"></div>
+                    Есть в наличии
+                </div>
+                <div class="filter__item" data-value="contract">
+                    <div class="filter__custom-radio"></div>
+                    Контрактные
+                </div>
+                <div class="filter__item" data-value="exclusive">
+                    <div class="filter__custom-radio"></div>
+                    Эксклюзивные
+                </div>
+                <div class="filter__item" data-value="sale">
+                    <div class="filter__custom-radio"></div>
+                    Распродажа
+                </div>
+            </div>
+        </div>
+        <div class="products-shell">
+            <div class="toolbar">
+                <div class="toolbar__products-count">
+
+                </div>
+                <div class="sort">
+                    <button class="sort__toggle" id="sortToggle">
+                        Сначала дорогие
+                        <span class="sort__arrow">&#9662;</span>
+                    </button>
+
+                    <div class="sort__dropdown" id="sortDropdown">
+                        <button class="sort__option sort__option--active" value="expensive">Сначала дорогие</button>
+                        <button class="sort__option" value="cheap">Сначала недорогие</button>
+                        <button class="sort__option" value="popular">Сначала популярные</button>
+                        <button class="sort__option" value="new">Сначала новые</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products" id="products"></div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart__sidebar" id="cartSidebar">
+            <div class="cart__header">
+                <h2 class="cart__title">Корзина</h2>
+                <button class="cart__close" id="cartClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 6L18 18" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="cart__controls">
+                <span class="cart__count">4 товара</span>
+                <button class="cart__clear">очистить список</button>
+            </div>
+
+            <div class="cart__items">
+                <div class="cart__item" data-id="101">
+                    <img src="images/paint.png" class="cart__image" alt="Краска">
+                    <div class="cart__info">
+                        <div class="cart__name">Краска Wallquest, Brownsone MS90102</div>
+                        <div class="cart__price">9600 ₽</div>
+                    </div>
+                    <div class="cart__tools">
+                        <div class="cart__quantity">
+                            <button class="cart__btn cart__btn--decrease">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.3335 8H12.6668" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="cart__amount">2</div>
+                            <button class="cart__btn cart__btn--increase">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 3.33325V12.6666" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.3335 8H12.6668" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="cart__remove">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.2">
+                                    <path d="M18 6L6 18" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 6L18 18" stroke="#1F2020" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                            </svg>
+                        </button>
+                        <button class="cart__recovery">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1L21 5L17 9" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 11V9C3 7.93913 3.42143 6.92172 4.17157 6.17157C4.92172 5.42143 5.93913 5 7 5H21" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 23L3 19L7 15" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 13V15C21 16.0609 20.5786 17.0783 19.8284 17.8284C19.0783 18.5786 18.0609 19 17 19H3" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__footer">
+                <div class="cart__total">
+                    <div class="cart__total-article">Итого</div>
+                    <div class="cart__total-price">14 400 ₽</div>
+                </div>
+                <button class="cart__checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__response container"></div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
