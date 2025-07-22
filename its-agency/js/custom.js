@@ -209,6 +209,9 @@ filterItems.forEach(item => {
             item.classList.remove('active');
             store.filteredProductList = [];
             renderSortedProductsByActiveOption(store.productList);
+
+            // Активируем кнопки добавления в корзину
+            addProductToBasket();
             return;
         }
 
@@ -223,6 +226,9 @@ filterItems.forEach(item => {
 
         // Рендер отфильтрованных карточек с учетом сортировки
         renderSortedProductsByActiveOption(store.filteredProductList);
+
+        // Активируем кнопки добавления в корзину
+        addProductToBasket();
     });
 
     item.addEventListener('keydown', (e) => {
@@ -258,6 +264,9 @@ document.querySelectorAll('.sort__option').forEach(option => {
 
         // Сортируем и рендерим
         renderProducts(store.productList, selectedValue);
+
+        // Активируем кнопки добавления в корзину
+        addProductToBasket();
     });
 });
 
