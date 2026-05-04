@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sticky Step-by-Step Section</title>
+  <style>
+    :root {
+      --bg: #0d0f14;
+      --surface: #171b23;
+      --text: #d3dae6;
+      --text-muted: #7f8aa3;
+      --accent: #67a6ff;
+      --accent-soft: rgba(103, 166, 255, 0.25);
+      --radius: 20px;
+      --gutter: clamp(16px, 4vw, 48px);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .spacer {
+      min-height: 90vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      color: var(--text-muted);
+    }
+
+    .sticky-steps {
+      position: relative;
+      height: 300vh;
+    }
+
+    .sticky-steps__viewport {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: clip;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--gutter);
+      padding: var(--gutter);
+      background: radial-gradient(1200px 700px at 10% 10%, #182131 0%, transparent 70%), var(--bg);
+    }
+
+    .titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      min-width: 0;
+    }
+
+    .title {
+      margin: 0;
+      font-size: clamp(1.4rem, 2.8vw, 3rem);
+      color: var(--text-muted);
+      /* Без transition: подсветка должна совпадать со скроллом без визуального лага */
+      transform: translateX(0);
+    }
+
+    .title.is-active {
+      color: var(--text);
+      text-shadow: 0 0 24px var(--accent-soft);
+      transform: translateX(8px);
+    }
+
+    .images {
+      position: relative;
+      height: 100%;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--surface);
+      isolation: isolate;
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .images-track {
+      height: 300%;
+      will-change: transform;
+    }
+
+    .slide {
+      position: relative;
+      width: 100%;
+      height: calc(100% / 3);
+      overflow: hidden;
+    }
+
+    .slide-caption {
+      display: none;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px 16px 28px;
+      font-size: clamp(1.05rem, 4.2vw, 1.35rem);
+      font-weight: 600;
+      line-height: 1.25;
+      color: #f2f5fb;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+      background: linear-gradient(to top, rgba(8, 10, 14, 0.82), rgba(8, 10, 14, 0.35) 55%, transparent);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .slide--one {
+      background: linear-gradient(135deg, #ff7a7a, #ffb86b);
+    }
+
+    .slide--two {
+      background: linear-gradient(135deg, #6be3ff, #6b8bff);
+    }
+
+    .slide--three {
+      background: linear-gradient(135deg, #7affc1, #2ed573);
+    }
+
+    .progress {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .progress > span {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, #7cb2ff, var(--accent));
+      transition: width 120ms linear;
+    }
+
+    @media (max-width: 900px) {
+        .progress {
+            display: none;
+        }
+      .sticky-steps {
+        height: auto;
+      }
+
+      .sticky-steps__viewport {
+        position: relative;
+        height: auto;
+        min-height: auto;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: var(--gutter);
+      }
+
+      .titles {
+        display: none;
+      }
+
+      .images {
+        aspect-ratio: 9 / 14;
+        max-height: 72vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .images-track {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 300%;
+        height: 100%;
+        will-change: auto;
+      }
+
+      .slide {
+        flex: 0 0 calc(100% / 3);
+        width: calc(100% / 3);
+        height: 100%;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+      }
+
+      .slide-caption {
+        display: block;
+        padding-bottom: 52px;
+      }
+
+      .progress > span {
+        transition: none;
+      }
+    }
+    .marquee {
+        overflow: hidden;
+        width: 100%;
+        padding: 20px 0;
+        background: #0d0f14;
+    }
+
+    .marquee__inner {
+        display: inline-block;
+        white-space: nowrap;
+        will-change: transform;
+        font-size: 24px;
+        color: #d3dae6;
+    }
+    @media (max-width: 767px) {
+        .marquee__inner {
+            white-space: wrap;
+        }
+        .spacer--first {
+            display: none;
+        }
+        .spacer {
+            min-height: auto;
+        }
+    }
+    .layered {
+        position: relative;
+        padding: clamp(60px, 10vw, 140px) 0;
+        background: #0d0f14;
+        overflow: hidden;
+    }
+
+    .layered__container {
+        position: relative;
+        width: min(1400px, 92vw);
+        margin: 0 auto;
+    }
+
+    .layered__bg {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(120px, 18vw, 420px);
+        font-weight: 800;
+        color: rgba(255,255,255,0.04);
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .layered__photos {
+        position: relative;
+        height: clamp(320px, 40vw, 520px);
+    }
+
+    .photo {
+        position: absolute;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        transition:
+                transform 0.4s ease,
+                filter 0.4s ease,
+                z-index 0s;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .photo--1 {
+        width: clamp(180px, 18vw, 260px);
+        height: clamp(220px, 22vw, 320px);
+        top: 0;
+        left: 10%;
+        background: linear-gradient(135deg,#ff7a7a,#ffb86b);
+    }
+
+    .photo--2 {
+        width: clamp(200px, 20vw, 300px);
+        height: clamp(260px, 24vw, 360px);
+        top: 20%;
+        left: 35%;
+        background: linear-gradient(135deg,#6be3ff,#6b8bff);
+    }
+
+    .photo--3 {
+        width: clamp(160px, 16vw, 240px);
+        height: clamp(220px, 22vw, 300px);
+        top: 10%;
+        right: 10%;
+        background: linear-gradient(135deg,#7affc1,#2ed573);
+    }
+
+    .photo--4 {
+        width: clamp(180px, 18vw, 260px);
+        height: clamp(240px, 22vw, 320px);
+        bottom: 0;
+        left: 25%;
+        background: linear-gradient(135deg,#c77dff,#845ef7);
+    }
+
+    .layered__photos:hover .photo {
+        filter: brightness(0.6);
+    }
+
+    .photo:hover {
+        transform: scale(1.12) translateY(-10px);
+        filter: brightness(1) !important;
+        z-index: 5;
+    }
+
+    .layered__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: clamp(28px, 5vw, 72px);
+        font-weight: 700;
+        line-height: 1.1;
+        color: #fff;
+        max-width: 600px;
+    }
+
+    /* затемнение текста при hover фоток */
+    .layered__photos:hover ~ .layered__title {
+        opacity: 0.6;
+        transition: opacity 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <section class="spacer spacer--first">
+    <p>Обычный контент до sticky-блока. Скролльте вниз.</p>
+  </section>
+
+  <section class="sticky-steps" id="stickySteps" aria-label="Пошаговая секция">
+    <div class="sticky-steps__viewport">
+      <div class="titles" id="titles">
+        <h2 class="title is-active">01. Знакомство с карточкой игрока</h2>
+        <h2 class="title">02. Аналитика и динамика формы</h2>
+        <h2 class="title">03. Ключевые метрики сезона</h2>
+      </div>
+
+      <div class="images" id="imagesFrame">
+        <div class="images-track" id="imagesTrack">
+          <div class="slide slide--one">
+            <p class="slide-caption">01. Знакомство с карточкой игрока</p>
+          </div>
+          <div class="slide slide--two">
+            <p class="slide-caption">02. Аналитика и динамика формы</p>
+          </div>
+          <div class="slide slide--three">
+            <p class="slide-caption">03. Ключевые метрики сезона</p>
+          </div>
+        </div>
+        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spacer">
+    <div id="module-container"></div>
+      <div class="marquee" id="marquee">
+          <div class="marquee__inner" id="marqueeInner">
+              ⚽ Player stats • Live analytics • Match insight • Transfer news •
+          </div>
+      </div>
+  </section>
+  <section class="spacer">
+      <section class="layered">
+          <div class="layered__container">
+
+              <!-- фон (логотип / вектор) -->
+              <div class="layered__bg">LOGO</div>
+
+              <!-- фотки -->
+              <div class="layered__photos">
+                  <div class="photo photo--1"></div>
+                  <div class="photo photo--2"></div>
+                  <div class="photo photo--3"></div>
+                  <div class="photo photo--4"></div>
+              </div>
+
+              <!-- заголовок -->
+              <h1 class="layered__title">
+                  Player analytics<br />
+                  next generation
+              </h1>
+
+          </div>
+      </section>
+  </section>
+  <script>
+      // Слайдер
+      (function initStickySteps() {
+          // Основные DOM-элементы
+          let section = document.getElementById("stickySteps"); // вся секция
+          let track = document.getElementById("imagesTrack"); // контейнер со слайдами
+          let imagesFrame = document.getElementById("imagesFrame"); // обёртка (viewport)
+          let titles = Array.from(document.querySelectorAll("#titles .title")); // заголовки
+          let progressBar = document.getElementById("progressBar"); // прогресс бар
+          let mq = window.matchMedia("(max-width: 900px)"); // media query для мобилки
+
+          // Если чего-то нет — выходим
+          if (!section || !track || !imagesFrame || titles.length !== 3 || !progressBar) {
+              return;
+          }
+
+          let ticking = false; // флаг для requestAnimationFrame
+
+          // Ограничение значения (чтобы не выходило за пределы)
+          function clamp(value, min, max) {
+              return Math.min(max, Math.max(min, value));
+          }
+
+          // Проверка: сейчас мобильный режим или нет
+          function isMobileMode() {
+              return mq.matches;
+          }
+
+          // 🖥 ДЕСКТОП ЛОГИКА (вертикальный скролл)
+          function updateDesktop() {
+              let rect = section.getBoundingClientRect(); // позиция секции
+              let maxTravel = section.offsetHeight - window.innerHeight; // сколько можно проскроллить
+              let scrolled = clamp(-rect.top, 0, maxTravel); // текущий скролл внутри секции
+              let progress = maxTravel > 0 ? scrolled / maxTravel : 0; // 0 → 1
+
+              // высота одного "шага" (слайда)
+              let slideH =
+                  imagesFrame.clientHeight > 0 ? imagesFrame.clientHeight : window.innerHeight;
+
+              // двигаем трек (2 перехода = 3 слайда)
+              let translatePx = progress * 2 * slideH;
+              track.style.transform = "translate3d(0, -" + translatePx + "px, 0)";
+
+              // определяем активный слайд
+              let slideIndex = progress * 2;
+              let activeIndex = Math.min(2, Math.max(0, Math.round(slideIndex)));
+
+              // подсветка заголовков
+              titles.forEach(function (title, i) {
+                  title.classList.toggle("is-active", i === activeIndex);
+              });
+
+              // обновление прогресс-бара
+              progressBar.style.width = (progress * 100).toFixed(2) + "%";
+          }
+
+          // 📱 МОБИЛЬНАЯ ЛОГИКА (горизонтальный скролл)
+          function updateMobile() {
+              track.style.transform = ""; // убираем translate
+
+              // считаем горизонтальный скролл
+              let maxScroll = Math.max(0, imagesFrame.scrollWidth - imagesFrame.clientWidth);
+              let progress = maxScroll > 0
+                  ? clamp(imagesFrame.scrollLeft / maxScroll, 0, 1)
+                  : 0;
+
+              progressBar.style.width = (progress * 100).toFixed(2) + "%";
+          }
+
+          // Главная функция обновления
+          function update() {
+              if (isMobileMode()) {
+                  updateMobile();
+              } else {
+                  updateDesktop();
+              }
+              ticking = false; // разрешаем следующий кадр
+          }
+
+          // Защита от частых вызовов (через requestAnimationFrame)
+          function requestTick() {
+              if (!ticking) {
+                  ticking = true;
+                  window.requestAnimationFrame(update);
+              }
+          }
+
+          // Обработка смены breakpoint (десктоп ↔ мобилка)
+          function onBreakpointChange() {
+              if (!isMobileMode()) {
+                  imagesFrame.scrollLeft = 0; // сбрасываем горизонтальный скролл
+              } else {
+                  track.style.transform = ""; // убираем transform
+              }
+              requestTick();
+          }
+
+          // Слушатели событий
+          window.addEventListener("scroll", requestTick, { passive: true });
+          window.addEventListener("resize", requestTick);
+          imagesFrame.addEventListener("scroll", requestTick, { passive: true });
+
+          // слушаем изменение media query
+          if (typeof mq.addEventListener === "function") {
+              mq.addEventListener("change", onBreakpointChange);
+          } else if (typeof mq.addListener === "function") {
+              mq.addListener(onBreakpointChange);
+          }
+
+          // если контейнер меняет размер — обновляем
+          if (window.ResizeObserver) {
+              new ResizeObserver(requestTick).observe(imagesFrame);
+          }
+
+          // первый запуск
+          requestTick();
+      })();
+
+      // ========================================================
+      // Магнитная кнопка **
+      function createEl(tag, attrs = {}, text) {
+          const el = document.createElement(tag);
+          for (let key in attrs) {
+              el.setAttribute(key, attrs[key]);
+          }
+          if (text) el.textContent = text;
+          return el;
+      }
+
+      // Как вариант сделать глобальной в windows для общего доступа
+      window.initModule003 = function() {
+          const container = document.getElementById('module-container');
+          container.innerHTML = '';
+          const info = createEl(
+              'p',
+              {},
+              'Кнопки реагируют на приближение курсора. Наведите мышь рядом, чтобы увидеть «прилипание».'
+          );          container.appendChild(info);
+          const btnWrapper = createEl('div', { class: 'mag-wrap' });
+          const btn = createEl('button', { class: 'mag-btn' }, 'Магнит');
+          btnWrapper.appendChild(btn);
+          container.appendChild(btnWrapper);
+          const style = createEl('style', {}, `
+            .mag-wrap {
+            position: relative;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .mag-btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            background: blue;
+            color: white;
+            border: none;
+            cursor:pointer;
+            border-radius: 50px;
+            transition: transform 0.2s;
+          }
+        `);
+          container.appendChild(style);
+          const area = btnWrapper;
+          area.addEventListener('pointermove', (e) => {
+              const rect = btn.getBoundingClientRect();
+              const x = e.clientX - rect.left - rect.width / 2;
+              const y = e.clientY - rect.top - rect.height / 2;
+              const dist = Math.hypot(x, y);
+              const maxDist = 80;
+              if (dist < maxDist) {
+                  const strength = (maxDist - dist) / maxDist;
+                  btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+              } else {
+                  btn.style.transform = 'translate(0, 0)';
+              }
+          });
+          area.addEventListener('pointerleave', () => {
+              btn.style.transform = 'translate(0, 0)';
+          });
+      };
+      window.initModule003();
+      // ========================================================
+      // Бегущая строка
+      (function initMarquee() {
+          const marquee = document.getElementById("marquee");
+          const inner = document.getElementById("marqueeInner");
+          if (!marquee || !inner) return;
+
+          let offset = 0;
+          let lastY = window.scrollY || 0;
+          let ticking = false;
+
+          let minOffset = 0;
+          let maxOffset = 0;
+
+          let isActive = false;
+
+          function clamp(v, min, max) {
+              return Math.min(max, Math.max(min, v));
+          }
+
+          function apply() {
+              inner.style.transform =
+                  "translate3d(" + offset.toFixed(2) + "px,0,0)";
+          }
+
+          function updateBounds() {
+              const textWidth = inner.scrollWidth;
+              const containerWidth = marquee.clientWidth;
+
+              maxOffset = Math.max(0, containerWidth - textWidth);
+              minOffset = 0;
+
+              offset = clamp(offset, minOffset, maxOffset);
+              apply();
+          }
+
+          function updateByScroll() {
+              const y = window.scrollY || 0;
+              const delta = y - lastY;
+              lastY = y;
+
+              if (!delta) {
+                  ticking = false;
+                  return;
+              }
+
+              const step = clamp(Math.abs(delta) * 0.9, 0.6, 42);
+
+              offset += delta > 0 ? step : -step;
+
+              offset = clamp(offset, minOffset, maxOffset);
+
+              apply();
+              ticking = false;
+          }
+
+          function onScroll() {
+              if (!ticking) {
+                  ticking = true;
+                  requestAnimationFrame(updateByScroll);
+              }
+          }
+
+          function onResize() {
+              updateBounds();
+          }
+
+          function activate() {
+              if (isActive) return;
+
+              isActive = true;
+              lastY = window.scrollY || 0;
+
+              window.addEventListener("scroll", onScroll, { passive: true });
+              window.addEventListener("resize", onResize);
+          }
+
+          function deactivate() {
+              if (!isActive) return;
+
+              isActive = false;
+
+              window.removeEventListener("scroll", onScroll);
+              window.removeEventListener("resize", onResize);
+          }
+
+          function check(entries) {
+              entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                      updateBounds();
+                      activate();
+                  } else {
+                      deactivate();
+                  }
+              });
+          }
+
+          const observer = new IntersectionObserver(check, {
+              threshold: 0
+          });
+
+          observer.observe(marquee);
+
+          updateBounds();
+      })();
+      // (function initMarquee() {
+      //     var marquee = document.getElementById("marquee");
+      //     var inner = document.getElementById("marqueeInner");
+      //     if (!marquee || !inner) return;
+      //
+      //     var offset = 0;
+      //     var lastY = window.scrollY || window.pageYOffset || 0;
+      //     var ticking = false;
+      //     var minOffset = 0;
+      //     var maxOffset = 0;
+      //
+      //     function clamp(value, min, max) {
+      //         return Math.min(max, Math.max(min, value));
+      //     }
+      //
+      //     function updateBounds() {
+      //         var textWidth = Math.ceil(inner.scrollWidth);
+      //         var containerWidth = Math.ceil(marquee.clientWidth);
+      //         maxOffset = Math.max(0, containerWidth - textWidth);
+      //         minOffset = 0;
+      //         offset = clamp(offset, minOffset, maxOffset);
+      //         inner.style.transform = "translate3d(" + offset.toFixed(2) + "px, 0, 0)";
+      //     }
+      //
+      //     function updateByScroll() {
+      //         var y = window.scrollY || window.pageYOffset || 0;
+      //         var delta = y - lastY;
+      //         lastY = y;
+      //
+      //         if (delta === 0) {
+      //             ticking = false;
+      //             return;
+      //         }
+      //
+      //         // Вниз -> вправо (offset растет), вверх -> влево (offset уменьшается)
+      //         var step = clamp(Math.abs(delta) * 0.9, 0.6, 42);
+      //         offset += delta > 0 ? step : -step;
+      //         offset = clamp(offset, minOffset, maxOffset);
+      //         inner.style.transform = "translate3d(" + offset.toFixed(2) + "px, 0, 0)";
+      //
+      //         ticking = false;
+      //     }
+      //
+      //     function onScroll() {
+      //         if (!ticking) {
+      //             ticking = true;
+      //             window.requestAnimationFrame(updateByScroll);
+      //         }
+      //     }
+      //
+      //     function onResize() {
+      //         updateBounds();
+      //     }
+      //
+      //     updateBounds();
+      //     const observer = new IntersectionObserver(
+      //         (entries) => {
+      //             entries.forEach((entry) => {
+      //                 let isVisible = entry.isIntersecting;
+      //
+      //                 if (isVisible) {
+      //                     console.log('yes')
+      //                     window.addEventListener("scroll", onScroll, { passive: true });
+      //                     window.addEventListener("resize", onResize);
+      //                 }
+      //             });
+      //         },
+      //         {
+      //             threshold: 0.1
+      //         }
+      //     );
+      //
+      //     observer.observe(marquee);
+      // })();
+  </script>
+</body>
+</html>
