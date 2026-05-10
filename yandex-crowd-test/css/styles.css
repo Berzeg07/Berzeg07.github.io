@@ -323,20 +323,18 @@ h6 {
     gap: 44px;
 }
 
-.support__content--column {
-    min-width: 0;
-}
-
-.support__content--column img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
 .support__content .support__content--column:first-child {
     max-width: 474px;
     width: 100%;
-    /*position: relative;*/
+    position: relative;
+}
+
+.support__content--column img {
+    position: absolute;
+    width: 529px;
+    max-width: none;
+    left: -26px;
+    top: -28px;
 }
 
 .support__content .support__content--column:last-child {
@@ -682,6 +680,12 @@ h6 {
 }
 
 @media (max-width: 1365px) {
+    .support__content--column img {
+        position: static;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
     .stage-card--wide {
         padding-right: 0;
     }
@@ -801,7 +805,7 @@ h6 {
     }
     .support__content .support__content--column:first-child {
         width: 100vw;
-        margin-left: calc(50% - 50vw);
+        /*margin-left: calc(50% - 50vw);*/
     }
     .support__meta-row dt {
         width: auto;
